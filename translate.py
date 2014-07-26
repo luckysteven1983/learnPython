@@ -46,8 +46,10 @@ def cn2dig(cn):
 	ldig = []#临时数组
 	while lcn:
 		cndig = lcn.pop()
+		#print cndig
 		if CN_UNIT.has_key(cndig):
 			unit = CN_UNIT.get(cndig)
+			print unit
 			if unit==10000:
 				ldig.append('w') #标示万位
 				unit = 1
@@ -66,11 +68,13 @@ def cn2dig(cn):
 			ldig.append(dig)
 	if unit==10: #处理10-19的数字
 		ldig.append(10)
-	#print ldig #uncomment this line to watch the middle var.
+	print ldig #uncomment this line to watch the middle var.
 	ret = 0
 	tmp = 0
 	while ldig:
 		x = ldig.pop()
+		print tmp
+		print ret
 		if x=='w':
 			tmp *= 10000
 			ret += tmp
@@ -93,16 +97,16 @@ def cn2dig(cn):
 if __name__ == '__main__':
 	#just for test
 	test_dig = [u'九',
-				u'十一',
-				u'一百二十三',
-				u'一千二百零三',
-				u'一万一千一百零一',
-				u'十万零三千六百零九',
-				u'一百二十三万四千五百六十七',
-				u'一千一百二十三万四千五百六十七',
-				u'一亿一千一百二十三万四千五百六十七',
-				u'一百零二亿五千零一万零一千零三十八',
-				u'一千一百一十一亿一千一百二十三万四千五百六十七',
+				#u'十一',
+				#u'一百二十三',
+				#u'一千二百零三',
+				#u'一万一千一百零一',
+				#u'十万零三千六百零九',
+				#u'一百二十三万四千五百六十七',
+				#u'一千一百二十三万四千五百六十七',
+				#u'一亿一千一百二十三万四千五百六十七',
+				#u'一百零二亿五千零一万零一千零三十八',
+				#u'一千一百一十一亿一千一百二十三万四千五百六十七',
 				u'一兆一千一百一十一亿一千一百二十三万四千五百六十七',
 				]
 	for cn in test_dig: 
