@@ -42,24 +42,60 @@ while i < len(b):
     i = i + 1
 print b[maxi],b[maxj]
 
-def binarySearch(lists,select):
-    is_none=False
-    if lists != []:
-        cen_num=len(lists)/2
-        tlag=lists[cen_num]
-        gt_list=lists[0:cen_num]
-        lt_list=lists[cen_num+1:]
- 
-    if tlag==select:
-is_none=True
-returnis_none
-eliftlag>select:
-is_se=binarySearch(gt_list,select)
-ifnotis_se:
-returnbinarySearch(lt_list,select)
-returnis_none
-eliftlag<select:
-is_se=binarySearch(lt_list,select)
-ifnotis_se:
-returnbinarySearch(gt_list,select)
-returnis_none
+import sys  
+  
+def search2(a,m):  
+    low = 0  
+    high = len(a) - 1  
+    while low<=high:  
+        mid = (low + high)/2  
+        midval = a[mid]  
+  
+        if midval<m:  
+            low = mid + 1  
+        elif midval>m:  
+            high = mid-1  
+        else:  
+            print mid  
+            return mid  
+    print -1  
+    return -1  
+  
+if __name__ == "__main__":  
+  
+    a = [int(i) for i in list(sys.argv[1])]  
+    m = int(sys.argv[2])  
+    search2(a,m)  
+
+def bubble(bubbleList):
+    listLength=len(bubbleList)
+    j = 0
+    while j < listLength:
+        for i in range(listLength - 1):
+            #print i
+            if bubbleList[i] > bubbleList[i+1]:
+                #temp = bubbleList[i]
+                #bubbleList[i] = bubbleList[i+1]
+                #bubbleList[i+1] = temp
+		bubbleList[i],bubbleList[i+1]=bubbleList[i+1],bubbleList[i]
+                #listLength = listLength - 1
+                #print i
+                #print listLength
+                #print bubbleList
+        j = j + 1
+	#print bubbleList
+    print bubbleList
+if __name__=='__main__':
+    bubbleList=[3,4,1,2,5,8,0]
+    bubble(bubbleList)
+
+
+def bubbletest(List):
+    for n in range(len(List)-1,0,-1):
+        for m in range(0,n):
+            if List[m]>List[m+1]:List[m],List[m+1]=List[m+1],List[m]
+    return List
+if __name__=='__main__':
+    mylist = [3,4,1,2,5,8,0]
+    bubbletest(mylist)
+    #print mylist
