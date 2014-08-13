@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SystemParameter> 
+  <SystemDN>$NmiDnPrefix,ManagementNode=ONRM,IRPAgent=IRPAgent</SystemDN>  
+  <IorHost>localhost</IorHost>  
+  <DirOrUrlControlIndication>1</DirOrUrlControlIndication>  
+  <NameService> 
+    <ORBInitRef>iioploc://localhost:35024/NameService</ORBInitRef>  
+    <NameContext> 
+      <EP>/com/ericsson/nbi/EPIRP</EP>  
+      <FT>/com/ericsson/nbi/FTIRP</FT>  
+      <CS>/com/ericsson/nbi/CSIRP</CS>  
+      <NA>/com/ericsson/nbi/NotificationIRP</NA>  
+      <Alarm>/com/ericsson/nbi/AlarmIRP</Alarm>  
+      <BasicCM>/com/ericsson/nbi/BasicCMIRP</BasicCM>  
+      <KernelCM>/com/ericsson/nbi/KernelCMIRP</KernelCM>  
+      <BulkCM>/com/ericsson/nbi/BulkCMIRP</BulkCM>  
+      <SimpleUploadBulkCM>/com/ericsson/nbi/SimpleUploadBulkCMIRP</SimpleUploadBulkCM>  
+      <ControlledUploadBulkCM>/com/ericsson/nbi/ControlledUploadBulkCMIRP</ControlledUploadBulkCM>  
+      <PMIRP>/com/ericsson/nbi/PMIRP</PMIRP> 
+    </NameContext> 
+  </NameService>  
+  <NotificationService> 
+    <ORBInitRef>iioploc://localhost:14100/NotificationService</ORBInitRef>  
+    <EventChannel> 
+      <EP>EPIRP</EP>  
+      <FT>FTIRP</FT>  
+      <CS>CSIRP</CS>  
+      <Alarm>Alarm</Alarm>  
+      <BasicCM>BasicCM</BasicCM>  
+      <KernelCM>KernelCM</KernelCM>  
+      <BulkCM>BulkCM</BulkCM>  
+      <SimpleUploadBulkCM>SimpleUploadBulkCM</SimpleUploadBulkCM>  
+      <ControlledUploadBulkCM>ControlledUploadBulkCM</ControlledUploadBulkCM>  
+      <PMIRP>PMIRP</PMIRP>  
+      <EventDistributor>EventDistributor</EventDistributor> 
+    </EventChannel> 
+  </NotificationService>  
+  <Database> 
+    <Server>NBI</Server>  
+    <Addr>150.236.73.187</Addr>  
+    <Port>5000</Port>  
+    <User>nbi</User>  
+    <Password>d337d1339762a0</Password>  
+    <DB>NBI</DB> 
+  </Database>  
+  <EPAgent> 
+    <IORFile>/config/epirp.ior</IORFile>  
+    <EPIORPort>55000</EPIORPort>  
+    <LogLevel>MAJOR</LogLevel>  
+    <LogFileName>/log/EPAgent.log</LogFileName>  
+    <LogFileNumber>2</LogFileNumber>  
+    <LogFileSize>5</LogFileSize>  
+    <SelfName>/com/ericsson/nbi/EPIRPSelfMgmt</SelfName>  
+    <SupportedIRPList> 
+      <IRP IRPId="EPIRP=1" IRPName="EPIRP" VersionNumber="EP IRP V3.0.0"/>  
+      <IRP IRPId="FileTransferIRP=2" IRPName="FileTransferIRP" VersionNumber="FileTransfer IRP V3.0.0"/>  
+      <IRP IRPId="CSIRP=3" IRPName="CSIRP" VersionNumber="CS IRP V3.0.0"/>  
+      <IRP IRPId="NotificationIRP=4" IRPName="NotificationIRP" VersionNumber="Notification IRP V3.0.0"/>  
+      <IRP IRPId="AlarmIRP=5" IRPName="AlarmIRP" VersionNumber="Alarm IRP V3.0.0"/>  
+      <IRP IRPId="BasicCMIRP=6" IRPName="BasicCMIRP" VersionNumber="BasicCM IRP V3.0.0"/>  
+      <IRP IRPId="KernelCMIRP=7" IRPName="KernelCMIRP" VersionNumber="KernelCM IRP V3.0.0"/>  
+      <IRP IRPId="BulkCMIRP=8" IRPName="BulkCMIRP" VersionNumber="BulkCM IRP V3.0.0"/>  
+      <IRP IRPId="PMIRP=9" IRPName="PMIRP" VersionNumber="PM IRP V3.0.0"/>  
+      <IRP IRPId="SimpleUploadBulkCMIRP=10" IRPName="SimpleUploadBulkCMIRP" VersionNumber="SimpleUploadBulkCM IRP V3.0.0"/>  
+      <IRP IRPId="ControlledUploadBulkCMIRP=11" IRPName="ControlledUploadBulkCMIRP" VersionNumber="ControlledUploadBulkCM IRP V3.0.0"/> 
+    </SupportedIRPList>  
+    <VBPara>-ORBUseSharedProfile 1</VBPara> 
+  </EPAgent>  
+  <FTAgent> 
+    <FileFormat>XML</FileFormat>  
+    <LogLevel>MAJOR</LogLevel>  
+    <LogFileName>/log/FTAgent.log</LogFileName>  
+    <LogFileNumber>2</LogFileNumber>  
+    <LogFileSize>5</LogFileSize>  
+    <SelfName>/com/ericsson/nbi/FileTransferIRPSelfMgmt</SelfName>  
+    <FileCompression>NULL</FileCompression>  
+    <FileExpirationInterval>1440</FileExpirationInterval>  
+    <DataDirList> 
+      <DataDir DataType="1" DataTypeName="PM" AvailableFilesPath="/DataFile/Generated/PM/NFI" TransferredFliesPath="/DataFile/Generated/PM/Transferred"/>  
+      <DataDir DataType="2" DataTypeName="CM" AvailableFilesPath="/DataFile/Generated/CM/UPLoad" TransferredFliesPath="/DataFile/Generated/CM/Transferred"/>  
+      <DataDir DataType="3" DataTypeName="IM" AvailableFilesPath="/DataFile/Generated/IM/Ready" TransferredFliesPath="/DataFile/Generated/IM/Transferred"/>  
+      <DataDir DataType="4" DataTypeName="TM" AvailableFilesPath="/DataFile/Generated/TM/Ready" TransferredFliesPath="/DataFile/Generated/TM/Transferred"/>  
+      <DataDir DataType="5" DataTypeName="CT" AvailableFilesPath="/DataFile/Generated/CT/Ready" TransferredFliesPath="/DataFile/Generated/CT/Transferred"/>  
+      <DataDir DataType="6" DataTypeName="NL" AvailableFilesPath="/DataFile/Generated/NL/Ready" TransferredFliesPath="/DataFile/Generated/NL/Transferred"/>  
+      <DataDir DataType="7" DataTypeName="CG" AvailableFilesPath="/DataFile/Generated/CG/Ready" TransferredFliesPath="/DataFile/Generated/CG/Transferred"/>  
+      <DataDir DataType="8" DataTypeName="OT" AvailableFilesPath="/DataFile/Generated/OT/Ready" TransferredFliesPath="/DataFile/Generated/OT/Transferred"/>  
+      <DataDir DataType="9" DataTypeName="FM" AvailableFilesPath="/DataFile/Generated/FM/Ready" TransferredFliesPath="/DataFile/Generated/FM/Transferred"/> 
+    </DataDirList>  
+    <VBPara>-ORBUseSharedProfile 1</VBPara> 
+  </FTAgent>  
+  <NAAgent> 
+    <EventBufferSize>1000</EventBufferSize>  
+    <LogLevel>MAJOR</LogLevel>  
+    <LogFileName>/log/NAAgent.log</LogFileName>  
+    <LogFileNumber>2</LogFileNumber>  
+    <LogFileSize>5</LogFileSize>  
+    <SelfName>/com/ericsson/nbi/NotificationIRPSelfMgmt</SelfName>  
+    <Hold_Sub_Period>10</Hold_Sub_Period>  
+    <SubNum>100</SubNum>  
+    <MaxQueueLength>250000</MaxQueueLength>  
+    <VBPara>-ORBUseSharedProfile 1</VBPara> 
+  </NAAgent>  
+  <CSAgent> 
+    <HeartBeatPeriod>5</HeartBeatPeriod>  
+    <SelfName>/com/ericsson/nbi/CSIRPSelfMgmt</SelfName>  
+    <LogLevel>MAJOR</LogLevel>  
+    <LogFileName>/log/CSAgent.log</LogFileName>  
+    <LogFileNumber>2</LogFileNumber>  
+    <LogFileSize>5</LogFileSize>  
+    <VBPara>-ORBUseSharedProfile 1</VBPara> 
+  </CSAgent>  
+  <PMIRP> 
+    <LogLevel>MAJOR</LogLevel>  
+    <LogFileName>/log/PMAgent.log</LogFileName>  
+    <LogFileNumber>2</LogFileNumber>  
+    <LogFileSize>1</LogFileSize>  
+    <SelfName>/com/ericsson/nbi/PMIRPSelfMgmt</SelfName>  
+    <EmptyInstanceSupport>N</EmptyInstanceSupport>  
+    <WildcardSupportUnderME>Y</WildcardSupportUnderME>  
+    <VBPara>-ORBUseSharedProfile 1</VBPara>  
+    <RPRecoverPeriod>24</RPRecoverPeriod>  
+    <Format>true</Format>  
+    <AlarmSend>false</AlarmSend> 
+  </PMIRP>  
+  <CMPMInterWork> 
+    <LogLevel>INFO</LogLevel>  
+    <LogFileName>/log/CMPMInterWork.log</LogFileName>  
+    <LogFileNumber>5</LogFileNumber>  
+    <LogFileSize>200</LogFileSize>  
+    <!--Unit:MB--> 
+  </CMPMInterWork>  
+  <PMFileRetrieval> 
+    <LogLevel>MAJOR</LogLevel>  
+    <LogFileName>/log/PMFileRetrieval.log</LogFileName>  
+    <LogFileNumber>2</LogFileNumber>  
+    <LogFileSize>5</LogFileSize>  
+    <SelfName>/com/ericsson/nbi/PMFileRetrievalSelfMgmt</SelfName>  
+    <ThPoolMaxSize>60</ThPoolMaxSize>  
+    <SGSNMMEDelayMinutes>2</SGSNMMEDelayMinutes>  
+    <VBPara>-ORBDottedDecimalAddresses 1</VBPara> 
+  </PMFileRetrieval>  
+  <PMCLIRetrieval> 
+    <LogLevel>MAJOR</LogLevel>  
+    <LogFileName>/log/PMCLIRetrieval.log</LogFileName>  
+    <LogFileNumber>2</LogFileNumber>  
+    <LogFileSize>5</LogFileSize>  
+    <SelfName>/com/ericsson/nbi/PMCLIRetrievalSelfMgmt</SelfName>  
+    <ThPoolMaxSize>30</ThPoolMaxSize>  
+    <MgwThPoolMaxSize>50</MgwThPoolMaxSize>  
+    <AheadMinutes>3</AheadMinutes>  
+    <VBPara>-ORBDottedDecimalAddresses 1</VBPara> 
+  </PMCLIRetrieval>  
+  <FileAnalyzer> 
+    <OSSRCNAME>/config/collector_Core.xml</OSSRCNAME>  
+    <FTPLISTFILE>/config/PM/FTPFileList.xml</FTPLISTFILE>  
+    <CLICfgPath>/config/PM/mmlcmd</CLICfgPath>  
+    <CLIExecuteInteval>15</CLIExecuteInteval>  
+    <!--unit minute -->  
+    <LIMITEDDEGREE>5</LIMITEDDEGREE>  
+    <HOLDHOUR>5</HOLDHOUR>  
+    <RECOLLECTFLAG>FALSE</RECOLLECTFLAG>  
+    <FILECOUNTERPER>200</FILECOUNTERPER>  
+    <RETRIEVALSLEEPTIME>5</RETRIEVALSLEEPTIME>  
+    <!--unit second-->  
+    <GRANULARITY>15</GRANULARITY>  
+    <pmdelay>600</pmdelay>  
+    <pm60delay>1080</pm60delay>  
+    <PMIRPCfgFile>/config/PM/PMIRP.xml</PMIRPCfgFile>  
+    <maxJobNum>1000</maxJobNum>  
+    <maxInstanceNum>270000</maxInstanceNum>  
+    <maxSystemInstanceNum>600000</maxSystemInstanceNum>  
+    <maxThresholdNum>1000</maxThresholdNum>  
+    <AgentMaxPoolNum>30</AgentMaxPoolNum>  
+    <performanceFilePath>/DataFile/Generated/PM/Ready/</performanceFilePath>  
+    <ThresholdRecoveryFile>/config/PM/ThresholdRecoveryFile.xml</ThresholdRecoveryFile>  
+    <JobRecoveryFile>/config/PM/JobRecoveryFile.xml</JobRecoveryFile>  
+    <jobStopTime>5</jobStopTime>  
+    <!-- unit minute -->  
+    <NotifyPolicy>R</NotifyPolicy>  
+    <PMMappingNeCfgFile>/config/PM/PMMapping_NEs.xml</PMMappingNeCfgFile>  
+    <UltraLongFileLocation>/DataFile/longdata/</UltraLongFileLocation> 
+  </FileAnalyzer>  
+  <CMIRP> 
+    <MOCMappingConfigFilePath>/config/CM</MOCMappingConfigFilePath>  
+    <MOCAttributeMappingFileList> 
+      <MOCAttributeMappingFile NEType="ENODEB" MappingFile="/config/CM/MOCAttributeMapping_ENODEB.xml"/>  
+      <MOCAttributeMappingFile NEType="PGW" MappingFile="/config/CM/MOCAttributeMapping_PGW.xml"/>  
+      <MOCAttributeMappingFile NEType="SGW" MappingFile="/config/CM/MOCAttributeMapping_SGW.xml"/>  
+      <MOCAttributeMappingFile NEType="CG" MappingFile="/config/CM/MOCAttributeMapping_CG.xml"/>  
+      <MOCAttributeMappingFile NEType="GGSN" MappingFile="/config/CM/MOCAttributeMapping_GGSN.xml"/>  
+      <MOCAttributeMappingFile NEType="PCRF" MappingFile="/config/CM/MOCAttributeMapping_PCRF.xml"/>  
+      <MOCAttributeMappingFile NEType="MSS" MappingFile="/config/CM/MOCAttributeMapping_MSS.xml"/>  
+      <MOCAttributeMappingFile NEType="MME" MappingFile="/config/CM/MOCAttributeMapping_MME.xml"/>  
+      <MOCAttributeMappingFile NEType="SGSN" MappingFile="/config/CM/MOCAttributeMapping_SGSN.xml"/>  
+      <MOCAttributeMappingFile NEType="HSS" MappingFile="/config/CM/MOCAttributeMapping_HSS.xml"/>  
+      <MOCAttributeMappingFile NEType="MGW" MappingFile="/config/CM/MOCAttributeMapping_MGW.xml"/>  
+      <MOCAttributeMappingFile NEType="DRA" MappingFile="/config/CM/MOCAttributeMapping_DRA.xml"/>  
+      <MOCAttributeMappingFile NEType="HLR" MappingFile="/config/CM/MOCAttributeMapping_HLR.xml"/>  
+      <MOCAttributeMappingFile NEType="IMSMGW" MappingFile="/config/CM/MOCAttributeMapping_IMSMGW.xml"/>  
+      <MOCAttributeMappingFile NEType="MGCF" MappingFile="/config/CM/MOCAttributeMapping_MGCF.xml"/>  
+      <MOCAttributeMappingFile NEType="MGCF" MappingFile="/config/CM/MOCAttributeMapping_MGCF.xml"/>  
+      <MOCAttributeMappingFile NEType="CSCF" MappingFile="/config/CM/MOCAttributeMapping_CSCF.xml"/>  
+      <MOCAttributeMappingFile NEType="MGCF" MappingFile="/config/CM/MOCAttributeMapping_MGCF.xml"></MOCAttributeMappingFile>
+      <MOCAttributeMappingFile NEType="CSCF" MappingFile="/config/CM/MOCAttributeMapping_CSCF.xml"></MOCAttributeMappingFile>
+    </MOCAttributeMappingFileList>  
+    <OssCMFileStorePath>/DataFile/Retrieved/CM</OssCMFileStorePath>  
+    <FileGeneratedPath>/DataFile/Generated/CM/Ready</FileGeneratedPath>  
+    <GeneratedPath>/DataFile/Generated/CM</GeneratedPath>  
+    <RecoverInterval>1</RecoverInterval> 
+  </CMIRP>  
+  <CMAgent> 
+    <SelfName>/com/ericsson/nbi/self/CMAgent</SelfName>  
+    <LogLevel>DEBUG</LogLevel>  
+    <LogFileName>/log/CMAgent.log</LogFileName>  
+    <LogFileNumber>2</LogFileNumber>  
+    <LogFileSize>20</LogFileSize>  
+    <FindIterNum>100</FindIterNum>  
+    <FindExpireTime>60</FindExpireTime>  
+    <!--unit minute-->  
+    <LocalExportFileLocation>/DataFile/Exported/CM</LocalExportFileLocation>  
+    <NBIConfigFile>/config/CM/NBIConfig.xml</NBIConfigFile>  
+    <MOCGroupDefinitionFile>/config/CM/MOCGroupDefinition.xml</MOCGroupDefinitionFile>  
+    <DelIterNum>100</DelIterNum>  
+    <DelExpireTime>60</DelExpireTime>  
+    <!--unit minute-->  
+    <ModifyIterNum>100</ModifyIterNum>  
+    <ModifyExpireTime>60</ModifyExpireTime>  
+    <!--unit minute-->  
+    <UploadWithNewSchema>true</UploadWithNewSchema>  
+    <!--unit minute-->  
+    <VBPara>-ORBUseSharedProfile 1</VBPara> 
+  </CMAgent>  
+  <FTPSERVER> 
+    <Ip>150.236.73.187</Ip>  
+    <Port>21</Port>  
+    <User>nbi</User>  
+    <Password>9762a0</Password> 
+  </FTPSERVER>  
+  <AlarmAgent> 
+    <LogLevel>MAJOR</LogLevel>  
+    <LogFileName>/log/AlarmAgent.log</LogFileName>  
+    <LogFileNumber>2</LogFileNumber>  
+    <LogFileSize>5</LogFileSize>  
+    <SelfName>/com/ericsson/nbi/AlarmAgentSelfMgmt</SelfName>  
+    <FilterableParaFile>/config/Alarm/filterablePara.xml</FilterableParaFile>  
+    <ReturnAlarmMethod>SYNC</ReturnAlarmMethod>  
+    <MaxIteratorNum>100</MaxIteratorNum>  
+    <MaxIteratorWaitTime>60</MaxIteratorWaitTime>  
+    <!-- unit minute -->  
+    <IteratorAlarmInstanceNumber>500</IteratorAlarmInstanceNumber>  
+    <!-- get_alarm_list Alarm number limit -->  
+    <VBPara>-ORBUseSharedProfile 1</VBPara> 
+  </AlarmAgent>  
+  <AlarmAdaptor> 
+    <LogLevel>MAJOR</LogLevel>  
+    <LogFileName>/log/AlarmAdaptor.log</LogFileName>  
+    <LogFileNumber>2</LogFileNumber>  
+    <LogFileSize>5</LogFileSize>  
+    <SelfName>/com/ericsson/nbi/AlarmAdaptorSelfMgmt</SelfName>  
+    <SBISubscribePeriod>60</SBISubscribePeriod>  
+    <!--unit second,[10,600],default 60 -->  
+    <EventBufferSize>1000000</EventBufferSize>  
+    <VBPara>-ORBDottedDecimalAddresses 1</VBPara> 
+  </AlarmAdaptor>  
+  <SelfManagement> 
+    <SelfName>/com/ericsson/nbi/selfmanagement</SelfName>  
+    <DelayExpiod>1</DelayExpiod>  
+    <AutoAckAlarm>enable</AutoAckAlarm>  
+    <VBPara>-ORBUseSharedProfile 1</VBPara>  
+    <IRPList> 
+      <IRPPara> 
+        <Name>ALARM_IRP_VERSION</Name>  
+        <Value>Alarm IRP V3.0.0</Value> 
+      </IRPPara>  
+      <IRPPara> 
+        <Name>ALARM_IRP_DESCRIPTION</Name>  
+        <Value>It provides China CMCC TD-LTE spec V3.0.0 fault management module's functions.</Value> 
+      </IRPPara> 
+    </IRPList> 
+  </SelfManagement>  
+  <PMMapping> 
+    <LogLevel>MAJOR</LogLevel>  
+    <LogFileName>/log/PMMapping.log</LogFileName>  
+    <LogFileSize>5</LogFileSize>  
+    <SelfName>/com/ericsson/nbi/PMMappingSelfMgmt</SelfName>  
+    <LocalPath>/DataFile/Retrieved/PM/CounterFile</LocalPath>  
+    <BackupPath>/DataFile/Retrieved/PM/BackupFile</BackupPath>  
+    <ThPoolMaxSize>3</ThPoolMaxSize>  
+    <ExprParser>/bin/PMScript/expr_parser</ExprParser>  
+    <ExprTempFile>/tmp/expr_node.xml</ExprTempFile>  
+    <PMConfigSchema>/config/PM/PMConfig.xsd</PMConfigSchema>  
+    <PMNeConfigSchema>/config/PM/PMNEConfig.xsd</PMNeConfigSchema>  
+    <PMNeMetaConfigSchema>/config/PM/PMNEMetaConfig.xsd</PMNeMetaConfigSchema>  
+    <BatchNum>1000</BatchNum>  
+    <PMMappingNum>60</PMMappingNum>  
+    <!--Total PMMapping program number. For EPS, default is 55-->  
+    <LTEPMMappingNum>50</LTEPMMappingNum>  
+    <!--PMMapping program number for LTE Nodes only. Default is 50, means PMMapping 1~50 will be used for LTE nodes, and 51~55 will be used for EPC nodes.--> 
+  </PMMapping>  
+  <CMMapping> 
+    <LogLevel>DEBUG</LogLevel>  
+    <LogFileName>/log/CMMapping.log</LogFileName>  
+    <LogFileSize>5</LogFileSize>  
+    <ThPoolMaxSize>20</ThPoolMaxSize>  
+    <SyncCtrlFile>/config/CM/CMDef_Sync_Flow.xml</SyncCtrlFile>  
+    <ENODEBWirelessParaSyncCtrlFile>/config/CM/CMDef_ENODEB_WirelessPara_Sync_Flow.xml</ENODEBWirelessParaSyncCtrlFile> 
+  </CMMapping>  
+  <BasicCollector> 
+    <LogLevel>INFO</LogLevel>  
+    <LogFileName>/log/BasicCollector.log</LogFileName>  
+    <LogFileSize>5</LogFileSize>  
+    <VBPara>-ORBDottedDecimalAddresses 1</VBPara> 
+  </BasicCollector>  
+  <BulkCollector> 
+    <LogLevel>INFO</LogLevel>  
+    <LogFileName>/log/BulkCollector.log</LogFileName>  
+    <LogFileSize>5</LogFileSize>  
+    <VBPara>-ORBDottedDecimalAddresses 1</VBPara> 
+  </BulkCollector>  
+  <AlarmRecord> 
+    <LogLevel>INFO</LogLevel>  
+    <LogFileName>/var/opt/ericsson/NBI/instrumentation/AlarmRecord/AlarmRecord.log</LogFileName>  
+    <LogFileSize>150</LogFileSize>  
+    <LogFileNumber>50</LogFileNumber> 
+  </AlarmRecord>  
+  <NFI> 
+    <LogLevel>MAJOR</LogLevel>  
+    <LogFileName>/log/NFI/NFI.log</LogFileName>  
+    <LogFileSize>5</LogFileSize>  
+    <LogFileNumber>2</LogFileNumber>  
+    <SelfName>/com/ericsson/nbi/NFISelfMgmt</SelfName> 
+  </NFI>  
+  <EventDecoder> 
+    <LogLevel>MAJOR</LogLevel>  
+    <LogFileName>/log/EventDecoder/EventDecoder.log</LogFileName>  
+    <LogFileSize>5</LogFileSize>  
+    <LogFileNumber>2</LogFileNumber>  
+    <SelfName>/com/ericsson/nbi/EventDecoderSelfMgmt</SelfName> 
+  </EventDecoder>  
+  <PMFileCollector> 
+    <LogLevel>MAJOR</LogLevel>  
+    <LogFileName>/log/PMFileCollector.log</LogFileName>  
+    <LogFileNumber>2</LogFileNumber>  
+    <LogFileSize>5</LogFileSize>  
+    <SelfName>/com/ericsson/nbi/PMFileCollectorSelfMgmt</SelfName>  
+    <ThPoolMaxSize>60</ThPoolMaxSize>  
+    <Netype4Notif>ENODEB</Netype4Notif>  
+    <NotifyExpiredTime>600</NotifyExpiredTime>  
+    <CollPointDeltaTime>60</CollPointDeltaTime>  
+    <EventBufferSize>1000000</EventBufferSize> 
+  </PMFileCollector>  
+  <EventDistributor> 
+    <LogLevel>MAJOR</LogLevel>  
+    <LogFileName>/log/EventDistributor.log</LogFileName>  
+    <LogFileNumber>2</LogFileNumber>  
+    <LogFileSize>5</LogFileSize>  
+    <SelfName>/com/ericsson/nbi/EventDistributorSelfMgmt</SelfName>  
+    <VBPara>-ORBDottedDecimalAddresses 1</VBPara> 
+  </EventDistributor>  
+  <SplitterTable> 
+    <SplitterTableName>PM_ENODEB_EutranCellTdd_S_XO</SplitterTableName>  
+    <SplitterTableName>PM_ENODEB_EutranCellTdd_S_XE</SplitterTableName>  
+    <SplitterTableName>PM_ENODEB_EutranCellTdd_S_XOE</SplitterTableName>  
+    <SplitterTableName>PM_ENODEB_MAC_EutranCellTdd_S_XO</SplitterTableName>  
+    <SplitterTableName>PM_ENODEB_PHY_EutranCellTdd_S_XO</SplitterTableName>  
+    <SplitterTableName>PM_ENODEB_PDCP_EutranCellTdd_S_XO</SplitterTableName>  
+    <SplitterTableName>PM_ENODEB_EQPT_ManagedElement_S_XO</SplitterTableName>  
+    <SplitterTableName>PM_ENODEB_HO_EutranRelationTdd_S_XO</SplitterTableName>  
+    <SplitterTableName>PM_ENODEB_SIG_SctpAssoc_S_XO</SplitterTableName>  
+    <SplitterTableName>PM_ENODEB_EQPT_EthernetPort_S_XO</SplitterTableName>  
+    <SplitterTableName>PM_ENODEB_S1_EpRpDynS1uEnb_S_XO</SplitterTableName>  
+    <SplitterTableName>PM_measGrpInst</SplitterTableName> 
+  </SplitterTable> 
+</SystemParameter>
