@@ -10,3 +10,9 @@ man: you most certainly did not!
 other man: now let's get one thing quite clear: i most definitely told you!
 man: oh no you didn't!
 other man: oh yes i did!
+(pause)
+man: no it isn't!
+(pause)
+man:it's just contradiction!
+other man: no it isn't!
+
