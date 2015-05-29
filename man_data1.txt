@@ -1,0 +1,18 @@
+(lp0
+S'is this the right room for an argument?'
+p1
+aS"no you haven't!"
+p2
+aS'when?'
+p3
+aS"you didn't!"
+p4
+aS'you most certainly did not!'
+p5
+aS"oh no you didn't!"
+p6
+aS"no it isn't!"
+p7
+aS"it's just contradiction!"
+p8
+a.
