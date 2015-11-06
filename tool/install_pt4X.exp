@@ -1,0 +1,95 @@
+#!/usr/bin/expect
+set argc [ llength $argv ]
+
+if {$argc<2} {
+  puts stderr "Usage: $argv0 FE|BE|COMPACT host [.. hostN]"
+  exit 1
+}
+
+for { set i 1 } { $i < $argc } { incr i } {
+    ###login NE#########################################
+	spawn ssh ainet@[lindex $argv $i]
+	set timeout -1
+	while  1  {
+        expect {
+         "(yes/no)" {
+                 send "yes\n"
+                continue
+         } "password:" {
+                send "ainet1\n"
+                break
+                 }
+         } 
+         
+        }
+	
+	###switch to root##################################
+	expect ">"
+	send "su - \n"
+	expect "Password:"
+	send "r00t\n"
+	expect "#"
+	###switch to /MDS directory#####################################
+	send "rm -r /MDS/pt\n"
+	expect "#"
+        send "mkdir /MDS/pt\n"
+        expect "#"
+	send "cd /MDS/pt\n"
+	expect "#"
+
+	###download tools to toolserver##########################
+	send "ftp 135.252.181.15\n"
+	expect "Name"
+	send "dadl\n"
+	expect "Password:"
+	send "dadl01\n"
+	expect "ftp>"
+	send "cd /home/dadl\n"
+	expect "ftp>"
+	send "bin\n"
+	expect "ftp>"
+	send "get pt_4X_mcas.tar.gz\n"
+    expect "ftp>"
+    if { [string equal [lindex $argv 0] "BE"] } {
+          send "get ModData_r4.0.tar\n"
+          expect "ftp>"
+    }
+	send "bye\n"
+	expect "#"
+        
+    ###Install pt tool#####################################
+    send "tar xvfz pt_4X_mcas.tar.gz\n"
+    expect "#"
+    send "cd ..;chown -R root:root pt;cd pt;cp log.ini log.ini.sync\n"
+    expect "#"
+    if { [string equal [lindex $argv 0] "BE"] } {
+           send "./install.sh BE pt_4X_mcas.tar.gz\n"
+           expect "#"
+           send "mv ModData_r4.0.tar /MDS\n"
+           expect "#"
+           send "cd /MDS;tar xof ModData_r4.0.tar\n"
+        } elseif { [string equal [lindex $argv 0] "FE"] } {
+           ###Add iLB STATION########################################
+#           send "echo `grep -i ilb /etc/hosts|awk '{print $1}'|head -1`  STATION_O >> /etc/hosts\n"
+#           expect "#"
+#           send "echo `grep -i ilb /etc/hosts|awk '{print $1}'|tail -1`  STATION_P >> /etc/hosts\n"
+#           expect "#"	
+           send "./install.sh FE pt_4X_mcas.tar.gz\n"
+        } else {
+           send "./install.sh COMPACT pt_4X_mcas.tar.gz\n"
+        }
+        expect "#"
+        send "psql -U scncraft -f /MDS/pt/log.sql\n"
+        expect "#"
+        send "/cs/sn/cr/cepexec INIT_PROC \"init:proc=CSOP,level=1,UCL\"\n";
+        expect "#"
+        send "/usr/sbin/ConfigIdleLogout -disable\n"
+        expect "#"
+        send "sed -i 's/#__DEFAULT__MAX_SIMULTANEOUS_LOGINS=6/MAX_SIMULTANEOUS_LOGINS=0/' /etc/default/passwd\n";
+        expect "#"
+        send "service xinetd restart\n"
+        expect "#"
+}
+close
+exit 0
+
