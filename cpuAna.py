@@ -5,6 +5,7 @@ Created on Nov 4, 2015
 '''
 import re
 import os
+import csv
 class CPUAnaAManager(object):
     '''
     classdocs
@@ -30,7 +31,7 @@ class CPUAnaAManager(object):
         '''
         '''
         dictCpu={}
-	#dictVal = ()
+    #dictVal = ()
         #dictCpu['PDLSI1']=[]
         #dictCpu['PDLSI2']=[]
         #dictCpu['PDLSI3']=[]
@@ -38,7 +39,7 @@ class CPUAnaAManager(object):
         cpuData = myFile.readlines()
         lineNum = 0
         for line in cpuData:
-	    line = line.strip()
+            line = line.strip()
             lineNum += 1
             found = re.search(r'top - (\d\d:\d\d:\d\d).', line)
             if found:
@@ -49,33 +50,44 @@ class CPUAnaAManager(object):
                     continue
         currentLineNum = lineNum - 1
         for line in cpuData[currentLineNum:-1]:
-	    line = line.strip()
+            line = line.strip()
             found = re.search(r'top - (\d\d:\d\d:\d\d).', line)
             if found:
                 timeIndex = found.group(1)
-		dictKey = timeIndex
+                dictKey = timeIndex
                 if self.timeCompare(endTime, timeIndex):
                     break
                 else:
                     continue
-            print line
+            #print line
 
-	   #found = re.search(r'
+       #found = re.search(r'
 
             found = re.search('PDLSI', line)
             if found:
                 #key = line.split()[11]
                 cpu = line.split()[8]
-		mem = line.split()[9]
-		dictVal = (cpu, mem)
-		dictCpu[dictKey] = dictVal
-		print dictCpu
+                mem = line.split()[9]
+                dictVal = [cpu, mem]
+                dictCpu[dictKey] = dictVal
+                print dictCpu
+                #row = dictKey + ',' + cpu + ',' + mem
+
+        with open('test.csv', 'wb') as csvfile:
+            csvfile.truncate()
+            spam = csv.writer(csvfile, dialect='excel')
+            spam.writerow(['Time','PDLSI cpu','PDLSI mem'])
+            for key in dictCpu:
+                sth = dictCpu[key][0:]
+                sth.insert(0, key)
+                spam.writerow(sth)
+            csvfile.close()
 
         myFile.close()
         return dictCpu
 
     def parseLine(self, line):
-	pass
+        pass
 
     def getFileList(self, lab, dir):
         '''
@@ -87,11 +99,12 @@ class CPUAnaAManager(object):
         #os.popen(cmd)
         
         fileList = ""
-        cmd = "ls "+dir+" | grep ^top | grep log$ | grep L"
+        cmd = "ls "+dir+" | grep ^top | grep log$ | grep L | grep -v parsed"
         #cmd = "ls "+dir+" | grep ^top | grep log$"
-	#cmd = "ls "+dir+" | grep test.txt"
-	result = os.popen(cmd).read()
+        #cmd = "ls "+dir+" | grep test.txt"
+        result = os.popen(cmd).read()
         output = result.strip().split(os.linesep)
+
         return output
 
     def cptAnaAll(self, startTime, endTime, lab, dir):
@@ -99,7 +112,7 @@ class CPUAnaAManager(object):
         '''
         dict={}
         for fileIndex in self.getFileList(lab, dir):
-	    print fileIndex
+            print fileIndex
             fileIndex = dir+'/'+fileIndex
             result = self.cpuAna(startTime, endTime, fileIndex)
             bladeNumber = 1
