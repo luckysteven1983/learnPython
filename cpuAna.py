@@ -33,22 +33,38 @@ class CPUAnaAManager(object):
         dictCpu['PDLSI1']=[]
         dictCpu['PDLSI2']=[]
         dictCpu['PDLSI3']=[]
-        print fileInput
         myFile = open(fileInput, "r")
         cpuData = myFile.readlines()
+        lineNum = 0
         for line in cpuData:
+	    line = line.strip()
+            lineNum += 1
             found = re.search(r'top - (\d\d:\d\d:\d\d).', line)
             if found:
                 timeIndex = found.group(1)
                 if self.timeCompare(startTime, timeIndex):
-                    continue
-                if self.timeCompare(timeIndex, endTime):
                     break
+                else:
+                    continue
+        currentLineNum = lineNum
+        for line in cpuData[currentLineNum:-1]:
+	    line = line.strip()
+            found = re.search(r'top - (\d\d:\d\d:\d\d).', line)
+            if found:
+                timeIndex = found.group(1)
+                if self.timeCompare(endTime, timeIndex):
+                    break
+                else:
+                    continue
+            print line
+
             found = re.search('PDLSI', line)
             if found:
                 key = line.split()[11]
                 cpu = line.split()[8]
                 dictCpu[key].append(cpu)
+
+        myFile.close()
         return dictCpu
 
     def getFileList(self, lab, dir):
@@ -63,32 +79,27 @@ class CPUAnaAManager(object):
         fileList = ""
         #cmd = "ls "+dir+"/top_L_16:43:40.log | grep ^top | grep log$"
         cmd = "ls "+dir+" | grep ^top | grep log$ | grep L"
-        result = os.popen(cmd).readlines()
-        #fileList = result.split()
-        for index in result:
-            fileList += index
-        output = fileList.split(os.linesep)
+	cmd = "ls "+dir+" | grep test.txt"
+	result = os.popen(cmd).read()
+        output = result.strip().split(os.linesep)
         return output
 
     def cptAnaAll(self, startTime, endTime, lab, dir):
         '''
         '''
         dict={}
-        self.getFileList(lab, dir)
         for fileIndex in self.getFileList(lab, dir):
             fileIndex = dir+'/'+fileIndex
-            print fileIndex
-            while len(fileIndex) != 0:
-                result = self.cpuAna(startTime, endTime, fileIndex)
+            result = self.cpuAna(startTime, endTime, fileIndex)
             bladeNumber = 1
             dict[bladeNumber] = result
         return dict
     
     def anaAll(self, dict):
-        print
+        pass
 
 cpuAnaAManager =  CPUAnaAManager()
-dict1 = cpuAnaAManager.cptAnaAll('16:45:00', '16:45:20', 'atca47', './rawdata')
+dict1 = cpuAnaAManager.cptAnaAll('16:43:42', '16:43:44', 'atca47', './rawdata')
 cpuAnaAManager.anaAll(dict1)
 
 

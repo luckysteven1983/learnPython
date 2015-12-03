@@ -1,0 +1,2130 @@
+Linux 2.6.32-504.12.2.el6.x86_64 (ATCA47-0-0-10) 	11/19/15 	_x86_64_	(2 CPU)
+
+11/19/15 16:42:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.06    0.00    0.06     0.29     0.88    20.23     0.01  173.25  45.49   0.26
+
+11/19/15 16:42:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     1.40    0.00    0.60     0.00    16.00    26.67     0.00    6.00   5.33   0.32
+
+11/19/15 16:42:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.00     0.00     0.00     0.00     0.00    0.00   0.00   0.00
+
+11/19/15 16:42:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.40     0.00     4.80    12.00     0.00    3.00   3.00   0.12
+
+11/19/15 16:42:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.40     0.00     6.40    16.00     0.00    4.00   4.00   0.16
+
+11/19/15 16:42:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.40     0.00     4.80    12.00     0.00    3.50   3.50   0.14
+
+11/19/15 16:42:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.40     0.00     4.80    12.00     0.00    3.00   3.00   0.12
+
+11/19/15 16:43:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     1.00    0.00    0.80     0.00    14.40    18.00     0.03   40.00  39.50   3.16
+
+11/19/15 16:43:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     3.60    0.00    1.40     0.00    33.60    24.00     0.30  206.29  44.29   6.20
+
+11/19/15 16:43:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.80     0.00    12.80    16.00     0.11  154.00  58.25   4.66
+
+11/19/15 16:43:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.60     0.00     9.60    16.00     0.02   41.00  40.00   2.40
+
+11/19/15 16:43:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.60     0.00     8.00    13.33     0.05   76.67  39.67   2.38
+
+11/19/15 16:43:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    0.60     0.00     9.60    16.00     0.02   41.33  40.33   2.42
+
+11/19/15 16:43:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.20     0.00    14.40    12.00     0.15  121.50  66.17   7.94
+
+11/19/15 16:43:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.60    0.00    1.00     0.00    28.80    28.80     0.16  157.00  90.40   9.04
+
+11/19/15 16:43:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.40     0.00     3.20     8.00     0.10  211.00 120.00   4.80
+
+11/19/15 16:43:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.80     0.00     9.60    12.00     0.10  141.25  51.00   4.08
+
+11/19/15 16:43:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.60     0.00     8.00    13.33     0.02   40.67  39.67   2.38
+
+11/19/15 16:43:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.80     0.00     9.60    12.00     0.09  115.50  58.25   4.66
+
+11/19/15 16:44:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.60     0.00     6.40    10.67     0.05   77.00  39.67   2.38
+
+11/19/15 16:44:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.00    0.00    1.40     0.00    27.20    19.43     0.12   87.00  63.29   8.86
+
+11/19/15 16:44:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.20     0.00    14.40    12.00     0.32  269.50  83.83  10.06
+
+11/19/15 16:44:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.20     0.00     9.60     8.00     0.26  215.17  72.17   8.66
+
+11/19/15 16:44:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.20     0.00     9.60     8.00     0.20  170.17  57.17   6.86
+
+11/19/15 16:44:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.07   87.00  57.50   4.60
+
+11/19/15 16:44:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.00     0.00     0.00     0.00     0.02    0.00   0.00   0.56
+
+11/19/15 16:44:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.20    0.00    1.40     0.00    30.40    21.71     0.18  143.86  52.57   7.36
+
+11/19/15 16:44:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.20     0.00    14.40    12.00     0.22  186.83  76.00   9.12
+
+11/19/15 16:44:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.20     0.00    11.20     9.33     0.11   94.83  57.00   6.84
+
+11/19/15 16:44:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.11  142.00  58.00   4.64
+
+11/19/15 16:44:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.80     0.00     9.60    12.00     0.07   87.50  58.00   4.64
+
+11/19/15 16:45:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.80     0.00     9.60    12.00     0.11  141.00  57.50   4.60
+
+11/19/15 16:45:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.40    0.00    1.40     0.00    30.40    21.71     0.20  146.14  50.71   7.10
+
+11/19/15 16:45:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.20     0.00     1.60     8.00     0.02  114.00 114.00   2.28
+
+11/19/15 16:45:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.20     0.00    11.20     9.33     0.14  114.00  57.67   6.92
+
+11/19/15 16:45:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.60     0.00     6.40    10.67     0.05   77.00  40.00   2.40
+
+11/19/15 16:45:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    1.20     0.00    12.80    10.67     0.18  153.83  76.17   9.14
+
+11/19/15 16:45:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.60     0.00     6.40    10.67     0.05   77.00  39.67   2.38
+
+11/19/15 16:45:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.60    0.00    1.20     0.00    30.40    25.33     0.23  194.67  72.50   8.70
+
+11/19/15 16:45:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.60     0.00     6.40    10.67     0.02   40.67  39.67   2.38
+
+11/19/15 16:45:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    0.40     0.00     3.19     8.00     0.05   83.00  57.50   2.30
+
+11/19/15 16:45:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.80     0.00    11.20    14.00     0.06   86.25  50.75   4.06
+
+11/19/15 16:45:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.14  135.60  46.40   4.64
+
+11/19/15 16:46:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.20     0.00    11.20     9.33     0.18  149.67  75.50   9.06
+
+11/19/15 16:46:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.60    0.00    1.20     0.00    30.40    25.33     0.14  117.50  51.33   6.16
+
+11/19/15 16:46:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.60     0.00     8.00    13.33     0.02   41.00  39.67   2.38
+
+11/19/15 16:46:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.80     0.00     6.40     8.00     0.02   30.25  29.75   2.38
+
+11/19/15 16:46:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.00     0.00     0.00     0.00     0.00    0.00   0.00   0.00
+
+11/19/15 16:46:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.80     0.00     9.60    12.00     0.06   69.25  68.25   5.46
+
+11/19/15 16:46:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    0.60     0.00     9.60    16.00     0.05   78.00  41.00   2.46
+
+11/19/15 16:46:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.40    0.00    1.40     0.00    30.40    21.71     0.15  109.57  76.71  10.74
+
+11/19/15 16:46:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.00     0.00    12.80    12.80     0.18  182.80  84.80   8.48
+
+11/19/15 16:46:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.09  117.75  46.00   3.68
+
+11/19/15 16:46:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.00     0.00    12.80    12.80     0.07   70.20  47.20   4.72
+
+11/19/15 16:46:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.00     0.00    12.80    12.80     0.09   92.20  47.20   4.72
+
+11/19/15 16:47:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    0.20     0.00     4.80    24.00     0.01    3.00  28.00   0.56
+
+11/19/15 16:47:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     1.80    0.00    0.80     0.00    24.00    30.00     0.05   72.25  45.25   3.62
+
+11/19/15 16:47:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    1.40     0.00    17.60    12.57     0.26  184.71  77.86  10.90
+
+11/19/15 16:47:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.14  136.20  46.20   4.62
+
+11/19/15 16:47:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.05   58.00  30.50   2.44
+
+11/19/15 16:47:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    1.00     0.00    14.40    14.40     0.07   70.00  25.80   2.58
+
+11/19/15 16:47:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.20     0.00     1.60     8.00     0.05  113.00 141.00   2.82
+
+11/19/15 16:47:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     1.80    0.00    1.40     0.00    27.20    19.43     0.09   86.00  16.14   2.26
+
+11/19/15 16:47:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    0.80     0.00    12.80    16.00     0.11  140.50  57.50   4.60
+
+11/19/15 16:47:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    1.20     0.00    12.80    10.67     0.11   95.67  57.67   6.92
+
+11/19/15 16:47:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.11  139.75  57.00   4.56
+
+11/19/15 16:47:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.05   46.20  24.20   2.42
+
+11/19/15 16:48:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.60     0.00     8.00    13.33     0.02   40.67  39.67   2.38
+
+11/19/15 16:48:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.60    0.00    1.40     0.00    32.00    22.86     0.18  131.29  50.86   7.12
+
+11/19/15 16:48:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.20     0.00     3.20    16.00     0.01    3.00  31.00   0.62
+
+11/19/15 16:48:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.60     0.00     6.40    10.67     0.04   79.00  30.33   1.82
+
+11/19/15 16:48:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    1.00     0.00    11.20    11.20     0.11  113.60  68.60   6.86
+
+11/19/15 16:48:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.80     0.00     9.60    12.00     0.05   59.75  30.25   2.42
+
+11/19/15 16:48:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    0.80     0.00    12.80    16.00     0.05   67.00  39.50   3.16
+
+11/19/15 16:48:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.60    0.00    1.60     0.00    33.60    21.00     0.34  213.00  71.62  11.46
+
+11/19/15 16:48:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.07   85.75  58.00   4.64
+
+11/19/15 16:48:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.20     0.00     3.20    16.00     0.01    3.00  31.00   0.62
+
+11/19/15 16:48:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.60     0.00     6.40    10.67     0.06  115.67  67.00   4.02
+
+11/19/15 16:48:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    1.60     0.00    16.00    10.00     0.24  149.00  69.25  11.08
+
+11/19/15 16:49:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.14  135.20  68.40   6.84
+
+11/19/15 16:49:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.00    0.00    1.40     0.00    27.20    19.43     0.10   72.86  37.43   5.24
+
+11/19/15 16:49:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.00     0.00    12.80    12.80     0.20  202.80  68.80   6.88
+
+11/19/15 16:49:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.09   92.20  47.20   4.72
+
+11/19/15 16:49:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.07   86.75  57.25   4.58
+
+11/19/15 16:49:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.00     0.00     0.00     0.00     0.02    0.00   0.00   0.64
+
+11/19/15 16:49:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.80     0.00     9.60    12.00     0.07  114.75  49.75   3.98
+
+11/19/15 16:49:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.00    0.00    1.20     0.00    25.60    21.33     0.12   96.67  40.50   4.86
+
+11/19/15 16:49:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    1.00     0.00    14.40    14.40     0.16  159.60  68.60   6.86
+
+11/19/15 16:49:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.05   60.50  31.75   2.54
+
+11/19/15 16:49:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    0.80     0.00    12.80    16.00     0.07   90.50  34.00   2.72
+
+11/19/15 16:49:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.07   87.00  30.50   2.44
+
+11/19/15 16:50:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.60     0.00     8.00    13.33     0.02   41.33  40.00   2.40
+
+11/19/15 16:50:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.40    0.00    0.40     0.00    17.60    44.00     0.03    7.50  22.50   0.90
+
+11/19/15 16:50:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    1.60     0.00    17.60    11.00     0.37  245.62  87.25  13.96
+
+11/19/15 16:50:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.80     0.00    12.80    16.00     0.09  114.75  56.00   4.48
+
+11/19/15 16:50:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.07   86.75  30.50   2.44
+
+11/19/15 16:50:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.80     0.00     9.60    12.00     0.07   86.50  57.25   4.58
+
+11/19/15 16:50:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.09  113.75  57.50   4.60
+
+11/19/15 16:50:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.40    0.00    1.60     0.00    32.00    20.00     0.25  153.62  50.38   8.06
+
+11/19/15 16:50:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.20     0.00     1.60     8.00     0.04  115.00 148.00   2.96
+
+11/19/15 16:50:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.20     0.00    11.20     9.33     0.18  160.83  80.17   9.62
+
+11/19/15 16:50:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.11  141.50  57.75   4.62
+
+11/19/15 16:50:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.20     0.00    11.20     9.33     0.09   77.67  57.33   6.88
+
+11/19/15 16:51:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    0.80     0.00    12.80    16.00     0.09  115.25  58.25   4.66
+
+11/19/15 16:51:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.40    0.00    1.40     0.00    30.40    21.71     0.16  114.71  42.57   5.96
+
+11/19/15 16:51:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.20     0.00     9.60     8.00     0.20  169.83  57.33   6.88
+
+11/19/15 16:51:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.40     0.00    16.00    11.43     0.07   50.71  34.29   4.80
+
+11/19/15 16:51:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.20     0.00     3.20    16.00     0.01    3.00  34.00   0.68
+
+11/19/15 16:51:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.00     0.00     8.00     8.00     0.06   70.20  40.00   4.00
+
+11/19/15 16:51:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    0.80     0.00    12.80    16.00     0.07   86.00  58.50   4.68
+
+11/19/15 16:51:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.00    0.00    1.80     0.00    30.40    16.89     0.54  300.89  89.22  16.06
+
+11/19/15 16:51:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.20     0.00    14.40    12.00     0.36  299.17  76.17   9.14
+
+11/19/15 16:51:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.07   87.00  57.50   4.60
+
+11/19/15 16:51:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    1.00     0.00    14.40    14.40     0.09   91.80  47.20   4.72
+
+11/19/15 16:51:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.20     0.00     1.60     8.00     0.04  113.00 147.00   2.94
+
+11/19/15 16:52:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.80     0.00     8.00    10.00     0.05   86.25  21.50   1.72
+
+11/19/15 16:52:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.20    0.00    1.20     0.00    27.20    22.67     0.12   97.17  59.00   7.08
+
+11/19/15 16:52:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.20     0.00    14.40    12.00     0.27  225.50  75.83   9.10
+
+11/19/15 16:52:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.60     0.00    14.40     9.00     0.25  156.00  71.12  11.38
+
+11/19/15 16:52:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.07   85.00  57.25   4.58
+
+11/19/15 16:52:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.20     0.00     3.20    16.00     0.01    3.00  31.00   0.62
+
+11/19/15 16:52:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.60     0.00     6.40    10.67     0.06  115.00  66.33   3.98
+
+11/19/15 16:52:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.20    0.00    1.40     0.00    28.80    20.57     0.27  194.00  95.29  13.34
+
+11/19/15 16:52:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    1.40     0.00    17.60    12.57     0.21  150.43  37.43   5.24
+
+11/19/15 16:52:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.20     0.00     9.60     8.00     0.14  115.00  38.83   4.66
+
+11/19/15 16:52:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.20     0.00    11.20     9.33     0.19  156.50  78.83   9.46
+
+11/19/15 16:52:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    0.20     0.00     1.60     8.00     0.02    7.00  41.00   0.82
+
+11/19/15 16:53:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.80     0.00    12.80    16.00     0.09  140.50  49.50   3.96
+
+11/19/15 16:53:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     1.80    0.00    1.20     0.00    24.00    20.00     0.09   72.00  37.17   4.46
+
+11/19/15 16:53:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.20     0.00    14.40    12.00     0.22  186.83  57.00   6.84
+
+11/19/15 16:53:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.05   48.40  25.00   2.50
+
+11/19/15 16:53:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.00     0.00    12.80    12.80     0.14  135.40  46.40   4.64
+
+11/19/15 16:53:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.60     0.00    14.40     9.00     0.26  164.62  66.88  10.70
+
+11/19/15 16:53:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.20     0.00     3.20    16.00     0.01    3.00  32.00   0.64
+
+11/19/15 16:53:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     1.80    0.00    0.80     0.00    22.40    28.00     0.02   33.00  24.50   1.96
+
+11/19/15 16:53:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    1.20     0.00    16.00    13.33     0.14  119.67  45.83   5.50
+
+11/19/15 16:53:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    1.00     0.00    14.40    14.40     0.11  112.80  46.40   4.64
+
+11/19/15 16:53:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.14  135.40  46.20   4.62
+
+11/19/15 16:53:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.80     0.00     9.60    12.00     0.07   87.75  57.75   4.62
+
+11/19/15 16:54:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.60     0.00    14.40     9.00     0.25  155.50  57.62   9.22
+
+11/19/15 16:54:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.60    0.00    1.40     0.00    32.00    22.86     0.19  134.29  77.00  10.78
+
+11/19/15 16:54:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.00     0.00     0.00     0.00     0.01    0.00   0.00   0.68
+
+11/19/15 16:54:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.60     0.00     8.00    13.33     0.03   76.00  27.67   1.66
+
+11/19/15 16:54:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    1.00     0.00    11.20    11.20     0.08   75.40  52.00   5.20
+
+11/19/15 16:54:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.60     0.00     4.80     8.00     0.00    3.67   2.67   0.16
+
+11/19/15 16:54:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.07   87.50  57.75   4.62
+
+11/19/15 16:54:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.80    0.00    1.40     0.00    33.60    24.00     0.17  118.71  68.14   9.54
+
+11/19/15 16:54:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.20     0.00    11.20     9.33     0.22  186.67  57.00   6.84
+
+11/19/15 16:54:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.07   87.25  57.75   4.62
+
+11/19/15 16:54:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    0.20     0.00     1.60     8.00     0.02    2.00  39.00   0.78
+
+11/19/15 16:54:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.00     0.00    14.40    14.40     0.11  135.40  61.60   6.16
+
+11/19/15 16:55:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.05   59.50  30.75   2.46
+
+11/19/15 16:55:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.00    0.00    1.20     0.00    25.60    21.33     0.07   61.83  41.00   4.92
+
+11/19/15 16:55:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    2.00     0.00    22.40    11.20     0.45  227.40  84.70  16.94
+
+11/19/15 16:55:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.20  201.40  68.20   6.82
+
+11/19/15 16:55:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.11  113.60  47.20   4.72
+
+11/19/15 16:55:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.20     0.00     3.20    16.00     0.01    3.00  35.00   0.70
+
+11/19/15 16:55:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.80     0.00     8.00    10.00     0.08  115.75  77.25   6.18
+
+11/19/15 16:55:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.20    0.00    1.20     0.00    27.20    22.67     0.13  105.33  44.83   5.38
+
+11/19/15 16:55:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.20     0.00    14.40    12.00     0.29  239.00  75.00   9.00
+
+11/19/15 16:55:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.05   64.25  31.75   2.54
+
+11/19/15 16:55:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.60     0.00     6.40    10.67     0.02   41.00  39.67   2.38
+
+11/19/15 16:55:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.60     0.00     4.80     8.00     0.13  196.33  96.33   5.78
+
+11/19/15 16:56:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.80     0.00     8.00    10.00     0.03   59.00  22.25   1.78
+
+11/19/15 16:56:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.60    0.00    1.00     0.00    28.80    28.80     0.09   94.20  49.20   4.92
+
+11/19/15 16:56:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    0.80     0.00    11.20    14.00     0.09  116.25  58.50   4.68
+
+11/19/15 16:56:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.05   59.50  31.50   2.52
+
+11/19/15 16:56:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    1.00     0.00    14.40    14.40     0.14  136.00  46.80   4.68
+
+11/19/15 16:56:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.05   58.50  29.75   2.38
+
+11/19/15 16:56:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    1.20     0.00    16.00    13.33     0.11   94.50  39.50   4.74
+
+11/19/15 16:56:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.80    0.00    1.00     0.00    25.60    25.60     0.24  209.00 113.00  11.30
+
+11/19/15 16:56:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.20     0.00    14.40    12.00     0.20  187.17  70.00   8.40
+
+11/19/15 16:56:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     7.98    10.00     0.07   85.00  30.50   2.44
+
+11/19/15 16:56:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.80     0.00     9.60    12.00     0.05   59.25  30.25   2.42
+
+11/19/15 16:56:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.11  139.50  56.75   4.54
+
+11/19/15 16:57:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.05   58.00  30.50   2.44
+
+11/19/15 16:57:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.40    0.00    1.20     0.00    28.80    24.00     0.12   97.83  41.50   4.98
+
+11/19/15 16:57:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.20     0.00    11.20     9.33     0.14  114.67  58.00   6.96
+
+11/19/15 16:57:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.20     0.00     1.60     8.00     0.00    5.00   5.00   0.10
+
+11/19/15 16:57:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    0.80     0.00    12.80    16.00     0.05   59.25  31.75   2.54
+
+11/19/15 16:57:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    0.80     0.00    12.80    16.00     0.11  141.00  57.75   4.62
+
+11/19/15 16:57:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.60     0.00     9.60    16.00     0.02   41.00  40.00   2.40
+
+11/19/15 16:57:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.60    0.00    1.20     0.00    30.40    25.33     0.16  130.50  60.67   7.28
+
+11/19/15 16:57:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     1.00    0.00    1.20     0.00    17.60    14.67     0.13  108.00  43.67   5.24
+
+11/19/15 16:57:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.40     0.00    16.00    11.43     0.23  166.57  71.00   9.94
+
+11/19/15 16:57:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.20     0.00     1.60     8.00     0.04  114.00 151.00   3.02
+
+11/19/15 16:57:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.80     0.00     8.00    10.00     0.09  140.50  48.50   3.88
+
+11/19/15 16:58:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.80     0.00     9.60    12.00     0.07   87.50  57.75   4.62
+
+11/19/15 16:58:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.20    0.00    1.00     0.00    25.60    25.60     0.09   85.80  56.00   5.60
+
+11/19/15 16:58:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.20     0.00    14.40    12.00     0.20  163.17  50.50   6.06
+
+11/19/15 16:58:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.07   86.00  30.00   2.40
+
+11/19/15 16:58:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.40     0.00    12.80     9.14     0.18  130.71  65.43   9.16
+
+11/19/15 16:58:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.11  113.20  68.00   6.80
+
+11/19/15 16:58:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.00     0.00     0.00     0.00     0.02    0.00   0.00   0.72
+
+11/19/15 16:58:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     1.80    0.00    1.20     0.00    27.20    22.67     0.16  147.67  59.83   7.18
+
+11/19/15 16:58:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    0.80     0.00    12.80    16.00     0.11  141.00  57.50   4.60
+
+11/19/15 16:58:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.05   56.75  30.25   2.42
+
+11/19/15 16:58:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.06   77.75  49.75   3.98
+
+11/19/15 16:58:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    0.80     0.00    11.20    14.00     0.03   34.75  32.50   2.60
+
+11/19/15 16:59:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    1.00     0.00    14.40    14.40     0.11  113.60  47.80   4.78
+
+11/19/15 16:59:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.40    0.00    0.40     0.00    17.60    44.00     0.09  151.50  98.00   3.92
+
+11/19/15 16:59:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.00     0.00    12.80    12.80     0.11  144.20  46.40   4.64
+
+11/19/15 16:59:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.20     0.00     9.60     8.00     0.12   99.00  30.00   3.60
+
+11/19/15 16:59:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.07   69.60  46.40   4.64
+
+11/19/15 16:59:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.11  140.00  57.00   4.56
+
+11/19/15 16:59:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    1.60     0.00    16.00    10.00     0.44  272.88  86.62  13.86
+
+11/19/15 16:59:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.40    0.00    1.20     0.00    28.80    24.00     0.23  190.67  77.00   9.24
+
+11/19/15 16:59:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.20     0.00     9.60     8.00     0.09   77.83  21.00   2.52
+
+11/19/15 16:59:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.00     0.00     0.00     0.00     0.00    0.00   0.00   0.00
+
+11/19/15 16:59:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.80     0.00     9.60    12.00     0.07   86.50  30.75   2.46
+
+11/19/15 16:59:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.05   59.25  30.25   2.42
+
+11/19/15 17:00:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.11  113.00  46.20   4.62
+
+11/19/15 17:00:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     3.00    0.00    2.20     0.00    41.60    18.91     0.62  282.82  88.45  19.46
+
+11/19/15 17:00:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.00     0.00    12.80    12.80     0.11  115.00  46.80   4.68
+
+11/19/15 17:00:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.06   71.25  42.00   3.36
+
+11/19/15 17:00:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.09  113.75  57.25   4.58
+
+11/19/15 17:00:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.60     0.00     6.40    10.67     0.05   76.33  39.33   2.36
+
+11/19/15 17:00:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     1.00    0.00    0.20     0.00     3.20    16.00     0.04  115.00 159.00   3.18
+
+11/19/15 17:00:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.00    0.00    0.80     0.00    28.80    36.00     0.06   91.25  52.50   4.20
+
+11/19/15 17:00:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.40     0.00    16.00    11.43     0.15  107.29  57.86   8.10
+
+11/19/15 17:00:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     1.20    0.00    1.00     0.00    17.60    17.60     0.11  112.40  36.20   3.62
+
+11/19/15 17:00:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.80     0.00     9.60    12.00     0.07   86.50  57.25   4.58
+
+11/19/15 17:00:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.60     0.00     8.00    13.33     0.02   41.33  40.00   2.40
+
+11/19/15 17:01:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.20     0.00     1.60     8.00     0.05  111.00 155.00   3.10
+
+11/19/15 17:01:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     1.80    0.00    1.20     0.00    25.60    21.33     0.09   97.00  33.83   4.06
+
+11/19/15 17:01:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    1.00     0.00    14.40    14.40     0.14  135.80  69.00   6.90
+
+11/19/15 17:01:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    2.00     0.00    17.60     8.80     0.46  232.40  73.80  14.76
+
+11/19/15 17:01:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.80     0.00     9.60    12.00     0.09  115.00  58.25   4.66
+
+11/19/15 17:01:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.00     0.00     0.00     0.00     0.02    0.00   0.00   0.84
+
+11/19/15 17:01:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.60     0.00     8.00    13.33     0.03   76.33  25.33   1.52
+
+11/19/15 17:01:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.00    0.00    1.20     0.00    25.60    21.33     0.08   69.50  45.00   5.40
+
+11/19/15 17:01:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    0.80     0.00    12.80    16.00     0.11  141.75  58.50   4.68
+
+11/19/15 17:01:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    1.20     0.00    12.80    10.67     0.07   56.83  39.17   4.70
+
+11/19/15 17:01:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     1.00    0.00    0.80     0.00    14.40    18.00     0.11  141.00  58.00   4.64
+
+11/19/15 17:01:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.80     0.00     9.60    12.00     0.07   87.50  57.75   4.62
+
+11/19/15 17:02:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.80     0.00     9.60    12.00     0.09  114.00  57.50   4.60
+
+11/19/15 17:02:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.60    0.00    0.40     0.00    17.60    44.00     0.03    8.00  27.50   1.10
+
+11/19/15 17:02:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.40     0.00    19.20    13.71     0.23  185.43  84.29  11.80
+
+11/19/15 17:02:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.80     0.00     9.60    12.00     0.09  114.25  58.00   4.64
+
+11/19/15 17:02:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.60     0.00     8.00    13.33     0.05   77.00  39.67   2.38
+
+11/19/15 17:02:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.80     0.00     9.60    12.00     0.07   88.00  57.75   4.62
+
+11/19/15 17:02:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    1.00     0.00    11.20    11.20     0.25  248.00  92.40   9.24
+
+11/19/15 17:02:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.60    0.00    0.40     0.00    17.60    44.00     0.04   41.00  45.50   1.82
+
+11/19/15 17:02:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.80     0.00    12.80    16.00     0.11  173.50  62.75   5.02
+
+11/19/15 17:02:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    1.20     0.00    12.80    10.67     0.11   92.83  57.17   6.86
+
+11/19/15 17:02:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.11  140.75  57.25   4.58
+
+11/19/15 17:02:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    1.00     0.00    14.40    14.40     0.07   71.00  47.60   4.76
+
+11/19/15 17:03:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.20     0.00     3.20    16.00     0.02    3.00  43.00   0.86
+
+11/19/15 17:03:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     1.60    0.00    1.00     0.00    22.40    22.40     0.10  114.20  61.00   6.10
+
+11/19/15 17:03:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    0.80     0.00    12.80    16.00     0.11  141.25  57.75   4.62
+
+11/19/15 17:03:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.06   71.00  41.50   3.32
+
+11/19/15 17:03:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.20     0.00    11.20     9.33     0.19  156.50  83.83  10.06
+
+11/19/15 17:03:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.09   92.60  47.20   4.72
+
+11/19/15 17:03:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    1.00     0.00    14.40    14.40     0.13  134.20  68.00   6.80
+
+11/19/15 17:03:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.20    0.00    1.00     0.00    25.60    25.60     0.09   85.60  40.40   4.04
+
+11/19/15 17:03:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.00     0.00    12.80    12.80     0.20  201.40  68.60   6.86
+
+11/19/15 17:03:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.20     0.00     9.58     8.00     0.09   77.33  20.83   2.50
+
+11/19/15 17:03:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.05   59.25  30.25   2.42
+
+11/19/15 17:03:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.07   84.25  57.00   4.56
+
+11/19/15 17:04:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.60     0.00     4.80     8.00     0.17  238.33 141.67   8.50
+
+11/19/15 17:04:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.00    0.00    1.40     0.00    30.40    21.71     0.18  150.29  59.43   8.32
+
+11/19/15 17:04:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    0.80     0.00    12.80    16.00     0.09  114.00  57.50   4.60
+
+11/19/15 17:04:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.20     0.00     9.60     8.00     0.14  114.83  38.83   4.66
+
+11/19/15 17:04:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.60     0.00     6.40    10.67     0.02   40.00  39.00   2.34
+
+11/19/15 17:04:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.00     0.00     0.00     0.00     0.03    0.00   0.00   1.02
+
+11/19/15 17:04:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.00     0.00     9.60     9.60     0.10  134.80  57.80   5.78
+
+11/19/15 17:04:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.20    0.00    1.40     0.00    28.80    20.57     0.12   88.29  50.86   7.12
+
+11/19/15 17:04:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    0.80     0.00    12.80    16.00     0.07   82.25  54.50   4.36
+
+11/19/15 17:04:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    1.00     0.00    14.40    14.40     0.18  177.00  59.40   5.94
+
+11/19/15 17:04:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.60     0.00     6.40    10.67     0.02   41.33  40.00   2.40
+
+11/19/15 17:04:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.00     0.00     0.00     0.00     0.03    0.00   0.00   1.06
+
+11/19/15 17:05:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.80     0.00     8.00    10.00     0.08  141.00  44.25   3.54
+
+11/19/15 17:05:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.20    0.00    1.20     0.00    27.20    22.67     0.10   84.17  64.17   7.70
+
+11/19/15 17:05:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     1.40    0.00    1.60     0.00    24.00    15.00     0.34  212.12  90.50  14.48
+
+11/19/15 17:05:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.07   69.00  25.00   2.50
+
+11/19/15 17:05:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.60     0.00     8.00    13.33     0.02   40.67  39.67   2.38
+
+11/19/15 17:05:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.00     0.00     0.00     0.00     0.03    0.00   0.00   0.96
+
+11/19/15 17:05:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.80     0.00     9.60    12.00     0.11  168.75  73.25   5.86
+
+11/19/15 17:05:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.20    0.00    1.20     0.00    27.20    22.67     0.19  157.67  83.50  10.02
+
+11/19/15 17:05:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    0.80     0.00    12.80    16.00     0.11  141.25  58.25   4.66
+
+11/19/15 17:05:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    1.00     0.00    11.20    11.20     0.07   70.80  58.20   5.82
+
+11/19/15 17:05:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    1.80     0.00    20.80    11.56     0.33  181.33  81.33  14.64
+
+11/19/15 17:05:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.12  118.00  37.20   3.72
+
+11/19/15 17:06:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.60     0.00     8.00    13.33     0.02   40.67  39.67   2.38
+
+11/19/15 17:06:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.60    0.00    0.40     0.00    17.60    44.00     0.09  115.50  87.50   3.50
+
+11/19/15 17:06:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.20     0.00    16.00    13.33     0.17  181.50  61.17   7.34
+
+11/19/15 17:06:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    1.00     0.00    14.40    14.40     0.14  135.20  68.60   6.86
+
+11/19/15 17:06:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.14  135.00  68.20   6.82
+
+11/19/15 17:06:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.20  201.80  68.40   6.84
+
+11/19/15 17:06:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.40     0.00    12.80     9.14     0.26  188.43  88.57  12.40
+
+11/19/15 17:06:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.00    0.00    1.80     0.00    30.40    16.89     0.39  216.22  82.33  14.82
+
+11/19/15 17:06:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.20     0.00     1.60     8.00     0.04  114.00 166.00   3.32
+
+11/19/15 17:06:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.60     0.00     6.40    10.67     0.03   76.33  22.00   1.32
+
+11/19/15 17:06:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.20     0.00     9.60     8.00     0.25  204.17  64.67   7.76
+
+11/19/15 17:06:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.08   82.80  59.20   5.92
+
+11/19/15 17:07:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    0.80     0.00    12.80    16.00     0.11  141.75  58.25   4.66
+
+11/19/15 17:07:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.40    0.00    1.60     0.00    32.00    20.00     0.41  256.25  98.62  15.78
+
+11/19/15 17:07:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.60     0.00     4.80     8.00     0.21  294.67 154.00   9.24
+
+11/19/15 17:07:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.00     0.00     9.60     9.60     0.09  121.80  52.80   5.28
+
+11/19/15 17:07:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.21  207.20  80.40   8.04
+
+11/19/15 17:07:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.20     0.00     9.60     8.00     0.20  170.50  57.33   6.88
+
+11/19/15 17:07:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.17  171.40  80.40   8.04
+
+11/19/15 17:07:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.40    0.00    1.60     0.00    32.00    20.00     0.31  192.88  77.50  12.40
+
+11/19/15 17:07:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    0.00     0.00     0.00     0.00     0.08    0.00   0.00   1.10
+
+11/19/15 17:07:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.60     0.00    17.60    11.00     0.42  313.25  69.75  11.16
+
+11/19/15 17:07:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    2.00     0.00    22.40    11.20     0.53  263.30  75.40  15.08
+
+11/19/15 17:07:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    0.80     0.00    12.80    16.00     0.11  142.00  58.50   4.68
+
+11/19/15 17:08:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.07   87.00  57.50   4.60
+
+11/19/15 17:08:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.20    0.00    1.20     0.00    27.20    22.67     0.12   99.83  53.83   6.46
+
+11/19/15 17:08:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     1.00    0.00    0.80     0.00    14.40    18.00     0.15  184.00  96.25   7.70
+
+11/19/15 17:08:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.40     0.00    12.80     9.14     0.23  164.00  70.14   9.82
+
+11/19/15 17:08:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     1.60    0.00    0.80     0.00    19.20    24.00     0.09  118.25  60.75   4.86
+
+11/19/15 17:08:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    2.40     0.00    25.60    10.67     0.67  278.75  90.58  21.74
+
+11/19/15 17:08:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.07   86.75  57.50   4.60
+
+11/19/15 17:08:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     3.00    0.00    0.80     0.00    22.40    28.00     0.22  194.75  95.75   7.66
+
+11/19/15 17:08:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.40     0.00    19.20    13.71     0.32  271.14  61.86   8.66
+
+11/19/15 17:08:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    1.20     0.00    12.80    10.67     0.25  211.83  60.67   7.28
+
+11/19/15 17:08:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.20     0.00    11.20     9.33     0.35  290.33  87.83  10.54
+
+11/19/15 17:08:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.07   87.75  57.75   4.62
+
+11/19/15 17:09:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.20  202.20  68.40   6.84
+
+11/19/15 17:09:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.80    0.00    1.80     0.00    36.80    20.44     0.52  288.00  98.33  17.70
+
+11/19/15 17:09:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.07   86.25  58.50   4.68
+
+11/19/15 17:09:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.20     0.00     3.20    16.00     0.02    3.00  53.00   1.06
+
+11/19/15 17:09:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.60     0.00     4.80     8.00     0.05  114.67  59.00   3.54
+
+11/19/15 17:09:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.60     0.00     6.40    10.67     0.05   77.33  40.00   2.40
+
+11/19/15 17:09:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.10   95.80  72.20   7.22
+
+11/19/15 17:09:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.60    0.00    1.20     0.00    30.40    25.33     0.15  127.00  55.83   6.70
+
+11/19/15 17:09:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    2.00     0.00    20.80    10.40     0.59  294.20 105.20  21.04
+
+11/19/15 17:09:49
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    1.00     0.00    14.40    14.40     0.13  134.40  84.80   8.48
+
+11/19/15 17:09:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.20     0.00     1.60     8.00     0.05    2.00  57.00   1.14
+
+11/19/15 17:09:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.00     0.00     8.00     8.00     0.20  242.80  65.80   6.58
+
+11/19/15 17:10:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.21  211.00  81.80   8.18
+
+11/19/15 17:10:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.00    0.00    1.20     0.00    25.60    21.33     0.13  108.83  64.50   7.74
+
+11/19/15 17:10:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.20     0.00    14.40    12.00     0.29  240.00  68.50   8.22
+
+11/19/15 17:10:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.11  114.00  90.40   9.04
+
+11/19/15 17:10:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.60     0.00    14.40     9.00     0.64  396.88  91.62  14.66
+
+11/19/15 17:10:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.23  229.20  90.20   9.02
+
+11/19/15 17:10:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.20     0.00     3.20    16.00     0.02    3.00  55.00   1.10
+
+11/19/15 17:10:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     1.80    0.00    1.00     0.00    22.40    22.40     0.08  102.40  67.80   6.78
+
+11/19/15 17:10:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    1.20     0.00    16.00    13.33     0.27  223.67  78.00   9.36
+
+11/19/15 17:10:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.07   87.00  57.75   4.62
+
+11/19/15 17:10:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.19  193.80  81.60   8.16
+
+11/19/15 17:10:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    1.80     0.00    20.80    11.56     0.36  198.44  92.78  16.70
+
+11/19/15 17:11:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.20     0.00     3.20    16.00     0.02    3.00  56.00   1.12
+
+11/19/15 17:11:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.00    0.00    1.00     0.00    24.00    24.00     0.11  134.40  78.00   7.80
+
+11/19/15 17:11:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.20     0.00    14.40    12.00     0.35  291.33 105.50  12.66
+
+11/19/15 17:11:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.40     0.00    12.80     9.14     0.06   44.29  30.57   4.28
+
+11/19/15 17:11:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.18  185.00  61.40   6.14
+
+11/19/15 17:11:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     7.98    10.00     0.07   86.75  57.50   4.59
+
+11/19/15 17:11:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.60     0.00    14.43     9.00     0.35  220.12  93.88  15.05
+
+11/19/15 17:11:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.59    0.00    1.00     0.00    28.74    28.80     0.16  161.80  64.20   6.41
+
+11/19/15 17:11:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.15  145.40  73.80   7.38
+
+11/19/15 17:11:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.20     0.00     3.20    16.00     0.01    4.00  59.00   1.18
+
+11/19/15 17:11:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.60     0.00     4.80     8.00     0.03   77.33  57.67   3.46
+
+11/19/15 17:11:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.11  139.75  57.50   4.60
+
+11/19/15 17:12:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.02   31.00  30.25   2.42
+
+11/19/15 17:12:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.60    0.00    1.00     0.00    28.80    28.80     0.07   70.80  45.20   4.52
+
+11/19/15 17:12:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     1.00    0.00    1.80     0.00    22.40    12.44     0.41  228.11  85.33  15.36
+
+11/19/15 17:12:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    0.80     0.00    12.80    16.00     0.07   86.75  64.75   5.18
+
+11/19/15 17:12:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.20     0.00     9.60     8.00     0.24  199.33  79.33   9.52
+
+11/19/15 17:12:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.00     0.00     0.00     0.00     0.00    0.00   0.00   0.00
+
+11/19/15 17:12:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.20     0.00     9.60     8.00     0.16  131.33  45.50   5.46
+
+11/19/15 17:12:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.00    0.00    1.60     0.00    28.80    18.00     0.30  187.75  65.38  10.46
+
+11/19/15 17:12:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.20     0.00    14.40    12.00     0.33  272.83  98.00  11.76
+
+11/19/15 17:12:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.07   88.00  63.75   5.10
+
+11/19/15 17:12:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.80     0.00    16.00     8.89     0.44  245.67  95.56  17.20
+
+11/19/15 17:12:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.07   87.75  57.75   4.62
+
+11/19/15 17:13:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.11  141.25  57.75   4.62
+
+11/19/15 17:13:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     1.60    0.00    0.40     0.00    16.00    40.00     0.06  138.50  72.00   2.88
+
+11/19/15 17:13:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.40     0.00    16.00    11.43     0.27  190.00  78.43  10.98
+
+11/19/15 17:13:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    0.60     0.00    11.20    18.67     0.08  138.00  95.67   5.74
+
+11/19/15 17:13:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.20     0.00     9.60     8.00     0.20  170.00  57.00   6.84
+
+11/19/15 17:13:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.07   87.00  57.50   4.60
+
+11/19/15 17:13:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.20  201.60  68.00   6.80
+
+11/19/15 17:13:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.60    0.00    1.80     0.00    35.20    19.56     0.39  215.67  99.78  17.96
+
+11/19/15 17:13:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.20     0.00     1.60     8.00     0.03  137.00 137.00   2.74
+
+11/19/15 17:13:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    0.80     0.00    12.80    16.00     0.04   52.50  41.75   3.34
+
+11/19/15 17:13:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.11  140.75  57.25   4.58
+
+11/19/15 17:13:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    1.00     0.00    14.40    14.40     0.20  201.20  77.20   7.72
+
+11/19/15 17:14:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.23  234.60  92.00   9.20
+
+11/19/15 17:14:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.40    0.00    0.40     0.00    17.60    44.00     0.11  113.50  91.00   3.64
+
+11/19/15 17:14:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    2.00     0.00    20.80    10.40     0.42  242.10  83.80  16.76
+
+11/19/15 17:14:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.19  192.20  64.40   6.44
+
+11/19/15 17:14:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.22  216.40  94.60   9.46
+
+11/19/15 17:14:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.11  141.75  58.25   4.66
+
+11/19/15 17:14:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.20     0.00     9.60     8.00     0.20  170.00  57.17   6.86
+
+11/19/15 17:14:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.40    0.00    1.00     0.00    22.40    22.40     0.29  168.00  87.20   8.72
+
+11/19/15 17:14:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.60     0.00     9.60    16.00     0.06  304.67  77.33   4.64
+
+11/19/15 17:14:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.60     0.00    12.80     8.00     0.27  169.38  70.62  11.30
+
+11/19/15 17:14:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.13  126.40  59.60   5.96
+
+11/19/15 17:14:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    1.20     0.00    16.00    13.33     0.16  129.33  68.33   8.20
+
+11/19/15 17:15:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.11  112.80  52.20   5.22
+
+11/19/15 17:15:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.60    0.00    1.00     0.00    28.80    28.80     0.17  173.20  61.00   6.10
+
+11/19/15 17:15:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.00     0.00     0.00     0.00     0.07    0.00   0.00   1.30
+
+11/19/15 17:15:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.20     0.00    11.20     9.33     0.15  181.17  46.33   5.56
+
+11/19/15 17:15:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    1.40     0.00    14.40    10.29     0.20  146.29  72.00  10.08
+
+11/19/15 17:15:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.60     0.00     6.40    10.67     0.05   76.33  39.33   2.36
+
+11/19/15 17:15:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.20     0.00    14.40    12.00     0.12  101.50  43.00   5.16
+
+11/19/15 17:15:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.60    0.00    1.00     0.00    28.80    28.80     0.17  174.60  75.60   7.56
+
+11/19/15 17:15:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.00     0.00     0.00     0.00     0.06    0.00   0.00   1.24
+
+11/19/15 17:15:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.20     0.00    11.20     9.33     0.20  217.50  47.17   5.66
+
+11/19/15 17:15:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.07   86.50  57.25   4.58
+
+11/19/15 17:15:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.80     0.00    14.40     8.00     0.31  173.67  69.89  12.58
+
+11/19/15 17:16:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.40     0.00    12.80     9.14     0.18  130.43  58.86   8.24
+
+11/19/15 17:16:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.40    0.00    1.20     0.00    28.80    24.00     0.08   69.33  41.83   5.02
+
+11/19/15 17:16:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.20     0.00    14.40    12.00     0.26  217.33  57.50   6.90
+
+11/19/15 17:16:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.20     0.00     3.20    16.00     0.03    3.00  66.00   1.32
+
+11/19/15 17:16:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.60     0.00     4.80     8.00     0.04  114.33  54.33   3.26
+
+11/19/15 17:16:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.15  155.00  60.60   6.06
+
+11/19/15 17:16:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.40     0.00    12.80     9.14     0.25  179.71  84.57  11.84
+
+11/19/15 17:16:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.40    0.00    1.00     0.00    27.20    27.20     0.09   86.60  58.60   5.86
+
+11/19/15 17:16:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    1.20     0.00    16.00    13.33     0.20  168.50  64.83   7.78
+
+11/19/15 17:16:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.20     0.00     3.20    16.00     0.03    3.00  66.00   1.32
+
+11/19/15 17:16:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.60     0.00     4.80     8.00     0.03   93.33  33.33   2.00
+
+11/19/15 17:16:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.80     0.00     9.60    12.00     0.09  115.25  58.25   4.66
+
+11/19/15 17:17:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.19  192.40  65.20   6.52
+
+11/19/15 17:17:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.40    0.00    1.20     0.00    28.80    24.00     0.08   69.33  25.00   3.00
+
+11/19/15 17:17:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    2.00     0.00    22.40    11.20     0.47  236.10  90.10  18.02
+
+11/19/15 17:17:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.20     0.00     3.20    16.00     0.03    3.00  67.00   1.34
+
+11/19/15 17:17:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.60     0.00     4.80     8.00     0.04  114.67  54.33   3.26
+
+11/19/15 17:17:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.15  154.60  59.80   5.98
+
+11/19/15 17:17:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.18  176.60  55.40   5.54
+
+11/19/15 17:17:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.00    0.00    1.40     0.00    27.20    19.43     0.24  171.43  66.43   9.30
+
+11/19/15 17:17:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.40     0.00    16.00    11.43     0.28  197.86  59.71   8.36
+
+11/19/15 17:17:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.00     0.00    12.80    12.80     0.05   49.20  35.20   3.52
+
+11/19/15 17:17:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.15  149.20  46.20   4.62
+
+11/19/15 17:17:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.20     0.00     9.60     8.00     0.14  112.50  38.83   4.66
+
+11/19/15 17:18:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.20     0.00     3.20    16.00     0.03    3.00  68.00   1.36
+
+11/19/15 17:18:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     1.80    0.00    1.00     0.00    22.40    22.40     0.04   63.40  26.40   2.64
+
+11/19/15 17:18:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.00     0.00    12.80    12.80     0.14  135.60  69.00   6.90
+
+11/19/15 17:18:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.11  140.75  57.25   4.58
+
+11/19/15 17:18:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.80     0.00    16.00     8.89     0.30  165.22  76.11  13.70
+
+11/19/15 17:18:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    0.80     0.00    12.80    16.00     0.11  141.50  58.25   4.66
+
+11/19/15 17:18:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.20     0.00     1.60     8.00     0.06    2.00  69.00   1.38
+
+11/19/15 17:18:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.00    0.00    1.20     0.00    25.60    21.33     0.12  147.83  49.33   5.92
+
+11/19/15 17:18:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.00     0.00    12.80    12.80     0.18  180.60  68.60   6.86
+
+11/19/15 17:18:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.20     0.00    11.20     9.33     0.26  217.50  57.17   6.86
+
+11/19/15 17:18:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.08   83.20  59.60   5.96
+
+11/19/15 17:18:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     1.00    0.00    1.00     0.00    16.00    16.00     0.12  117.20  38.60   3.86
+
+11/19/15 17:19:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    0.60     0.00     8.00    13.33     0.18  208.67 128.67   7.72
+
+11/19/15 17:19:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     1.60    0.00    1.40     0.00    25.60    18.29     0.15  145.14  43.71   6.12
+
+11/19/15 17:19:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.00     0.00    12.80    12.80     0.18  180.80  68.80   6.88
+
+11/19/15 17:19:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.15  150.20  46.60   4.66
+
+11/19/15 17:19:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.08   83.60  59.80   5.98
+
+11/19/15 17:19:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.06   70.00  42.00   3.36
+
+11/19/15 17:19:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    1.00     0.00    14.40    14.40     0.11  106.60  46.80   4.68
+
+11/19/15 17:19:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.40    0.00    1.20     0.00    28.80    24.00     0.12   97.17  41.17   4.94
+
+11/19/15 17:19:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     6.40     8.00     0.22  201.75 119.25   9.54
+
+11/19/15 17:19:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.00     0.00     9.60     9.60     0.14  201.40  67.00   6.70
+
+11/19/15 17:19:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.10  126.75  97.50   7.80
+
+11/19/15 17:19:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.09  114.00  57.50   4.60
+
+11/19/15 17:20:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     1.00    0.00    1.20     0.00    17.60    14.67     0.22  179.83  55.17   6.62
+
+11/19/15 17:20:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.60    0.00    1.00     0.00    28.80    28.80     0.10   97.60  38.00   3.80
+
+11/19/15 17:20:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.00     0.00     0.00     0.00     0.00    0.00   0.00   0.00
+
+11/19/15 17:20:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.20     0.00    11.20     9.33     0.26  217.50  57.17   6.86
+
+11/19/15 17:20:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.60     0.00    14.40     9.00     0.30  190.25  92.25  14.76
+
+11/19/15 17:20:29
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.15  149.60  46.60   4.66
+
+11/19/15 17:20:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.18  175.60  59.60   5.96
+
+11/19/15 17:20:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.60    0.00    0.40     0.00    19.20    48.00     0.10  177.00 159.00   6.36
+
+11/19/15 17:20:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.60     0.00     9.60    16.00     0.03  102.00  43.67   2.62
+
+11/19/15 17:20:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.20     0.00    11.20     9.33     0.26  218.00  57.50   6.90
+
+11/19/15 17:20:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.07   87.00  57.50   4.60
+
+11/19/15 17:20:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.09   90.80  68.00   6.80
+
+11/19/15 17:21:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.11  132.75  53.50   4.28
+
+11/19/15 17:21:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.80    0.00    0.40     0.00    17.60    44.00     0.05   15.50  46.50   1.86
+
+11/19/15 17:21:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.20     0.00    17.60    14.67     0.09  113.17  41.17   4.94
+
+11/19/15 17:21:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    0.60     0.00    11.20    18.67     0.02   34.67  19.33   1.16
+
+11/19/15 17:21:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     7.98    10.00     0.07   87.50  58.00   4.63
+
+11/19/15 17:21:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.15  153.80  59.40   5.94
+
+11/19/15 17:21:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.18  175.40  55.00   5.50
+
+11/19/15 17:21:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.80    0.00    1.20     0.00    27.20    22.67     0.36  258.83  92.33  11.08
+
+11/19/15 17:21:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.20     0.00    14.40    12.00     0.10  122.17  39.67   4.76
+
+11/19/15 17:21:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    1.00     0.00    14.40    14.40     0.11  109.40  56.00   5.60
+
+11/19/15 17:21:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.09  113.75  57.50   4.60
+
+11/19/15 17:21:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.15  149.60  46.40   4.64
+
+11/19/15 17:22:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.00     0.00     0.00     0.00     0.08    0.00   0.00   1.54
+
+11/19/15 17:22:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     1.80    0.00    1.60     0.00    28.80    18.00     0.10  108.50  21.62   3.46
+
+11/19/15 17:22:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.80     0.00    19.20    10.67     0.38  208.67  86.11  15.50
+
+11/19/15 17:22:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.05   64.50  41.25   3.30
+
+11/19/15 17:22:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.11  141.00  57.50   4.60
+
+11/19/15 17:22:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.06   77.25  47.25   3.78
+
+11/19/15 17:22:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.00     0.00     0.00     0.00     0.06    0.00   0.00   1.60
+
+11/19/15 17:22:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     1.80    0.00    1.40     0.00    27.20    19.43     0.18  177.71  61.86   8.66
+
+11/19/15 17:22:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    0.60     0.00     9.60    16.00     0.05   77.00  40.00   2.40
+
+11/19/15 17:22:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.06   64.00  40.40   4.04
+
+11/19/15 17:22:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    0.80     0.00    12.80    16.00     0.06   76.75  49.00   3.92
+
+11/19/15 17:22:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    0.80     0.00    12.80    16.00     0.03   41.75  30.50   2.44
+
+11/19/15 17:23:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    1.00     0.00    14.40    14.40     0.19  188.60  65.60   6.56
+
+11/19/15 17:23:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.40    0.00    1.20     0.00    28.80    24.00     0.23  191.33  67.17   8.06
+
+11/19/15 17:23:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.20     0.00     1.60     8.00     0.08   68.00  81.00   1.62
+
+11/19/15 17:23:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.20     0.00    11.20     9.33     0.12  156.33  51.67   6.20
+
+11/19/15 17:23:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.40     0.00    16.00    11.43     0.25  177.43  82.14  11.50
+
+11/19/15 17:23:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.18  176.60  59.80   5.98
+
+11/19/15 17:23:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.20     0.00     9.60     8.00     0.18  148.33  46.17   5.54
+
+11/19/15 17:23:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.60    0.00    1.20     0.00    30.40    25.33     0.17  143.00  58.00   6.96
+
+11/19/15 17:23:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.00     0.00     0.00     0.00     0.00    0.00   0.00   0.00
+
+11/19/15 17:23:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.20     0.00    11.20     9.33     0.26  220.50  58.17   6.98
+
+11/19/15 17:23:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.07   70.60  46.40   4.64
+
+11/19/15 17:23:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    1.20     0.00    16.00    13.33     0.18  147.00  79.83   9.58
+
+11/19/15 17:24:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    1.00     0.00    14.40    14.40     0.17  170.60  64.40   6.44
+
+11/19/15 17:24:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.60    0.00    0.20     0.00    17.60    88.00     0.07   18.00 100.00   2.00
+
+11/19/15 17:24:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.00     0.00    12.80    12.80     0.08  149.60  30.20   3.02
+
+11/19/15 17:24:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.20     0.00    11.20     9.33     0.26  217.50  57.17   6.86
+
+11/19/15 17:24:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.07   86.50  57.25   4.58
+
+11/19/15 17:24:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    1.00     0.00     9.60     9.60     0.18  176.20  59.80   5.98
+
+11/19/15 17:24:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.06   71.50  41.25   3.30
+
+11/19/15 17:24:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.40    0.00    1.00     0.00    22.40    22.40     0.33  261.00 133.60  13.36
+
+11/19/15 17:24:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.00     0.00    12.80    12.80     0.09  153.00  48.80   4.88
+
+11/19/15 17:24:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.20     0.00     9.60     8.00     0.15  126.83  38.83   4.66
+
+11/19/15 17:24:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.07   87.50  57.75   4.62
+
+11/19/15 17:24:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.11  140.50  57.25   4.58
+
+11/19/15 17:25:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.20     0.00     9.60     8.00     0.20  170.33  53.67   6.44
+
+11/19/15 17:25:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.00    0.00    1.60     0.00    28.80    18.00     0.27  171.25  78.00  12.48
+
+11/19/15 17:25:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    1.00     0.00    14.40    14.40     0.14  144.20  63.80   6.38
+
+11/19/15 17:25:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.00     0.00     0.00     0.00     0.06    0.00   0.00   1.60
+
+11/19/15 17:25:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.00     0.00     9.60     9.60     0.09  149.20  30.20   3.02
+
+11/19/15 17:25:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.40    0.00    0.80     0.00     9.60    12.00     0.06   77.00  47.00   3.76
+
+11/19/15 17:25:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.06   69.75  42.00   3.36
+
+11/19/15 17:25:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.60    0.00    1.40     0.00    32.00    22.86     0.13   93.43  35.14   4.92
+
+11/19/15 17:25:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.00     0.00    12.80    12.80     0.20  202.00  68.40   6.84
+
+11/19/15 17:25:48
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    2.00     0.00    17.56     8.80     0.43  215.60  75.60  15.09
+
+11/19/15 17:25:53
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.20     0.00     1.60     8.00     0.05   61.00  98.00   1.96
+
+11/19/15 17:25:58
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.60     0.00     6.39    10.67     0.05  153.00  45.00   2.69
+
+11/19/15 17:26:03
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.20    0.00    0.80     0.00     8.00    10.00     0.07   87.00  57.50   4.60
+
+11/19/15 17:26:08
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.00    0.00    1.40     0.00    27.20    19.43     0.20  143.00  56.29   7.88
+
+11/19/15 17:26:13
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.00     0.00    12.80    12.80     0.20  201.80  68.40   6.84
+
+11/19/15 17:26:18
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    0.80     0.00    12.80    16.00     0.06   78.00  47.50   3.80
+
+11/19/15 17:26:23
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    0.80     0.00     6.40     8.00     0.22  274.25 147.50  11.80
+
+11/19/15 17:26:28
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.80    0.00    0.60     0.00    11.20    18.67     0.02   33.00  18.33   1.10
+
+11/19/15 17:26:33
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.00    0.00    1.20     0.00     9.60     8.00     0.15  126.33  38.83   4.66
+
+11/19/15 17:26:38
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     2.00    0.00    1.40     0.00    27.20    19.43     0.16  117.71  42.57   5.96
+
+11/19/15 17:26:43
+Device:         rrqm/s   wrqm/s     r/s     w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+sda               0.00     0.60    0.00    1.00     0.00    12.80    12.80     0.20  202.00  68.60   6.86
+
