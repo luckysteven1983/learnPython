@@ -1,0 +1,64 @@
+#!/usr/bin/expect
+set argc [ llength $argv ]
+
+if {$argc<2} {
+  puts stderr "Usage: $argv0 BJ|LN host [.. hostN]"
+  exit 1
+}
+
+for { set i 1 } { $i < $argc } { incr i } {
+    ###login NE#########################################
+	spawn ssh ainet@[lindex $argv $i]
+	set timeout -1
+	while  1  {
+        expect {
+         "(yes/no)" {
+                 send "yes\n"
+                continue
+         } "password:" {
+                send "ainet1\n"
+                break
+                 }
+        }
+	}
+	###switch to root##################################
+	expect ">"
+	send "su - \n"
+	expect "Password:"
+	send "r00t\n"
+	expect "#"
+	
+	###switch to /MDS directory#####################################
+	send "rm -r /MDS/perf_tool\n"
+	expect "#"
+	send "mkdir /MDS/perf_tool;cd /MDS/perf_tool\n"
+	expect "#"
+	###download tools to toolserver##########################
+	send "ftp 135.252.181.15\n"
+	expect "Name"
+	send "dadl\n"
+	expect "Password:"
+	send "dadl01\n"
+	expect "ftp>"
+	send "cd /home/dadl\n"
+	expect "ftp>"
+	send "bin\n"
+	expect "ftp>"
+	send "get pf_4X.tar\n"
+	expect "ftp>"
+	send "bye\n"
+	expect "#"
+        
+        ###untar perf_tool.tar to /MDS directory#####################################
+        send "tar xof pf_4X.tar\n"
+        expect "#"
+        if { [string equal [lindex $argv 0] "BJ"] } {	
+           send "cp bandwidth_meas.conf.BJ bandwidth_meas.conf\n"
+        } else {
+           send "cp bandwidth_meas.conf.LN bandwidth_meas.conf\n"
+        }
+        expect "#"
+}
+close
+exit 0
+

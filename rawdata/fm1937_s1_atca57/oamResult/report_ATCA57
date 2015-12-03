@@ -1,0 +1,43 @@
+---------------------------------------------------------------------------------
+                     Oam CPU Statistics  oamResult                               
+---------------------------------------------------------------------------------
+Station	HottestCpu	HottestCore	AvgCoreCpu
+A      	44.2     	1          	41.0     
+B      	10.8     	1          	9.5      
+OAM_MAX_CPU	OAM_AVG_CPU
+44.2      	41.0      
+---------------------------------------------------------------------------------
+             Oam Memory Statistics  oamResult                                    
+---------------------------------------------------------------------------------
+Station	 AvgMem(M) 	 MinMem(M) 	 MaxMem(M) 	 MaxTime
+      A	 3773.22	 3762.85	 3793.42	15:59:28
+      B	 1514.65	 1513.43	 1520.91	16:01:28
+OAM_AVG_MEM(M)
+3773.22
+---------------------------------------------------------------------------------
+             Oam Run Queue Statistics  oamResult                                 
+---------------------------------------------------------------------------------
+AvgRunQue	MaxRunQue
+2	21
+---------------------------------------------------------------------------------
+             Oam Processes Statistics  oamResult                                 
+---------------------------------------------------------------------------------
+Proc_Name	Station	AvgCpu	MinCpu	MinTime	 MaxCpu 	MaxTime
+GdmpServer	A      	 10.6	  7.4	15:56:41	14.3 	16:05:51
+GdmpServer	B      	  3.2	  2.5	16:17:59	4.0  	16:16:05
+ndb_mgmd  	A      	  1.6	  0.5	16:14:58	11.9 	15:59:34
+ndb_mgmd  	B      	  0.6	  0.5	16:18:25	2.0  	15:55:12
+Proc_Name	Station	AvgMem	MinMem	MinTime	 MaxMem 	MaxTime
+GdmpServer	A      	  1126	  1126	16:18:25	1126  	16:18:25
+GdmpServer	B      	   304	   304	16:18:25	305   	16:08:53
+ndb_mgmd  	A      	    54	    54	16:18:25	55    	16:15:47
+ndb_mgmd  	B      	    28	    28	16:18:25	28    	16:18:25
+Proc_Name	OamProcAvgCpu	OamProcAvgMem(M)
+GdmpServer	        10.6	1126            
+ndb_mgmd  	         1.6	54              
+---------------------------------------------------------------------------------
+          Oam Bandwidth Statistics  oamResult                                    
+---------------------------------------------------------------------------------
+      Type	   AvgInBd	   MaxInBd	        MaxInTime	  AvgOutBd	  MaxOutBd	       MaxOutTime
+OAM       	24755     	24755     	2015-11-12-16:00:00	85745     	85745     	2015-11-12-16:00:00
+pt_stoplog_finished

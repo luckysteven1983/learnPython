@@ -1,0 +1,18 @@
+Station	HottestCpu	HottestCore	AvgCoreCpu
+A      	43.9     	1          	42.3     
+B      	9.2      	0          	8.4      
+OAM_MAX_CPU	OAM_AVG_CPU
+43.9      	42.3      
+Station	HottestCpu	HottestCore	AvgCoreCpu
+C      	52.3     	1          	50.5     
+D      	51.6     	1          	50.0     
+E      	47.9     	0          	46.2     
+F      	51.6     	1          	50.0     
+G      	51.6     	1          	49.9     
+H      	51.6     	1          	49.9     
+I      	58.9     	1          	57.1     
+J      	62.2     	1          	60.3     
+K      	58.9     	1          	57.0     
+L      	59.1     	1          	57.5     
+Nonpilot_MAX_CPU	Nonpilot_AVG_CPU
+           62.2	           52.8

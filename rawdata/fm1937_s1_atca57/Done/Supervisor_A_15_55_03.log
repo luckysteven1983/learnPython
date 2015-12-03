@@ -1,0 +1,897 @@
+==> /var/local/nectar/log/Supervisor.log.flip <==
+12/11/2015 15:54:55.185 | MatedPairService(30044) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairService still alive.
+12/11/2015 15:54:55.435 | SupervisedCluster(30049) | SYS | INT | DBG | SupervisedCluster::LongTicker::expireHandler debut
+12/11/2015 15:54:57.915 | SupervisedCluster(30049) | SYS | INT | DBG | Cluster allocation seen by mgmd: 41044416
+12/11/2015 15:54:57.915 | SupervisedCluster(30049) | SYS | INT | DBG | Cluster allocation seen by mysqld: 40620032
+12/11/2015 15:54:57.915 | SupervisedCluster(30049) | SYS | INT | DBG | SupervisedCluster::checkUsage() All nodes reported usage data:  data: 0.841728 index: 0.699417 thr1: 0.8 thr2: 0.9 recovery1: 0.8 recovery2: 0.9 maxUsage: 0.841728
+12/11/2015 15:54:58.760 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 15:54:58.937 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 15:54:59.439 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=2 memload=0
+12/11/2015 15:55:00.440 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=0 memload=0
+12/11/2015 15:55:01.442 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=1 memload=0
+
+==> /var/local/nectar/log/Supervisor.log.flop <==
+09/11/2015 07:58:53.953 | MdsObsApiService(26500) | SYS | INT | FIL | RateValueProbe::getValue PassiveDbErrorRate, nb Err = 0, nb Mes = 0, rate = 0
+09/11/2015 07:58:56.076 | MatedPairCheckReplication(3022 | SYS | INT | DBG | Replication Latency pgmps:  8=6 9=8 10=28 11=17 12=1
+09/11/2015 07:58:56.076 | MatedPairCheckReplication(3022 | SYS | INT | DBG | Replication Latency result:  <0 =108, 0 =704068, 1 =34483, 2 =790, 3 =143, 4 =118, 5 =90, 6 =61, 7 =46, 8 =28, 9 =14 >9 =1674604
+ mysql not running = 359 diff time with master = 0 checkPollEvent = 60
+09/11/2015 07:58:59.321 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=2 init=1)
+09/11/2015 07:59:02.969 | MatedPairService(30044) | SYS | INT | DBG | Injection periodic observation: binlog size=3474/3517, size of data=0, time to inject binlog=0mn 0s
+09/11/2015 07:59:07.783 | MysqlSupervision(1090) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+09/11/2015 07:59:10.332 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=2 init=1)
+09/11/2015 07:59:15.434 | MatedPairService(30044) | SYS | INT | DBG | SHOW SLAVE STATUS fetch row failed 
+09/11/2015 07:59:21.840 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=2 init=1)
+
+==> /var/local/nectar/log/Supervisor.log.flip <==
+12/11/2015 15:55:06.165 | SupervisedCluster(30049) | SYS | INT | DBG | Cluster allocation seen by mgmd: 41044416
+12/11/2015 15:55:06.165 | SupervisedCluster(30049) | SYS | INT | DBG | Cluster allocation seen by mysqld: 40620032
+12/11/2015 15:55:06.165 | SupervisedCluster(30049) | SYS | INT | DBG | SupervisedCluster::checkUsage() All nodes reported usage data:  data: 0.841728 index: 0.699417 thr1: 0.8 thr2: 0.9 recovery1: 0.8 recovery2: 0.9 maxUsage: 0.841728
+12/11/2015 15:55:12.453 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=1 memload=0
+12/11/2015 15:55:12.462 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 15:55:14.988 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 15:55:16.163 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4098/4078, binlog inserts=0/109, binlog updates=64995/64554, binlog deletes=126/16, size of data=534, time to fill binlog= 10h 0mn
+12/11/2015 15:55:20.968 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=1 memload=0
+12/11/2015 15:55:21.471 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=2 memload=0
+12/11/2015 15:55:21.473 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=1 memload=0
+12/11/2015 15:55:22.970 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=0 memload=0
+12/11/2015 15:55:23.475 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=1 memload=0
+12/11/2015 15:55:24.490 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 15:55:24.993 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=1 memload=0
+12/11/2015 15:55:25.493 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=1 memload=0
+12/11/2015 15:55:25.493 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=2 memload=0
+12/11/2015 15:55:26.995 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=0 memload=0
+12/11/2015 15:55:27.494 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=2 memload=0
+12/11/2015 15:55:29.498 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=0 memload=0
+12/11/2015 15:55:31.401 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 15:55:31.738 | MysqlSupervision(1090) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 15:55:35.505 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=1 memload=0
+12/11/2015 15:55:35.506 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=1 memload=0
+12/11/2015 15:55:36.576 | MdsObsApiService(26500) | SYS | INT | FIL | RateValueProbe::getValue PassiveDbErrorRate, nb Err = 0, nb Mes = 0, rate = 0
+12/11/2015 15:55:37.122 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4060/4083, binlog inserts=0/96, binlog updates=64499/64618, binlog deletes=126/28, size of data=406, time to fill binlog= 10h 0mn
+12/11/2015 15:55:37.507 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=0 memload=0
+12/11/2015 15:55:38.017 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 15:55:42.524 | MatedPairSMPSService(30227) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairSMPSService still alive.
+12/11/2015 15:55:42.524 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=0 memload=0
+12/11/2015 15:55:44.528 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=1 memload=0
+12/11/2015 15:55:46.531 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=0 memload=0
+12/11/2015 15:55:47.528 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=1 memload=0
+12/11/2015 15:55:47.688 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 15:55:48.411 | FwMySQLClientService(30047) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 15:55:49.532 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=2 memload=0
+12/11/2015 15:55:50.034 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 15:55:50.536 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=1 memload=0
+12/11/2015 15:55:54.541 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=0 memload=0
+12/11/2015 15:55:56.252 | MatedPairService(30044) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairService still alive.
+12/11/2015 15:55:56.546 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=1 memload=0
+12/11/2015 15:55:58.255 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4083/4083, binlog inserts=0/84, binlog updates=65095/64644, binlog deletes=126/41, size of data=406, time to fill binlog= 10h 0mn
+12/11/2015 15:56:03.986 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 15:56:04.054 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 15:56:04.556 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=0 memload=0
+12/11/2015 15:56:06.560 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=1 memload=0
+12/11/2015 15:56:12.241 | MatedPairSMPSService(30227) | SYS | INT | DBG | getElapsedMSec() : 1630ms
+12/11/2015 15:56:16.575 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=1 memload=0
+12/11/2015 15:56:19.189 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4022/4078, binlog inserts=0/71, binlog updates=64476/64630, binlog deletes=126/53, size of data=382, time to fill binlog= 10h 0mn
+12/11/2015 15:56:19.213 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 15:56:19.715 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=1 memload=0
+12/11/2015 15:56:19.715 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=1 memload=0
+12/11/2015 15:56:19.715 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=2 memload=0
+12/11/2015 15:56:20.274 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 15:56:21.719 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=0 memload=0
+12/11/2015 15:56:23.223 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=1 memload=0
+12/11/2015 15:56:23.223 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=1 memload=0
+12/11/2015 15:56:25.227 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=0 memload=0
+12/11/2015 15:56:25.726 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=0 memload=0
+12/11/2015 15:56:27.230 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=1 memload=0
+12/11/2015 15:56:28.224 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=9 cpuload=2 memload=0
+12/11/2015 15:56:28.730 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=0 memload=0
+12/11/2015 15:56:30.603 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 15:56:31.606 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=1 memload=0
+12/11/2015 15:56:31.809 | MysqlSupervision(1090) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 15:56:32.116 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=1 memload=0
+12/11/2015 15:56:32.116 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=1 memload=0
+12/11/2015 15:56:32.609 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=9 cpuload=1 memload=0
+12/11/2015 15:56:33.608 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=0 memload=0
+12/11/2015 15:56:33.609 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=0 memload=0
+12/11/2015 15:56:33.610 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=0 memload=0
+12/11/2015 15:56:34.159 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=0 memload=0
+12/11/2015 15:56:34.159 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=0 memload=0
+12/11/2015 15:56:34.612 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=9 cpuload=2 memload=0
+12/11/2015 15:56:35.614 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=1 memload=0
+12/11/2015 15:56:36.527 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 15:56:36.734 | MdsObsApiService(26500) | SYS | INT | FIL | RateValueProbe::getValue PassiveDbErrorRate, nb Err = 0, nb Mes = 0, rate = 0
+12/11/2015 15:56:37.618 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=0 memload=0
+12/11/2015 15:56:38.617 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=9 cpuload=1 memload=0
+12/11/2015 15:56:39.615 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=1 memload=0
+12/11/2015 15:56:40.130 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4022/4074, binlog inserts=0/59, binlog updates=64507/64687, binlog deletes=126/66, size of data=406, time to fill binlog= 10h 0mn
+12/11/2015 15:56:40.623 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=9 cpuload=2 memload=0
+12/11/2015 15:56:41.618 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=0 memload=0
+12/11/2015 15:56:42.171 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=1 memload=0
+12/11/2015 15:56:42.626 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=9 cpuload=1 memload=0
+12/11/2015 15:56:43.626 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 15:56:43.627 | MatedPairSMPSService(30227) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairSMPSService still alive.
+12/11/2015 15:56:44.631 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=0 memload=0
+12/11/2015 15:56:48.131 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=1 memload=0
+12/11/2015 15:56:48.567 | FwMySQLClientService(30047) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 15:56:50.139 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=1 memload=0
+12/11/2015 15:56:52.784 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 15:56:54.147 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=2 memload=0
+12/11/2015 15:56:55.648 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 15:56:56.880 | MatedPairService(30044) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairService still alive.
+12/11/2015 15:56:59.154 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=0 memload=0
+12/11/2015 15:57:01.042 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4020/4072, binlog inserts=0/47, binlog updates=64412/64737, binlog deletes=126/79, size of data=404, time to fill binlog= 10h 0mn
+12/11/2015 15:57:01.158 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=1 memload=0
+12/11/2015 15:57:02.159 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=1 memload=0
+12/11/2015 15:57:06.161 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=2 memload=0
+12/11/2015 15:57:09.271 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 15:57:09.930 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 15:57:12.435 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=1 memload=0
+12/11/2015 15:57:15.440 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=0 memload=0
+12/11/2015 15:57:20.458 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=2 memload=0
+12/11/2015 15:57:21.814 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4010/4068, binlog inserts=0/34, binlog updates=63998/64744, binlog deletes=126/91, size of data=384, time to fill binlog= 10h 0mn
+12/11/2015 15:57:22.153 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 15:57:22.656 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=1 memload=0
+12/11/2015 15:57:25.540 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 15:57:31.874 | MysqlSupervision(1090) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 15:57:32.668 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=2 memload=0
+12/11/2015 15:57:33.670 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 15:57:34.674 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=1 memload=0
+12/11/2015 15:57:36.676 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=2 memload=0
+12/11/2015 15:57:36.903 | MdsObsApiService(26500) | SYS | INT | FIL | RateValueProbe::getValue PassiveDbErrorRate, nb Err = 0, nb Mes = 0, rate = 0
+12/11/2015 15:57:37.679 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=1 memload=0
+12/11/2015 15:57:38.680 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=1 memload=0
+12/11/2015 15:57:39.683 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=0 memload=0
+12/11/2015 15:57:40.682 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=2 memload=0
+12/11/2015 15:57:41.687 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=1 memload=0
+12/11/2015 15:57:41.794 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 15:57:42.518 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=3994/4053, binlog inserts=0/21, binlog updates=63772/64567, binlog deletes=124/104, size of data=407, time to fill binlog= 10h 0mn
+12/11/2015 15:57:42.685 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=1 memload=0
+12/11/2015 15:57:43.683 | MatedPairSMPSService(30227) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairSMPSService still alive.
+12/11/2015 15:57:44.688 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 15:57:44.689 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=2 memload=0
+12/11/2015 15:57:46.692 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=1 memload=0
+12/11/2015 15:57:48.826 | FwMySQLClientService(30047) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 15:57:49.779 | MPExternalIpAddService(30045) | ADM | INT | DBG | MPExternalIpAddService : set counter to 0
+12/11/2015 15:57:55.701 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 15:57:57.087 | MatedPairService(30044) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairService still alive.
+12/11/2015 15:57:58.042 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 15:58:02.209 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=0 memload=0
+12/11/2015 15:58:03.257 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=3993/4042, binlog inserts=0/9, binlog updates=63762/64459, binlog deletes=122/116, size of data=388, time to fill binlog= 10h 0mn
+12/11/2015 15:58:04.714 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=2 memload=0
+12/11/2015 15:58:06.214 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=1 memload=0
+12/11/2015 15:58:06.719 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 15:58:10.724 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=1 memload=0
+12/11/2015 15:58:14.229 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=0 memload=0
+12/11/2015 15:58:14.426 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 15:58:16.231 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=1 memload=0
+12/11/2015 15:58:18.825 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 15:58:24.159 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4037/4033, binlog inserts=0/0, binlog updates=64547/64406, binlog deletes=126/125, size of data=402, time to fill binlog= 10h 0mn
+12/11/2015 15:58:26.336 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=0 memload=0
+12/11/2015 15:58:30.347 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=1 memload=0
+12/11/2015 15:58:31.335 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 15:58:31.767 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 15:58:31.952 | MysqlSupervision(1090) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 15:58:37.018 | MdsObsApiService(26500) | SYS | INT | FIL | RateValueProbe::getValue PassiveDbErrorRate, nb Err = 0, nb Mes = 0, rate = 0
+12/11/2015 15:58:40.846 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=0 memload=0
+12/11/2015 15:58:43.799 | MatedPairSMPSService(30227) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairSMPSService still alive.
+12/11/2015 15:58:44.851 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 15:58:44.852 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=1 memload=0
+12/11/2015 15:58:45.124 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4035/4027, binlog inserts=14/1, binlog updates=64447/64351, binlog deletes=112/124, size of data=387, time to fill binlog= 10h 0mn
+12/11/2015 15:58:48.108 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 15:58:49.041 | FwMySQLClientService(30047) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 15:58:56.359 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 15:58:56.361 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=1 memload=0
+12/11/2015 15:58:58.207 | MatedPairService(30044) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairService still alive.
+12/11/2015 15:58:58.363 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=0 memload=0
+12/11/2015 15:59:03.369 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=1 memload=0
+12/11/2015 15:59:03.370 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=2 memload=0
+12/11/2015 15:59:04.484 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 15:59:05.372 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=1 memload=0
+12/11/2015 15:59:07.314 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4287/4050, binlog inserts=132/14, binlog updates=68471/64748, binlog deletes=0/111, size of data=402, time to fill binlog= 10h 0mn
+12/11/2015 15:59:07.374 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=0 memload=0
+12/11/2015 15:59:07.375 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=2 memload=0
+12/11/2015 15:59:08.376 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 15:59:15.179 | FwMySQLClientService(30047) | SYS | INT | DBG | Connected to mysql @localhost : 15306
+12/11/2015 15:59:17.389 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=1 memload=0
+12/11/2015 15:59:19.393 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 15:59:19.394 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=2 memload=0
+12/11/2015 15:59:20.395 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=1 memload=0
+12/11/2015 15:59:20.746 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 15:59:22.396 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=1 memload=0
+12/11/2015 15:59:22.398 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=0 memload=0
+12/11/2015 15:59:24.398 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=0 memload=0
+12/11/2015 15:59:27.904 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=2 memload=0
+12/11/2015 15:59:28.652 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4111/4053, binlog inserts=132/27, binlog updates=65914/64830, binlog deletes=0/98, size of data=410, time to fill binlog= 10h 0mn
+12/11/2015 15:59:29.402 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=9 cpuload=2 memload=0
+12/11/2015 15:59:30.905 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=0 memload=0
+12/11/2015 15:59:31.404 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=9 cpuload=1 memload=0
+12/11/2015 15:59:31.417 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 15:59:32.026 | MysqlSupervision(1090) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 15:59:33.922 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=1 memload=0
+12/11/2015 15:59:35.476 | FwMySQLClientService(30047) | SYS | INT | DBG | FwMySQLClientService::updateUsage (before replication factor) total_data_len = 20310016 total_usage (fixed part)=16717568
+12/11/2015 15:59:35.476 | FwMySQLClientService(30047) | SYS | INT | DBG | FwMySQLClientService::updateUsage (before replication factor) dynamic max part=3476000 dynamic min part=3451520
+12/11/2015 15:59:35.476 | FwMySQLClientService(30047) | SYS | INT | DBG | FwMySQLClientService::updateUsage (before replication factor) total usage adjusted from 16717568 to 20169088
+12/11/2015 15:59:37.138 | MdsObsApiService(26500) | SYS | INT | FIL | RateValueProbe::getValue PassiveDbErrorRate, nb Err = 0, nb Mes = 0, rate = 0
+12/11/2015 15:59:37.326 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 15:59:40.929 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=1 memload=0
+12/11/2015 15:59:44.430 | MatedPairSMPSService(30227) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairSMPSService still alive.
+12/11/2015 15:59:45.433 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 15:59:45.434 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=1 memload=0
+12/11/2015 15:59:49.405 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=3980/4048, binlog inserts=120/39, binlog updates=63611/64744, binlog deletes=0/86, size of data=405, time to fill binlog= 10h 0mn
+12/11/2015 15:59:49.440 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=2 memload=0
+12/11/2015 15:59:50.439 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=1 memload=0
+12/11/2015 15:59:50.940 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=1 memload=0
+12/11/2015 15:59:51.443 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=1 memload=0
+12/11/2015 15:59:51.944 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=2 memload=0
+12/11/2015 15:59:53.446 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=2 memload=0
+12/11/2015 15:59:53.585 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 15:59:53.943 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=1 memload=0
+12/11/2015 15:59:53.947 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=1 memload=0
+12/11/2015 15:59:54.443 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=0 memload=0
+12/11/2015 15:59:55.950 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=2 memload=0
+12/11/2015 15:59:56.767 | SupervisedCluster(30049) | SYS | INT | DBG | SupervisedCluster::LongTicker::expireHandler debut
+12/11/2015 15:59:56.947 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=0 memload=0
+12/11/2015 15:59:57.315 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 15:59:58.317 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=0 memload=0
+12/11/2015 15:59:59.258 | SupervisedCluster(30049) | SYS | INT | DBG | Cluster allocation seen by mgmd: 41044416
+12/11/2015 15:59:59.258 | SupervisedCluster(30049) | SYS | INT | DBG | Cluster allocation seen by mysqld: 40620032
+12/11/2015 15:59:59.258 | SupervisedCluster(30049) | SYS | INT | DBG | SupervisedCluster::checkUsage() All nodes reported usage data:  data: 0.841725 index: 0.699417 thr1: 0.8 thr2: 0.9 recovery1: 0.8 recovery2: 0.9 maxUsage: 0.841725
+12/11/2015 15:59:59.806 | MatedPairService(30044) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairService still alive.
+12/11/2015 15:59:59.820 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=1 memload=0
+12/11/2015 16:00:00.319 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=1 memload=0
+12/11/2015 16:00:01.824 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=2 memload=0
+12/11/2015 16:00:03.360 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=0 memload=0
+12/11/2015 16:00:05.404 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=1 memload=0
+12/11/2015 16:00:08.807 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:00:09.509 | FwMySQLClientService(30047) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:00:09.809 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=0 memload=0
+12/11/2015 16:00:09.868 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:00:10.039 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4006/4047, binlog inserts=126/52, binlog updates=63840/64677, binlog deletes=0/73, size of data=434, time to fill binlog= 10h 0mn
+12/11/2015 16:00:21.821 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:00:21.822 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=1 memload=0
+12/11/2015 16:00:22.323 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=9 cpuload=0 memload=0
+12/11/2015 16:00:24.326 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=9 cpuload=1 memload=0
+12/11/2015 16:00:26.162 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:00:26.828 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=1 memload=0
+12/11/2015 16:00:28.329 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=1 memload=0
+12/11/2015 16:00:28.831 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=2 memload=0
+12/11/2015 16:00:30.332 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=0 memload=0
+12/11/2015 16:00:30.841 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4020/4047, binlog inserts=126/65, binlog updates=64080/64644, binlog deletes=0/61, size of data=390, time to fill binlog= 10h 0mn
+12/11/2015 16:00:32.101 | MysqlSupervision(1090) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:00:32.336 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=1 memload=0
+12/11/2015 16:00:34.202 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:00:36.706 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=0 memload=0
+12/11/2015 16:00:37.285 | MdsObsApiService(26500) | SYS | INT | FIL | RateValueProbe::getValue PassiveDbErrorRate, nb Err = 0, nb Mes = 0, rate = 0
+12/11/2015 16:00:39.210 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=1 memload=0
+12/11/2015 16:00:39.706 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=1 memload=0
+12/11/2015 16:00:39.709 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=1 memload=0
+12/11/2015 16:00:40.710 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=1 memload=0
+12/11/2015 16:00:41.213 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=1 cpuload=0 memload=0
+12/11/2015 16:00:41.710 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=1 memload=0
+12/11/2015 16:00:42.670 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:00:44.213 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=1 memload=0
+12/11/2015 16:00:45.209 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:00:45.210 | MatedPairSMPSService(30227) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairSMPSService still alive.
+12/11/2015 16:00:45.210 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=1 memload=0
+12/11/2015 16:00:47.213 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=0 memload=0
+12/11/2015 16:00:47.711 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=0 memload=0
+12/11/2015 16:00:47.712 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=2 memload=0
+12/11/2015 16:00:48.213 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=0 memload=0
+12/11/2015 16:00:48.713 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=0 memload=0
+12/11/2015 16:00:49.711 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=0 memload=0
+12/11/2015 16:00:49.715 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=1 memload=0
+12/11/2015 16:00:49.718 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=0 memload=0
+12/11/2015 16:00:50.713 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=9 cpuload=2 memload=0
+12/11/2015 16:00:51.718 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=2 memload=0
+12/11/2015 16:00:51.807 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4085/4054, binlog inserts=126/77, binlog updates=64909/64735, binlog deletes=0/48, size of data=411, time to fill binlog= 10h 0mn
+12/11/2015 16:00:55.723 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=1 memload=0
+12/11/2015 16:00:56.222 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:00:56.723 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=9 cpuload=1 memload=0
+12/11/2015 16:00:58.725 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=9 cpuload=2 memload=0
+12/11/2015 16:00:58.870 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:01:00.129 | MatedPairService(30044) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairService still alive.
+12/11/2015 16:01:00.727 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=9 cpuload=1 memload=0
+12/11/2015 16:01:03.230 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=1 memload=0
+12/11/2015 16:01:05.729 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=1 memload=0
+12/11/2015 16:01:05.733 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=2 memload=0
+12/11/2015 16:01:07.230 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:01:07.732 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=0 memload=0
+12/11/2015 16:01:07.732 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=1 memload=0
+12/11/2015 16:01:09.770 | FwMySQLClientService(30047) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:01:11.734 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=0 memload=0
+12/11/2015 16:01:12.540 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4054/4060, binlog inserts=126/90, binlog updates=64103/64768, binlog deletes=0/36, size of data=415, time to fill binlog= 10h 0mn
+12/11/2015 16:01:15.084 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:01:15.237 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=1 memload=0
+12/11/2015 16:01:15.737 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=1 memload=0
+12/11/2015 16:01:15.742 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=1 memload=0
+12/11/2015 16:01:17.242 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=0 memload=0
+12/11/2015 16:01:17.739 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=0 memload=0
+12/11/2015 16:01:17.741 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=2 memload=0
+12/11/2015 16:01:17.752 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=0 memload=0
+12/11/2015 16:01:18.242 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:01:19.244 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=1 memload=0
+12/11/2015 16:01:19.743 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=1 memload=0
+12/11/2015 16:01:19.744 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=1 memload=0
+12/11/2015 16:01:19.744 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=1 memload=0
+12/11/2015 16:01:20.759 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=1 memload=0
+12/11/2015 16:01:21.245 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=0 memload=0
+12/11/2015 16:01:21.245 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=1 memload=0
+12/11/2015 16:01:21.746 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=0 memload=0
+12/11/2015 16:01:21.746 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=1 memload=0
+12/11/2015 16:01:22.762 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=0 memload=0
+12/11/2015 16:01:23.247 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=1 memload=0
+12/11/2015 16:01:23.248 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=0 memload=0
+12/11/2015 16:01:23.748 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=1 memload=0
+12/11/2015 16:01:24.765 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=1 memload=0
+12/11/2015 16:01:25.249 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=0 memload=0
+12/11/2015 16:01:25.250 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=1 memload=0
+12/11/2015 16:01:25.748 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=0 memload=0
+12/11/2015 16:01:25.750 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=0 memload=0
+12/11/2015 16:01:27.253 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=0 memload=0
+12/11/2015 16:01:27.749 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=1 memload=0
+12/11/2015 16:01:27.751 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=1 memload=0
+12/11/2015 16:01:29.256 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=1 memload=0
+12/11/2015 16:01:29.280 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:01:29.782 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=0 memload=0
+12/11/2015 16:01:29.782 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=0 memload=0
+12/11/2015 16:01:29.782 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=0 memload=0
+12/11/2015 16:01:30.783 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=0 memload=0
+12/11/2015 16:01:31.279 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:01:31.285 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=1 memload=0
+12/11/2015 16:01:31.285 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=0 memload=0
+12/11/2015 16:01:31.784 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=1 memload=0
+12/11/2015 16:01:31.784 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=1 memload=0
+12/11/2015 16:01:31.784 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=0 memload=0
+12/11/2015 16:01:32.192 | MysqlSupervision(1090) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:01:33.328 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=0 memload=0
+12/11/2015 16:01:33.537 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4115/4073, binlog inserts=126/102, binlog updates=64926/64884, binlog deletes=0/23, size of data=409, time to fill binlog= 10h 0mn
+12/11/2015 16:01:33.786 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=0 memload=0
+12/11/2015 16:01:33.787 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=2 memload=0
+12/11/2015 16:01:37.442 | MdsObsApiService(26500) | SYS | INT | FIL | RateValueProbe::getValue PassiveDbErrorRate, nb Err = 0, nb Mes = 0, rate = 0
+12/11/2015 16:01:40.291 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:01:43.795 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=1 memload=0
+12/11/2015 16:01:45.298 | MatedPairSMPSService(30227) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairSMPSService still alive.
+12/11/2015 16:01:47.583 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:01:51.299 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:01:52.301 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=0 memload=0
+12/11/2015 16:01:54.283 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4047/4074, binlog inserts=120/114, binlog updates=63984/64828, binlog deletes=0/11, size of data=409, time to fill binlog= 10h 0mn
+12/11/2015 16:02:00.525 | MatedPairService(30044) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairService still alive.
+12/11/2015 16:02:02.818 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:02:03.793 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:02:08.325 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=1 memload=0
+12/11/2015 16:02:09.995 | FwMySQLClientService(30047) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:02:12.330 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=0 memload=0
+12/11/2015 16:02:13.830 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:02:14.838 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4029/4073, binlog inserts=126/126, binlog updates=63756/64759, binlog deletes=0/0, size of data=411, time to fill binlog= 10h 0mn
+12/11/2015 16:02:19.986 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:02:25.265 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:02:26.768 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=1 memload=0
+12/11/2015 16:02:28.772 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=0 memload=0
+12/11/2015 16:02:30.775 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=1 memload=0
+12/11/2015 16:02:32.284 | MysqlSupervision(1090) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:02:32.777 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=0 memload=0
+12/11/2015 16:02:35.681 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4093/4054, binlog inserts=126/125, binlog updates=64653/64377, binlog deletes=0/0, size of data=409, time to fill binlog= 10h 0mn
+12/11/2015 16:02:36.213 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:02:36.275 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:02:37.556 | MdsObsApiService(26500) | SYS | INT | FIL | RateValueProbe::getValue PassiveDbErrorRate, nb Err = 0, nb Mes = 0, rate = 0
+12/11/2015 16:02:37.556 | MdsObsApiService(26500) | SYS | INT | FIL | RateValueProbe::getValue PassiveDbErrorRate evalution of the KPI 
+12/11/2015 16:02:45.636 | MatedPairSMPSService(30227) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairSMPSService still alive.
+12/11/2015 16:02:48.289 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:02:50.058 | MPExternalIpAddService(30045) | ADM | INT | DBG | MPExternalIpAddService : set counter to 0
+12/11/2015 16:02:52.422 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:02:52.795 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=1 memload=0
+12/11/2015 16:02:56.422 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4034/4046, binlog inserts=0/112, binlog updates=63907/64176, binlog deletes=120/12, size of data=390, time to fill binlog= 10h 0mn
+12/11/2015 16:03:00.287 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:03:01.068 | MatedPairService(30044) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairService still alive.
+12/11/2015 16:03:07.296 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=0 memload=0
+12/11/2015 16:03:08.642 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:03:10.132 | FwMySQLClientService(30047) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:03:11.302 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=1 memload=0
+12/11/2015 16:03:11.611 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:03:13.616 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=0 memload=0
+12/11/2015 16:03:17.651 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4169/4065, binlog inserts=0/100, binlog updates=65857/64401, binlog deletes=132/25, size of data=392, time to fill binlog= 10h 0mn
+12/11/2015 16:03:22.997 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:03:24.976 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:03:32.009 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=1 memload=0
+12/11/2015 16:03:32.346 | MysqlSupervision(1090) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:03:35.506 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:03:36.508 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=0 memload=0
+12/11/2015 16:03:37.669 | MdsObsApiService(26500) | SYS | INT | FIL | RateValueProbe::getValue PassiveDbErrorRate, nb Err = 0, nb Mes = 0, rate = 0
+12/11/2015 16:03:38.362 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4013/4065, binlog inserts=0/87, binlog updates=63566/64374, binlog deletes=120/37, size of data=435, time to fill binlog= 10h 0mn
+12/11/2015 16:03:41.219 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:03:46.069 | MatedPairSMPSService(30227) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairSMPSService still alive.
+12/11/2015 16:03:48.520 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:03:57.456 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:03:59.243 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4084/4072, binlog inserts=0/75, binlog updates=64738/64439, binlog deletes=126/49, size of data=460, time to fill binlog= 10h 0mn
+12/11/2015 16:04:01.451 | MatedPairService(30044) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairService still alive.
+12/11/2015 16:04:01.534 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:04:02.548 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=1 memload=0
+12/11/2015 16:04:05.539 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=1 memload=0
+12/11/2015 16:04:06.041 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=1 memload=0
+12/11/2015 16:04:08.044 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=0 memload=0
+12/11/2015 16:04:09.543 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=0 memload=0
+12/11/2015 16:04:09.545 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=1 memload=0
+12/11/2015 16:04:10.346 | FwMySQLClientService(30047) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:04:11.547 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=0 memload=0
+12/11/2015 16:04:13.665 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:04:14.049 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=2 memload=0
+12/11/2015 16:04:14.556 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:04:18.060 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=1 memload=0
+12/11/2015 16:04:20.101 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4066/4070, binlog inserts=0/62, binlog updates=64391/64388, binlog deletes=126/62, size of data=394, time to fill binlog= 10h 0mn
+12/11/2015 16:04:27.069 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:04:27.571 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=1 memload=0
+12/11/2015 16:04:27.571 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=1 memload=0
+12/11/2015 16:04:29.575 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=0 memload=0
+12/11/2015 16:04:29.902 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:04:31.075 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=1 memload=0
+12/11/2015 16:04:32.409 | MysqlSupervision(1090) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:04:35.080 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=0 memload=0
+12/11/2015 16:04:35.580 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=0 memload=0
+12/11/2015 16:04:36.521 | FwMySQLClientService(30047) | SYS | INT | DBG | Connected to mysql @localhost : 15306
+12/11/2015 16:04:37.799 | MdsObsApiService(26500) | SYS | INT | FIL | RateValueProbe::getValue PassiveDbErrorRate, nb Err = 0, nb Mes = 0, rate = 0
+12/11/2015 16:04:39.100 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:04:41.738 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4273/4092, binlog inserts=0/49, binlog updates=67317/64709, binlog deletes=132/75, size of data=416, time to fill binlog= 10h 0mn
+12/11/2015 16:04:45.609 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=1 memload=0
+12/11/2015 16:04:46.106 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:04:46.109 | MatedPairSMPSService(30227) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairSMPSService still alive.
+12/11/2015 16:04:46.109 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=1 memload=0
+12/11/2015 16:04:47.609 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=1 memload=0
+12/11/2015 16:04:47.612 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=0 memload=0
+12/11/2015 16:04:48.112 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=0 memload=0
+12/11/2015 16:04:49.613 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=0 memload=0
+12/11/2015 16:04:49.613 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=1 memload=0
+12/11/2015 16:04:51.620 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=1 memload=0
+12/11/2015 16:04:51.620 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=0 memload=0
+12/11/2015 16:04:52.117 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:04:52.118 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=1 memload=0
+12/11/2015 16:04:56.123 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=0 memload=0
+12/11/2015 16:04:57.749 | SupervisedCluster(30049) | SYS | INT | DBG | SupervisedCluster::LongTicker::expireHandler debut
+12/11/2015 16:04:57.932 | FwMySQLClientService(30047) | SYS | INT | DBG | FwMySQLClientService::updateUsage (before replication factor) total_data_len = 20310016 total_usage (fixed part)=16717568
+12/11/2015 16:04:57.932 | FwMySQLClientService(30047) | SYS | INT | DBG | FwMySQLClientService::updateUsage (before replication factor) dynamic max part=3476000 dynamic min part=3451520
+12/11/2015 16:04:57.932 | FwMySQLClientService(30047) | SYS | INT | DBG | FwMySQLClientService::updateUsage (before replication factor) total usage adjusted from 16717568 to 20169088
+12/11/2015 16:04:59.626 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=0 memload=0
+12/11/2015 16:05:00.218 | SupervisedCluster(30049) | SYS | INT | DBG | Cluster allocation seen by mgmd: 41044416
+12/11/2015 16:05:00.218 | SupervisedCluster(30049) | SYS | INT | DBG | Cluster allocation seen by mysqld: 40620032
+12/11/2015 16:05:00.218 | SupervisedCluster(30049) | SYS | INT | DBG | SupervisedCluster::checkUsage() All nodes reported usage data:  data: 0.841725 index: 0.699417 thr1: 0.8 thr2: 0.9 recovery1: 0.8 recovery2: 0.9 maxUsage: 0.841725
+12/11/2015 16:05:02.312 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:05:02.533 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4033/4084, binlog inserts=0/37, binlog updates=63930/64609, binlog deletes=122/87, size of data=389, time to fill binlog= 10h 0mn
+12/11/2015 16:05:02.582 | MatedPairService(30044) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairService still alive.
+12/11/2015 16:05:03.879 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:05:07.384 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=0 memload=0
+12/11/2015 16:05:16.995 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:05:18.600 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:05:19.974 | ThreadLCPLogEvent(1097) | SYS | INT | DBG | ThreadLCPLogEvent::thread_main LCP completed
+12/11/2015 16:05:19.974 | ThreadLCPLogEvent(1097) | SYS | INT | DBG | MysqlSupervision::logTick before reset STARTED
+12/11/2015 16:05:19.974 | ThreadLCPLogEvent(1097) | SYS | INT | DBG | MysqlSupervision::logTick after start STARTED
+12/11/2015 16:05:20.983 | ThreadLCPLogEvent(1097) | SYS | INT | DBG | ThreadLCPLogEvent::thread_main LCP started
+12/11/2015 16:05:23.169 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4039/4083, binlog inserts=0/25, binlog updates=63934/64604, binlog deletes=124/100, size of data=407, time to fill binlog= 10h 0mn
+12/11/2015 16:05:31.004 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:05:31.960 | FwMySQLClientService(30047) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:05:32.480 | MysqlSupervision(1090) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:05:34.815 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:05:37.940 | MdsObsApiService(26500) | SYS | INT | FIL | RateValueProbe::getValue PassiveDbErrorRate, nb Err = 0, nb Mes = 0, rate = 0
+12/11/2015 16:05:45.142 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:05:45.657 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4408/4121, binlog inserts=0/12, binlog updates=69537/65183, binlog deletes=138/114, size of data=395, time to fill binlog= 10h 0mn
+12/11/2015 16:05:46.177 | MatedPairSMPSService(30227) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairSMPSService still alive.
+12/11/2015 16:05:50.182 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=1 memload=0
+12/11/2015 16:05:51.010 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:05:56.688 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=0 memload=0
+12/11/2015 16:05:58.691 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:05:58.692 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=1 memload=0
+12/11/2015 16:06:00.193 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=0 memload=0
+12/11/2015 16:06:04.288 | MatedPairService(30044) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairService still alive.
+12/11/2015 16:06:06.295 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4039/4115, binlog inserts=0/0, binlog updates=63880/65105, binlog deletes=120/126, size of data=394, time to fill binlog= 10h 0mn
+12/11/2015 16:06:07.400 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:06:10.258 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:06:23.609 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:06:23.790 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:06:27.284 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4092/4121, binlog inserts=0/0, binlog updates=64823/65197, binlog deletes=126/126, size of data=411, time to fill binlog= 10h 0mn
+12/11/2015 16:06:30.293 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=1 memload=0
+12/11/2015 16:06:32.087 | FwMySQLClientService(30047) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:06:32.295 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=0 memload=0
+12/11/2015 16:06:32.544 | MysqlSupervision(1090) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:06:34.297 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=1 memload=0
+12/11/2015 16:06:35.799 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:06:36.801 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=1 memload=0
+12/11/2015 16:06:38.056 | MdsObsApiService(26500) | SYS | INT | FIL | RateValueProbe::getValue PassiveDbErrorRate, nb Err = 0, nb Mes = 0, rate = 0
+12/11/2015 16:06:38.303 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=1 memload=0
+12/11/2015 16:06:38.805 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=1 memload=0
+12/11/2015 16:06:39.805 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=1 memload=0
+12/11/2015 16:06:39.806 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:06:40.306 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=0 memload=0
+12/11/2015 16:06:40.803 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=2 memload=0
+12/11/2015 16:06:41.809 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=0 memload=0
+12/11/2015 16:06:42.805 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=0 memload=0
+12/11/2015 16:06:42.807 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=1 memload=0
+12/11/2015 16:06:44.813 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=0 memload=0
+12/11/2015 16:06:46.808 | MatedPairSMPSService(30227) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairSMPSService still alive.
+12/11/2015 16:06:47.812 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=9 cpuload=2 memload=0
+12/11/2015 16:06:48.173 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4085/4113, binlog inserts=112/11, binlog updates=64505/65062, binlog deletes=14/114, size of data=411, time to fill binlog= 10h 0mn
+12/11/2015 16:06:48.819 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=1 memload=0
+12/11/2015 16:06:49.302 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:06:50.303 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=1 memload=0
+12/11/2015 16:06:51.305 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=1 memload=0
+12/11/2015 16:06:51.305 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=1 memload=0
+12/11/2015 16:06:52.808 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=1 memload=0
+12/11/2015 16:06:53.305 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=2 memload=0
+12/11/2015 16:06:55.308 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=0 memload=0
+12/11/2015 16:06:56.031 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:06:56.813 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=0 memload=0
+12/11/2015 16:06:57.311 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=0 memload=0
+12/11/2015 16:06:59.310 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=1 memload=0
+12/11/2015 16:06:59.315 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=0 memload=0
+12/11/2015 16:07:00.309 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=0 memload=0
+12/11/2015 16:07:00.315 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:07:00.316 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=9 cpuload=1 memload=0
+12/11/2015 16:07:04.924 | MatedPairService(30044) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairService still alive.
+12/11/2015 16:07:08.974 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4064/4118, binlog inserts=126/23, binlog updates=64325/65138, binlog deletes=0/102, size of data=408, time to fill binlog= 10h 0mn
+12/11/2015 16:07:11.322 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=2 memload=0
+12/11/2015 16:07:11.324 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=1 memload=0
+12/11/2015 16:07:11.327 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:07:11.328 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=1 memload=0
+12/11/2015 16:07:12.276 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:07:13.329 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=1 memload=0
+12/11/2015 16:07:13.329 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=0 memload=0
+12/11/2015 16:07:15.333 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=0 memload=0
+12/11/2015 16:07:22.338 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:07:28.591 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:07:29.714 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4067/4116, binlog inserts=126/36, binlog updates=64267/65090, binlog deletes=0/90, size of data=387, time to fill binlog= 10h 0mn
+12/11/2015 16:07:32.392 | FwMySQLClientService(30047) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:07:32.613 | MysqlSupervision(1090) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:07:33.852 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:07:34.354 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=0 memload=0
+12/11/2015 16:07:38.149 | MdsObsApiService(26500) | SYS | INT | FIL | RateValueProbe::getValue PassiveDbErrorRate, nb Err = 0, nb Mes = 0, rate = 0
+12/11/2015 16:07:44.850 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:07:44.860 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:07:46.865 | MatedPairSMPSService(30227) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairSMPSService still alive.
+12/11/2015 16:07:50.334 | MPExternalIpAddService(30045) | ADM | INT | DBG | MPExternalIpAddService : set counter to 0
+12/11/2015 16:07:50.365 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=1 memload=0
+12/11/2015 16:07:50.539 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4062/4116, binlog inserts=122/48, binlog updates=64114/65063, binlog deletes=0/77, size of data=407, time to fill binlog= 10h 0mn
+12/11/2015 16:07:56.876 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:08:01.212 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:08:05.536 | MatedPairService(30044) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairService still alive.
+12/11/2015 16:08:06.387 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=0 memload=0
+12/11/2015 16:08:09.894 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:08:11.667 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4124/4101, binlog inserts=130/61, binlog updates=65147/64846, binlog deletes=0/64, size of data=392, time to fill binlog= 10h 0mn
+12/11/2015 16:08:17.457 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:08:23.818 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:08:32.439 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4100/4108, binlog inserts=126/74, binlog updates=64887/64941, binlog deletes=0/52, size of data=394, time to fill binlog= 10h 0mn
+12/11/2015 16:08:32.609 | FwMySQLClientService(30047) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:08:32.675 | MysqlSupervision(1090) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:08:33.658 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:08:36.834 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:08:38.241 | MdsObsApiService(26500) | SYS | INT | FIL | RateValueProbe::getValue PassiveDbErrorRate, nb Err = 0, nb Mes = 0, rate = 0
+12/11/2015 16:08:45.844 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=1 memload=0
+12/11/2015 16:08:47.841 | MatedPairSMPSService(30227) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairSMPSService still alive.
+12/11/2015 16:08:47.847 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=0 memload=0
+12/11/2015 16:08:49.871 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:08:50.350 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:08:53.082 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=3919/4096, binlog inserts=120/86, binlog updates=61767/64725, binlog deletes=0/39, size of data=418, time to fill binlog= 10h 0mn
+12/11/2015 16:09:05.380 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:09:05.740 | MatedPairService(30044) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairService still alive.
+12/11/2015 16:09:06.086 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:09:13.866 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=3839/4039, binlog inserts=126/98, binlog updates=60240/63795, binlog deletes=0/26, size of data=372, time to fill binlog= 10h 0mn
+12/11/2015 16:09:17.701 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:09:22.287 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:09:22.844 | MatedPairSMPSService(30227) | SYS | INT | DBG | getElapsedMSec() : 1630ms
+12/11/2015 16:09:27.215 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=1 memload=0
+12/11/2015 16:09:29.219 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=2 memload=0
+12/11/2015 16:09:32.204 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:09:32.706 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=1 memload=0
+12/11/2015 16:09:32.741 | MysqlSupervision(1090) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:09:32.838 | FwMySQLClientService(30047) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:09:34.661 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=3846/4019, binlog inserts=126/111, binlog updates=60543/63461, binlog deletes=0/14, size of data=404, time to fill binlog= 10h 0mn
+12/11/2015 16:09:34.708 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=1 memload=0
+12/11/2015 16:09:36.712 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=2 memload=0
+12/11/2015 16:09:37.712 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=1 memload=0
+12/11/2015 16:09:38.354 | MdsObsApiService(26500) | SYS | INT | FIL | RateValueProbe::getValue PassiveDbErrorRate, nb Err = 0, nb Mes = 0, rate = 0
+12/11/2015 16:09:38.704 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:09:38.713 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=0 memload=0
+12/11/2015 16:09:38.714 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=0 memload=0
+12/11/2015 16:09:38.715 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=1 memload=0
+12/11/2015 16:09:45.720 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=0 memload=0
+12/11/2015 16:09:45.785 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:09:49.291 | MatedPairSMPSService(30227) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairSMPSService still alive.
+12/11/2015 16:09:54.918 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:09:55.872 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=3939/4004, binlog inserts=126/124, binlog updates=61858/63165, binlog deletes=0/1, size of data=398, time to fill binlog= 10h 0mn
+12/11/2015 16:09:57.798 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:09:58.625 | SupervisedCluster(30049) | SYS | INT | DBG | SupervisedCluster::LongTicker::expireHandler debut
+12/11/2015 16:09:58.963 | FwMySQLClientService(30047) | SYS | INT | DBG | Connected to mysql @localhost : 15306
+12/11/2015 16:10:00.100 | SupervisedCluster(30049) | SYS | INT | DBG | Cluster allocation seen by mgmd: 41044416
+12/11/2015 16:10:00.100 | SupervisedCluster(30049) | SYS | INT | DBG | Cluster allocation seen by mysqld: 40620032
+12/11/2015 16:10:00.100 | SupervisedCluster(30049) | SYS | INT | DBG | SupervisedCluster::checkUsage() All nodes reported usage data:  data: 0.841725 index: 0.699417 thr1: 0.8 thr2: 0.9 recovery1: 0.8 recovery2: 0.9 maxUsage: 0.841725
+12/11/2015 16:10:03.806 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=1 memload=0
+12/11/2015 16:10:06.361 | MatedPairService(30044) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairService still alive.
+12/11/2015 16:10:08.806 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:10:10.810 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=1 memload=0
+12/11/2015 16:10:11.174 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:10:11.310 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=1 memload=0
+12/11/2015 16:10:12.812 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=0 memload=0
+12/11/2015 16:10:13.813 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=1 memload=0
+12/11/2015 16:10:14.815 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=1 memload=0
+12/11/2015 16:10:15.314 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=0 memload=0
+12/11/2015 16:10:15.473 | MatedPairService(30044) | SYS | INT | DBG | getElapsedMSec() : 2640ms, DbSup ticker: 156ms
+12/11/2015 16:10:16.315 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=4 cpuload=2 memload=0
+12/11/2015 16:10:16.818 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=0 memload=0
+12/11/2015 16:10:17.480 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4125/4008, binlog inserts=126/125, binlog updates=65154/63230, binlog deletes=0/0, size of data=307, time to fill binlog= 10h 0mn
+12/11/2015 16:10:17.818 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=0 memload=0
+12/11/2015 16:10:21.320 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:10:23.746 | FwMySQLClientService(30047) | SYS | INT | DBG | FwMySQLClientService::updateUsage (before replication factor) total_data_len = 20310016 total_usage (fixed part)=16717632
+12/11/2015 16:10:23.746 | FwMySQLClientService(30047) | SYS | INT | DBG | FwMySQLClientService::updateUsage (before replication factor) dynamic max part=3476000 dynamic min part=3451520
+12/11/2015 16:10:23.746 | FwMySQLClientService(30047) | SYS | INT | DBG | FwMySQLClientService::updateUsage (before replication factor) total usage adjusted from 16717632 to 20169152
+12/11/2015 16:10:27.368 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:10:32.335 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:10:32.827 | MysqlSupervision(1090) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:10:38.441 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4126/4014, binlog inserts=34/116, binlog updates=65222/63319, binlog deletes=96/9, size of data=407, time to fill binlog= 10h 0mn
+12/11/2015 16:10:38.468 | MdsObsApiService(26500) | SYS | INT | FIL | RateValueProbe::getValue PassiveDbErrorRate, nb Err = 0, nb Mes = 0, rate = 0
+12/11/2015 16:10:43.625 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:10:44.856 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:10:49.360 | MatedPairSMPSService(30227) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairSMPSService still alive.
+12/11/2015 16:10:56.370 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:10:57.777 | FwMySQLClientService(30047) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:10:59.454 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4084/4016, binlog inserts=0/103, binlog updates=64730/63366, binlog deletes=122/21, size of data=419, time to fill binlog= 10h 0mn
+12/11/2015 16:10:59.826 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:11:07.793 | MatedPairService(30044) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairService still alive.
+12/11/2015 16:11:09.885 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:11:16.030 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:11:20.645 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4133/4023, binlog inserts=0/91, binlog updates=65499/63504, binlog deletes=132/35, size of data=416, time to fill binlog= 10h 0mn
+12/11/2015 16:11:23.884 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:11:29.392 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=1 memload=0
+12/11/2015 16:11:29.394 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=1 memload=0
+12/11/2015 16:11:31.395 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=0 memload=0
+12/11/2015 16:11:31.895 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=1 memload=0
+12/11/2015 16:11:32.269 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:11:32.903 | MysqlSupervision(1090) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:11:33.400 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=0 memload=0
+12/11/2015 16:11:33.898 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=0 memload=0
+12/11/2015 16:11:35.901 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=2 memload=0
+12/11/2015 16:11:35.901 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=1 memload=0
+12/11/2015 16:11:35.927 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:11:37.930 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=1 memload=0
+12/11/2015 16:11:37.931 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=0 memload=0
+12/11/2015 16:11:38.580 | MdsObsApiService(26500) | SYS | INT | FIL | RateValueProbe::getValue PassiveDbErrorRate, nb Err = 0, nb Mes = 0, rate = 0
+12/11/2015 16:11:41.476 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4037/4014, binlog inserts=0/78, binlog updates=64072/63397, binlog deletes=120/47, size of data=412, time to fill binlog= 10h 0mn
+12/11/2015 16:11:48.503 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:11:48.525 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:11:49.567 | MatedPairSMPSService(30227) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairSMPSService still alive.
+12/11/2015 16:11:54.031 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=1 memload=0
+12/11/2015 16:11:55.534 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=1 memload=0
+12/11/2015 16:11:56.035 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=0 memload=0
+12/11/2015 16:11:57.537 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=0 memload=0
+12/11/2015 16:11:57.922 | FwMySQLClientService(30047) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:12:01.541 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:12:02.153 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4032/4008, binlog inserts=0/65, binlog updates=64060/63314, binlog deletes=126/59, size of data=395, time to fill binlog= 10h 0mn
+12/11/2015 16:12:04.695 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:12:08.623 | MatedPairService(30044) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairService still alive.
+12/11/2015 16:12:12.554 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=1 memload=0
+12/11/2015 16:12:14.558 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=0 memload=0
+12/11/2015 16:12:15.058 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:12:18.563 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=1 memload=0
+12/11/2015 16:12:20.565 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=0 memload=0
+12/11/2015 16:12:21.030 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:12:22.068 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=1 memload=0
+12/11/2015 16:12:23.184 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4093/4025, binlog inserts=0/53, binlog updates=64868/63624, binlog deletes=126/72, size of data=436, time to fill binlog= 10h 0mn
+12/11/2015 16:12:23.568 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=1 memload=0
+12/11/2015 16:12:23.569 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=1 memload=0
+12/11/2015 16:12:23.583 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=1 memload=0
+12/11/2015 16:12:24.572 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=1 memload=0
+12/11/2015 16:12:25.571 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=0 memload=0
+12/11/2015 16:12:25.586 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=0 memload=0
+12/11/2015 16:12:26.072 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=0 memload=0
+12/11/2015 16:12:26.588 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:12:28.592 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=0 memload=0
+12/11/2015 16:12:29.592 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=0 memload=0
+12/11/2015 16:12:32.971 | MysqlSupervision(1090) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:12:37.232 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:12:38.684 | MdsObsApiService(26500) | SYS | INT | FIL | RateValueProbe::getValue PassiveDbErrorRate, nb Err = 0, nb Mes = 0, rate = 0
+12/11/2015 16:12:40.592 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:12:44.060 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4080/4049, binlog inserts=0/41, binlog updates=64624/64063, binlog deletes=126/84, size of data=410, time to fill binlog= 10h 0mn
+12/11/2015 16:12:50.288 | MatedPairSMPSService(30227) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairSMPSService still alive.
+12/11/2015 16:12:50.588 | MPExternalIpAddService(30045) | ADM | INT | DBG | MPExternalIpAddService : set counter to 0
+12/11/2015 16:12:53.427 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:12:54.254 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:12:58.206 | FwMySQLClientService(30047) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:13:00.762 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=1 memload=0
+12/11/2015 16:13:01.263 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=1 memload=0
+12/11/2015 16:13:04.266 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=1 memload=0
+12/11/2015 16:13:04.851 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4068/4071, binlog inserts=0/28, binlog updates=64424/64451, binlog deletes=126/97, size of data=394, time to fill binlog= 10h 0mn
+12/11/2015 16:13:05.605 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:13:06.611 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=0 memload=0
+12/11/2015 16:13:07.109 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=0 memload=0
+12/11/2015 16:13:08.613 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=1 memload=0
+12/11/2015 16:13:09.112 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=1 memload=0
+12/11/2015 16:13:09.193 | MatedPairService(30044) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairService still alive.
+12/11/2015 16:13:09.632 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:13:11.115 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=0 memload=0
+12/11/2015 16:13:11.613 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=1 memload=0
+12/11/2015 16:13:12.114 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=1 memload=0
+12/11/2015 16:13:12.612 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=1 memload=0
+12/11/2015 16:13:12.614 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=1 memload=0
+12/11/2015 16:13:13.118 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=1 memload=0
+12/11/2015 16:13:14.616 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=0 memload=0
+12/11/2015 16:13:14.621 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=0 memload=0
+12/11/2015 16:13:15.619 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=0 memload=0
+12/11/2015 16:13:16.619 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=1 memload=0
+12/11/2015 16:13:16.624 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=1 memload=0
+12/11/2015 16:13:17.123 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=0 memload=0
+12/11/2015 16:13:17.621 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=1 memload=0
+12/11/2015 16:13:18.119 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=0 memload=0
+12/11/2015 16:13:18.621 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:13:18.623 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=0 memload=0
+12/11/2015 16:13:18.623 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=0 memload=0
+12/11/2015 16:13:19.624 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=0 memload=0
+12/11/2015 16:13:21.625 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=0 memload=0
+12/11/2015 16:13:22.126 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=9 cpuload=2 memload=0
+12/11/2015 16:13:22.626 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=0 memload=0
+12/11/2015 16:13:25.860 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:13:26.065 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4127/4090, binlog inserts=0/16, binlog updates=65465/64811, binlog deletes=126/110, size of data=414, time to fill binlog= 10h 0mn
+12/11/2015 16:13:26.131 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=9 cpuload=1 memload=0
+12/11/2015 16:13:31.129 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:13:32.631 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=1 memload=0
+12/11/2015 16:13:33.040 | MysqlSupervision(1090) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:13:34.634 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=0 memload=0
+12/11/2015 16:13:36.637 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=1 memload=0
+12/11/2015 16:13:38.821 | MdsObsApiService(26500) | SYS | INT | FIL | RateValueProbe::getValue PassiveDbErrorRate, nb Err = 0, nb Mes = 0, rate = 0
+12/11/2015 16:13:40.140 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=1 memload=0
+12/11/2015 16:13:40.642 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=0 memload=0
+12/11/2015 16:13:42.078 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:13:42.697 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:13:44.701 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=1 memload=0
+12/11/2015 16:13:45.201 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=1 memload=0
+12/11/2015 16:13:46.708 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=0 memload=0
+12/11/2015 16:13:47.204 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=0 memload=0
+12/11/2015 16:13:47.285 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4137/4091, binlog inserts=0/3, binlog updates=65556/64852, binlog deletes=126/122, size of data=411, time to fill binlog= 10h 0mn
+12/11/2015 16:13:48.715 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=1 memload=0
+12/11/2015 16:13:50.707 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=1 memload=0
+12/11/2015 16:13:50.718 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=0 memload=0
+12/11/2015 16:13:51.207 | MatedPairSMPSService(30227) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairSMPSService still alive.
+12/11/2015 16:13:51.207 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=1 memload=0
+12/11/2015 16:13:51.207 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=1 memload=0
+12/11/2015 16:13:51.209 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=1 memload=0
+12/11/2015 16:13:52.209 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=0 memload=0
+12/11/2015 16:13:52.710 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=0 memload=0
+12/11/2015 16:13:52.721 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=1 memload=0
+12/11/2015 16:13:53.210 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=0 memload=0
+12/11/2015 16:13:53.210 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=0 memload=0
+12/11/2015 16:13:54.211 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:13:54.213 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=1 memload=0
+12/11/2015 16:13:54.715 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=1 memload=0
+12/11/2015 16:13:55.214 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=1 memload=0
+12/11/2015 16:13:55.715 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=1 memload=0
+12/11/2015 16:13:56.216 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=0 memload=0
+12/11/2015 16:13:56.718 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=0 memload=0
+12/11/2015 16:13:57.219 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=0 memload=0
+12/11/2015 16:13:58.217 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=9 cpuload=2 memload=0
+12/11/2015 16:13:58.303 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:13:58.711 | FwMySQLClientService(30047) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:13:58.722 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=1 memload=0
+12/11/2015 16:13:59.218 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=1 memload=0
+12/11/2015 16:13:59.222 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=1 memload=0
+12/11/2015 16:13:59.720 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=0 memload=0
+12/11/2015 16:14:00.220 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=9 cpuload=1 memload=0
+12/11/2015 16:14:01.723 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=1 memload=0
+12/11/2015 16:14:02.224 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=9 cpuload=2 memload=0
+12/11/2015 16:14:02.726 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=0 memload=0
+12/11/2015 16:14:03.222 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=0 memload=0
+12/11/2015 16:14:03.223 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=0 memload=0
+12/11/2015 16:14:03.726 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=0 memload=0
+12/11/2015 16:14:05.228 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=0 memload=0
+12/11/2015 16:14:06.364 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:14:08.122 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4066/4085, binlog inserts=0/0, binlog updates=64406/64770, binlog deletes=126/125, size of data=396, time to fill binlog= 10h 0mn
+12/11/2015 16:14:09.368 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=0 memload=0
+12/11/2015 16:14:10.915 | MatedPairService(30044) | SYS | INT | DBG | getElapsedMSec() : 2710ms, DbSup ticker: 309ms
+12/11/2015 16:14:10.915 | MatedPairService(30044) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairService still alive.
+12/11/2015 16:14:14.629 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:14:16.376 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=9 cpuload=1 memload=0
+12/11/2015 16:14:20.387 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:14:29.766 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4237/4101, binlog inserts=84/8, binlog updates=66952/64992, binlog deletes=48/118, size of data=366, time to fill binlog= 10h 0mn
+12/11/2015 16:14:30.858 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:14:33.144 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:14:33.155 | MysqlSupervision(1090) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:14:38.957 | MdsObsApiService(26500) | SYS | INT | FIL | RateValueProbe::getValue PassiveDbErrorRate, nb Err = 0, nb Mes = 0, rate = 0
+12/11/2015 16:14:46.039 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:14:47.093 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:14:50.713 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4097/4097, binlog inserts=126/21, binlog updates=64788/64921, binlog deletes=0/105, size of data=392, time to fill binlog= 10h 0mn
+12/11/2015 16:14:52.060 | MatedPairSMPSService(30227) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairSMPSService still alive.
+12/11/2015 16:14:58.552 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:14:58.925 | FwMySQLClientService(30047) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:14:59.735 | SupervisedCluster(30049) | SYS | INT | DBG | SupervisedCluster::LongTicker::expireHandler debut
+12/11/2015 16:15:01.209 | SupervisedCluster(30049) | SYS | INT | DBG | Cluster allocation seen by mgmd: 41044416
+12/11/2015 16:15:01.209 | SupervisedCluster(30049) | SYS | INT | DBG | Cluster allocation seen by mysqld: 40620032
+12/11/2015 16:15:01.209 | SupervisedCluster(30049) | SYS | INT | DBG | SupervisedCluster::checkUsage() All nodes reported usage data:  data: 0.841728 index: 0.699417 thr1: 0.8 thr2: 0.9 recovery1: 0.8 recovery2: 0.9 maxUsage: 0.841728
+12/11/2015 16:15:03.309 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:15:06.715 | MatedPairSMPSService(30227) | SYS | INT | DBG | getElapsedMSec() : 1660ms
+12/11/2015 16:15:11.874 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4123/4106, binlog inserts=126/33, binlog updates=65283/65042, binlog deletes=0/93, size of data=411, time to fill binlog= 10h 0mn
+12/11/2015 16:15:11.907 | MatedPairService(30044) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairService still alive.
+12/11/2015 16:15:12.074 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:15:19.502 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:15:22.086 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=1 memload=0
+12/11/2015 16:15:24.089 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=0 memload=0
+12/11/2015 16:15:24.842 | MatedPairService(30044) | SYS | INT | DBG | getElapsedMSec() : 2600ms, DbSup ticker: 564ms
+12/11/2015 16:15:25.123 | FwMySQLClientService(30047) | SYS | INT | DBG | Connected to mysql @localhost : 15306
+12/11/2015 16:15:26.092 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=1 memload=0
+12/11/2015 16:15:26.150 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:15:30.155 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=0 memload=0
+12/11/2015 16:15:33.221 | MysqlSupervision(1090) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:15:33.931 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4325/4135, binlog inserts=132/46, binlog updates=68321/65468, binlog deletes=0/80, size of data=391, time to fill binlog= 10h 0mn
+12/11/2015 16:15:35.715 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:15:39.071 | MdsObsApiService(26500) | SYS | INT | FIL | RateValueProbe::getValue PassiveDbErrorRate, nb Err = 0, nb Mes = 0, rate = 0
+12/11/2015 16:15:40.141 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:15:48.232 | FwMySQLClientService(30047) | SYS | INT | DBG | FwMySQLClientService::updateUsage (before replication factor) total_data_len = 20310016 total_usage (fixed part)=16717568
+12/11/2015 16:15:48.232 | FwMySQLClientService(30047) | SYS | INT | DBG | FwMySQLClientService::updateUsage (before replication factor) dynamic max part=3476000 dynamic min part=3451520
+12/11/2015 16:15:48.232 | FwMySQLClientService(30047) | SYS | INT | DBG | FwMySQLClientService::updateUsage (before replication factor) total usage adjusted from 16717568 to 20169088
+12/11/2015 16:15:51.928 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:15:53.180 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:15:53.181 | MatedPairSMPSService(30227) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairSMPSService still alive.
+12/11/2015 16:15:56.049 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4301/4156, binlog inserts=132/60, binlog updates=68129/65794, binlog deletes=0/67, size of data=397, time to fill binlog= 10h 0mn
+12/11/2015 16:16:05.590 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:16:08.304 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:16:14.289 | MatedPairService(30044) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairService still alive.
+12/11/2015 16:16:18.775 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:16:18.797 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4427/4190, binlog inserts=138/73, binlog updates=70273/66359, binlog deletes=0/55, size of data=380, time to fill binlog= 10h 0mn
+12/11/2015 16:16:22.280 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=9 cpuload=0 memload=0
+12/11/2015 16:16:22.302 | FwMySQLClientService(30047) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:16:24.283 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=9 cpuload=1 memload=0
+12/11/2015 16:16:24.636 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:16:30.164 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:16:33.279 | MysqlSupervision(1090) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:16:36.672 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=1 memload=0
+12/11/2015 16:16:39.179 | MdsObsApiService(26500) | SYS | INT | FIL | RateValueProbe::getValue PassiveDbErrorRate, nb Err = 0, nb Mes = 0, rate = 0
+12/11/2015 16:16:40.506 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4178/4201, binlog inserts=126/86, binlog updates=66251/66542, binlog deletes=0/42, size of data=505, time to fill binlog= 10h 0mn
+12/11/2015 16:16:40.676 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=3 cpuload=0 memload=0
+12/11/2015 16:16:40.850 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:16:43.191 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:16:51.702 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=1 memload=0
+12/11/2015 16:16:53.704 | MatedPairSMPSService(30227) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairSMPSService still alive.
+12/11/2015 16:16:54.941 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:16:55.943 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=1 memload=0
+12/11/2015 16:16:55.943 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=5 cpuload=0 memload=0
+12/11/2015 16:16:55.944 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=1 memload=0
+12/11/2015 16:16:57.171 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:16:59.948 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=6 cpuload=0 memload=0
+12/11/2015 16:17:01.338 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4107/4199, binlog inserts=126/99, binlog updates=65081/66504, binlog deletes=0/30, size of data=389, time to fill binlog= 10h 0mn
+12/11/2015 16:17:01.949 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=0 memload=0
+12/11/2015 16:17:02.948 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=9 cpuload=2 memload=0
+12/11/2015 16:17:03.952 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=1 memload=0
+12/11/2015 16:17:04.451 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=1 memload=0
+12/11/2015 16:17:05.955 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=0 memload=0
+12/11/2015 16:17:06.454 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=0 memload=0
+12/11/2015 16:17:06.905 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:17:11.411 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=9 cpuload=1 memload=0
+12/11/2015 16:17:13.363 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:17:13.916 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=1 memload=0
+12/11/2015 16:17:16.026 | MatedPairService(30044) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairService still alive.
+12/11/2015 16:17:18.421 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:17:21.926 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=11 cpuload=0 memload=0
+12/11/2015 16:17:22.198 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4086/4194, binlog inserts=126/111, binlog updates=64556/66404, binlog deletes=0/17, size of data=410, time to fill binlog= 10h 0mn
+12/11/2015 16:17:22.569 | FwMySQLClientService(30047) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:17:24.430 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=1 memload=0
+12/11/2015 16:17:26.430 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=1 memload=0
+12/11/2015 16:17:28.434 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=8 cpuload=0 memload=0
+12/11/2015 16:17:29.553 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:17:30.476 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=7 cpuload=0 memload=0
+12/11/2015 16:17:30.936 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=1 memload=0
+12/11/2015 16:17:31.430 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:17:33.360 | MysqlSupervision(1090) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:17:33.433 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=12 cpuload=0 memload=0
+12/11/2015 16:17:39.297 | MdsObsApiService(26500) | SYS | INT | FIL | RateValueProbe::getValue PassiveDbErrorRate, nb Err = 0, nb Mes = 0, rate = 0
+12/11/2015 16:17:39.297 | MdsObsApiService(26500) | SYS | INT | FIL | RateValueProbe::getValue PassiveDbErrorRate evalution of the KPI 
+12/11/2015 16:17:42.443 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:17:43.543 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4172/4205, binlog inserts=132/124, binlog updates=65950/66558, binlog deletes=0/4, size of data=412, time to fill binlog= 10h 0mn
+12/11/2015 16:17:45.777 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:17:51.337 | MPExternalIpAddService(30045) | ADM | INT | DBG | MPExternalIpAddService : set counter to 0
+12/11/2015 16:17:53.771 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:17:53.772 | MatedPairSMPSService(30227) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairSMPSService still alive.
+12/11/2015 16:18:01.997 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:18:02.621 | ThreadLCPLogEvent(1097) | SYS | INT | DBG | ThreadLCPLogEvent::thread_main LCP completed
+12/11/2015 16:18:02.621 | ThreadLCPLogEvent(1097) | SYS | INT | DBG | MysqlSupervision::logTick before reset STARTED
+12/11/2015 16:18:02.621 | ThreadLCPLogEvent(1097) | SYS | INT | DBG | MysqlSupervision::logTick after start STARTED
+12/11/2015 16:18:03.622 | ThreadLCPLogEvent(1097) | SYS | INT | DBG | ThreadLCPLogEvent::thread_main LCP started
+12/11/2015 16:18:04.150 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4024/4184, binlog inserts=120/128, binlog updates=63583/66221, binlog deletes=0/0, size of data=398, time to fill binlog= 10h 0mn
+12/11/2015 16:18:04.786 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:18:07.290 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=0 memload=0
+12/11/2015 16:18:09.334 | MatedPairSMPSService(30227) | SYS | INT | DBG | setGdmpOverload change Id=10 cpuload=1 memload=0
+12/11/2015 16:18:16.782 | MatedPairService(30044) | SYS | INT | US1 | SupervisedObject::watchdogStillHere : MatedPairService still alive.
+12/11/2015 16:18:17.339 | MatedPairSMPSService(30227) | SYS | INT | DBG | MatedPairSMPSServerSocket::NotifyStatus(status=1 init=1)
+12/11/2015 16:18:18.195 | SftpAudit(30535) | SYS | INT | US2 | Libssh2Wrapper::bind OK for source ip: 192.169.57.129
+12/11/2015 16:18:22.873 | FwMySQLClientService(30047) | SYS | INT | DBG | Connected to mysql @STATION_A : 15306
+12/11/2015 16:18:25.277 | MatedPairService(30044) | SYS | INT | DBG | Binlog periodic observation: binlog size=4131/4187, binlog inserts=32/119, binlog updates=65367/66279, binlog deletes=94/9, size of data=391, time to fill binlog= 10h 0mn

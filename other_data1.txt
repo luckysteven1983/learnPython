@@ -1,0 +1,16 @@
+(lp0
+S'i"ve told you once.'
+p1
+aS'yes i have.'
+p2
+aS'just now.'
+p3
+aS"i'm telling you, i did!"
+p4
+aS"now let's get one thing quite clear: i most definitely told you!"
+p5
+aS'oh yes i did!'
+p6
+aS"no it isn't!"
+p7
+a.

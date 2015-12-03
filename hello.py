@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 print 'Hello World!'
+<<<<<<< HEAD
 #name = raw_input('Please enter your name: ')
 #print 'hello',name
 #sum = 0
@@ -45,3 +46,14 @@ def my_abs(x):
     else:
         return -x
 #print my_abs(input)
+=======
+try:
+    print 'try...'
+    r = 10 / 2
+    print 'result:', r
+except ZeroDivisionError, e:
+    print 'except:', e
+finally:
+    print 'finally...'
+print 'END'
+>>>>>>> 70f37bd41c28e5177ec873a77b2ff1711f491c9f

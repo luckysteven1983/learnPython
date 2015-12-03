@@ -1,0 +1,2 @@
+GdmpServer_AvgCpu	GdmpServer_AvgMem(M)	ndb_mgmd_AvgCpu 	ndb_mgmd_AvgMem(M) 		GdmpServer_AvgCpu	GdmpServer_AvgMem(M)	ndbd_AvgCpu     	ndbd_AvgMem(M)     	
+10.6               	1126.0            	1.6                	54.0              		68.5               	478.0             	41.0               	6451.0            	
