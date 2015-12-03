@@ -1,0 +1,10 @@
+
+   +++ ATCA57 2015-11-10 20:58:27 DEBUG   #000024 0-0-1 >
+   REPT ERROR LOG OamACTL, FILE ../AILogger.C, LINE 82
+   TID: 8592
+   File:/oam_actl/src/infrastructure/distribution/Src/ApplicationSessionFactoryM
+   anagerImpl.cc +458 
+   ApplicationSessionFactoryManagerImpl::declareSessionFactory() Leave, called b
+   y OamOnDB
+   END OF REPORT #000024++-
+

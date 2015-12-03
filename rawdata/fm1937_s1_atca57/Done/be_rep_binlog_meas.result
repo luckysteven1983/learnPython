@@ -1,0 +1,2 @@
+Avg(BINLOG_SPEED) Avg(BINLOG_TIME_TO_FILL_SPACE)  Avg(BINLOG_SIZE_TO_REPLICATE) Avg(BINLOG_INJECTION_SPEED) Avg(BINLOG_INJECTION_SIZE) Avg(logSpacePartMax) Avg(BINLOG_NB_INSERTS) Avg(BINLOG_NB_UPDATES) Avg(BINLOG_NB_DELETES)
+        12208.00	                600.00	                        405.00	                     0.00	           0.00	           0.00	         190.00	      193349.00	         187.00
