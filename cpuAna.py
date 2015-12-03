@@ -92,10 +92,8 @@ class CPUAnaAManager(object):
             #key = line.split()[11]
             cpu = line.split()[8]
             mem = line.split()[9]
-            dictVal1 = [cpu, mem]
-            #dictCpu[dictKey] = dictVal
-            return dictVal1
-            #row = dictKey + ',' + cpu + ',' + mem
+            dictVal = [cpu, mem]
+            return dictVal
         else:
             pass
 
