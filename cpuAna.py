@@ -11,7 +11,7 @@ class CPUAnaAManager(object):
     classdocs
     
     '''
-
+    dictCpu = {}
 
     def __init__(self):
         '''
@@ -30,8 +30,7 @@ class CPUAnaAManager(object):
     def cpuAna(self, startTime, endTime, fileInput):
         '''
         '''
-        dictCpu={}
-    #dictVal = ()
+        dictCpu = {}
         #dictCpu['PDLSI1']=[]
         #dictCpu['PDLSI2']=[]
         #dictCpu['PDLSI3']=[]
@@ -59,20 +58,21 @@ class CPUAnaAManager(object):
                     break
                 else:
                     continue
-            #print line
 
-       #found = re.search(r'
-
-            found = re.search('PDLSI', line)
+            '''found = re.search('PDLSI', line)
             if found:
                 #key = line.split()[11]
                 cpu = line.split()[8]
                 mem = line.split()[9]
-                dictVal = [cpu, mem]
+                dictVal = {'PDLSI': [cpu, mem]}
                 dictCpu[dictKey] = dictVal
                 print dictCpu
-                #row = dictKey + ',' + cpu + ',' + mem
-
+                #row = dictKey + ',' + cpu + ',' + mem'''
+            
+            dictVal = self.parseLine(dictKey, line)
+            if dictVal:
+                dictCpu[dictKey] = dictVal
+                print dictCpu
         with open('test.csv', 'wb') as csvfile:
             csvfile.truncate()
             spam = csv.writer(csvfile, dialect='excel')
@@ -86,8 +86,18 @@ class CPUAnaAManager(object):
         myFile.close()
         return dictCpu
 
-    def parseLine(self, line):
-        pass
+    def parseLine(self, dictKey, line):
+        found = re.search('PDLSI', line)
+        if found:
+            #key = line.split()[11]
+            cpu = line.split()[8]
+            mem = line.split()[9]
+            dictVal1 = [cpu, mem]
+            #dictCpu[dictKey] = dictVal
+            return dictVal1
+            #row = dictKey + ',' + cpu + ',' + mem
+        else:
+            pass
 
     def getFileList(self, lab, dir):
         '''
