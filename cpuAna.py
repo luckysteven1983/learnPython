@@ -20,7 +20,7 @@ class CPUAnaAManager(object):
     def timeCompare(self, time1, time2):
         '''
         18:03:03
-        true is >
+        True is <=
         '''
         if cmp(time1, time2) <= 0:
             return True
@@ -30,7 +30,7 @@ class CPUAnaAManager(object):
     def cpuAna(self, startTime, endTime, fileInput):
         '''
         '''
-        dictCpu = {}
+        dictCpu = {1:{2:(3,4)}}
         #dictCpu['PDLSI1']=[]
         #dictCpu['PDLSI2']=[]
         #dictCpu['PDLSI3']=[]
@@ -59,37 +59,38 @@ class CPUAnaAManager(object):
                 else:
                     continue
 
-            '''found = re.search('PDLSI', line)
-            if found:
-                #key = line.split()[11]
-                cpu = line.split()[8]
-                mem = line.split()[9]
-                dictVal = {'PDLSI': [cpu, mem]}
-                dictCpu[dictKey] = dictVal
+            pdlsi1Val = self.parseProcess('PDLSI1', line)
+            if pdlsi1Val:
+                print pdlsi1Val
+                dictCpu[dictKey]['PDLSI1'] = pdlsi1Val
                 print dictCpu
-                #row = dictKey + ',' + cpu + ',' + mem'''
-            
-            dictVal = self.parseLine(dictKey, line)
-            if dictVal:
-                dictCpu[dictKey] = dictVal
-                print dictCpu
+            '''pdlsu1Val = self.parseProcess('PDLSU1', line)
+            if pdlsu1Val:
+                print pdlsu1Val
+                dictCpu[dictKey]['PDLSU1'] = pdlsu1Val
+                print dictCpu'''
         with open('test.csv', 'wb') as csvfile:
             csvfile.truncate()
             spam = csv.writer(csvfile, dialect='excel')
             spam.writerow(['Time','PDLSI cpu','PDLSI mem'])
             for key in dictCpu:
-                sth = dictCpu[key][0:]
-                sth.insert(0, key)
-                spam.writerow(sth)
+                for key in dictCpu[key]:
+                    sth = dictCpu[key][key][0:]
+                    sth = dictCpu[key][0:]
+                    sth.insert(0, key)
+                    spam.writerow(sth)
             csvfile.close()
 
         myFile.close()
         return dictCpu
 
-    def parseLine(self, dictKey, line):
-        found = re.search('PDLSI', line)
+    def parseCpu(self, keyValue, line):
+        pass
+    def parseMem(self, keyValue, line):
+        pass
+    def parseProcess(self, keyValue, line):
+        found = re.search(keyValue, line)
         if found:
-            #key = line.split()[11]
             cpu = line.split()[8]
             mem = line.split()[9]
             dictVal = [cpu, mem]
@@ -108,8 +109,6 @@ class CPUAnaAManager(object):
         
         fileList = ""
         cmd = "ls "+dir+" | grep ^top | grep log$ | grep L | grep -v parsed"
-        #cmd = "ls "+dir+" | grep ^top | grep log$"
-        #cmd = "ls "+dir+" | grep test.txt"
         result = os.popen(cmd).read()
         output = result.strip().split(os.linesep)
 
