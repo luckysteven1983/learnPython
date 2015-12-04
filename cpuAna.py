@@ -8,8 +8,7 @@ import os
 import csv
 class CPUAnaAManager(object):
     '''
-    classdocs
-    
+    classdocs 
     '''
     dictCpu = {}
 
@@ -19,7 +18,6 @@ class CPUAnaAManager(object):
         '''
     def timeCompare(self, time1, time2):
         '''
-        18:03:03
         True is <=
         '''
         if cmp(time1, time2) <= 0:
@@ -30,10 +28,7 @@ class CPUAnaAManager(object):
     def cpuAna(self, startTime, endTime, fileInput):
         '''
         '''
-        dictCpu = {1:{2:(3,4)}}
-        #dictCpu['PDLSI1']=[]
-        #dictCpu['PDLSI2']=[]
-        #dictCpu['PDLSI3']=[]
+        dictCpu = {}
         myFile = open(fileInput, "r")
         cpuData = myFile.readlines()
         lineNum = 0
@@ -54,31 +49,32 @@ class CPUAnaAManager(object):
             if found:
                 timeIndex = found.group(1)
                 dictKey = timeIndex
+                dictCpu[dictKey] = {}
                 if self.timeCompare(endTime, timeIndex):
                     break
                 else:
                     continue
-
-            pdlsi1Val = self.parseProcess('PDLSI1', line)
-            if pdlsi1Val:
-                print pdlsi1Val
-                dictCpu[dictKey]['PDLSI1'] = pdlsi1Val
-                print dictCpu
-            '''pdlsu1Val = self.parseProcess('PDLSU1', line)
-            if pdlsu1Val:
-                print pdlsu1Val
-                dictCpu[dictKey]['PDLSU1'] = pdlsu1Val
-                print dictCpu'''
+            parseList = ['PDLSI1', 'PDLSU1']
+            for keyVal in parseList:
+                found = self.parseProcess(keyVal, line)
+                if found:
+                    #print "PDLSI1 line: %s"%line
+                    dictCpu[dictKey][keyVal] = found
         with open('test.csv', 'wb') as csvfile:
             csvfile.truncate()
             spam = csv.writer(csvfile, dialect='excel')
-            spam.writerow(['Time','PDLSI cpu','PDLSI mem'])
+            spam.writerow(['Time','PDLSI1_cpu','PDLSI1_mem','PDLSU1_cpu','PDLSU1_mem'])
             for key in dictCpu:
-                for key in dictCpu[key]:
-                    sth = dictCpu[key][key][0:]
-                    sth = dictCpu[key][0:]
+                if self.timeCompare(endTime, key):
+                    continue
+                else:
+                    sth = []
+                    keyCpu = dictCpu[key]
+                    for parseItem in parseList:
+                        sth += keyCpu[parseItem]
                     sth.insert(0, key)
                     spam.writerow(sth)
+                
             csvfile.close()
 
         myFile.close()
