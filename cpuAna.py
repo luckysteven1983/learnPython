@@ -7,7 +7,8 @@ Created on Dec 5, 2015
 import re
 import os
 import csv
-import xlwt
+#import xlwt
+import xlsxwriter
 
 class CPUAnaAManager(object):
     '''
@@ -130,7 +131,8 @@ class CPUAnaAManager(object):
         return dictVal
         
     def writeToSheet(self, workbook, sheetName, dictCpu):
-        booksheet1 = workbook.add_sheet(sheetName, cell_overwrite_ok=True)
+        booksheet1 = workbook.add_worksheet(sheetName)
+        chart = workbook.add_chart({'type': 'column'})
         second = []
         third = []
         for key in self.allTime[0:-1]:
@@ -144,6 +146,10 @@ class CPUAnaAManager(object):
         for i, row in enumerate(second):
             for j, col in enumerate(row):
                 booksheet1.write(i, j, col)
+
+        chart.add_series({'values': '='+sheetName+'!$A$2:$A$3'})
+        chart.add_series({'values': '='+sheetName+'!$B$2:$B$3'})
+        booksheet1.insert_chart('E2', chart)
         return booksheet1
         #booksheet1.col(0).width=10
 
@@ -171,7 +177,8 @@ class CPUAnaAManager(object):
         '''
         '''
         print '---test---'
-        workbook = xlwt.Workbook(encoding='utf-8')
+        #workbook = xlwt.Workbook(encoding='utf-8')
+        workbook = xlsxwriter.Workbook('result.xlsx')
         for fileName in self.getFileList(lab, dir):
             fileIndex = dir+'/'+fileName
             fileName = re.search(r'top_(\w).', fileName).group(1)
@@ -215,7 +222,7 @@ class CPUAnaAManager(object):
             
             self.writeToSheet(workbook, fileName, self.dictCpu)
             workbook.save('result.xls')'''
-        workbook.save('result.xls')
+        workbook.close()
             
             #bladeNumber = 1
             #self.output[bladeNumber] = result
