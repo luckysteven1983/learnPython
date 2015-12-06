@@ -1,0 +1,8 @@
+Q1:
+os.popen() 需要再使用后close()吗?
+subprocess?
+Q2:
+如何把文件中一段一段取出然后进行处理？
+Q3:
+python 处理excel, xml, ini
+Q4:

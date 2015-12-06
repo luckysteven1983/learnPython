@@ -9,7 +9,9 @@ Created on Dec 5, 2015
 '''
 import re
 import os
+import sys
 import csv
+
 import xlsxwriter
 
 class CPUAnaAManager(object):
@@ -17,11 +19,9 @@ class CPUAnaAManager(object):
     classdocs 
     '''
     dictCpu = {}
-    output = {}
     dictKey = ''
     allTime = []
     fileName = ''
-    out = []
     parseList = ['Cpu0', 'Cpu1', 'Cpu_Ave', 'Mem', 'OamCOMM',
                  'PDLSI1', 'PDLSL1', 'PDLSU1', 'PDLSM1']
     firstRow = ['Time', 'SysCPU_0', 'SysCPU_1', 'SysCPU_AVE', 'Mem', 'OamCOMM_cpu',
@@ -182,8 +182,7 @@ class CPUAnaAManager(object):
         5. cd to data dir
         6. ftp/sftp to local dir
         7. quit ftp/sftp
-        8. close ssh connection
-        
+        8. close ssh connection        
         '''
         #cmd = "mdkir -f tmp4CPU"
         #os.popen(cmd)
@@ -198,7 +197,6 @@ class CPUAnaAManager(object):
         for i in os.popen(cmd).readlines():
             j = i.strip()
             k.append(j)
-        #output = result.strip().split(os.linesep)
         return k
 
     def cptAnaAll(self, startTime, endTime, lab, dir):
@@ -263,8 +261,24 @@ class CPUAnaAManager(object):
     def anaAll(self, dict):
         pass
 
+    def parseArg(self):
+        print len(sys.argv)
+        if len(sys.argv) != 5:
+            #return '16:43:42', '16:43:48', 'atca47', './rawdata'
+            print 'Agument number wrong! You need to input 4 parameters!\n'\
+                  'E.g. 16:43:42', '16:43:48', 'atca47', './rawdata'
+            sys.exit(0)
+        else:
+            startTime = sys.argv[1]
+            endTime = sys.argv[2]
+            lab = ''
+            directory = sys.argv[4]
+            return startTime, endTime, lab, directory
+
 cpuAnaAManager =  CPUAnaAManager()
-dict1 = cpuAnaAManager.cptAnaAll('16:43:42', '16:53:48', 'atca47', './rawdata')
+arg = cpuAnaAManager.parseArg()
+dict1 = cpuAnaAManager.cptAnaAll(arg[0], arg[1], arg[2], arg[3])
+#dict1 = cpuAnaAManager.cptAnaAll('16:43:42', '16:53:48', 'atca47', './rawdata')
 cpuAnaAManager.anaAll(dict1)
 
 
