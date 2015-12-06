@@ -4,5 +4,22 @@ subprocess?
 Q2:
 如何把文件中一段一段取出然后进行处理？
 Q3:
-python 处理excel, xml, ini
+python 处理excel(xlsxwriter), xml(minidom, xpath), ini(ConfigParser)
+python读写excel方法汇总：http://www.gocalf.com/blog/python-read-write-excel.html
+python解析xml方法汇总：http://blog.chinaunix.net/uid-21633169-id-4407291.html
+ConfigParse例子：http://www.cnblogs.com/sislcb/archive/2008/11/25/1340587.html
 Q4:
+__MAIN__
+__init__
+
+
+
+1. 可以把多线程用语多个blade文件处理，能提高效率
+2. python字符串处理实例
+http://wenku.baidu.com/link?url=VhFO9c_0bYD4uFugfmAIT_ImV9XXcjdF2S77yzZ84FJJ70-NA88VjE7VkqQZ6ccxy8IUTv8ExoMF4AXfhhQonnycVVarRvTywNbFH61Jfme
+3. 文件字符串重复删除
+list(set(list))
+e.g. 
+>>> a = 'abac'
+>>> list(set(a))
+['a', 'c', 'b']
