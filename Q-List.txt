@@ -11,6 +11,8 @@ ConfigParse例子：http://www.cnblogs.com/sislcb/archive/2008/11/25/1340587.html
 Q4:
 __MAIN__
 __init__
+Q5:
+为什么我看到的sshManager不需要import？
 
 
 
