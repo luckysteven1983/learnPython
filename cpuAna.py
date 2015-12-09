@@ -1,18 +1,24 @@
+#!/usr/bin/env python
 # -*- coding: cp936 -*-
 '''
 Created on Dec 5, 2015
 
 @author: Da
-1. get file from lab,dir
+1. scpGetAll to get file from lab,dir
 2. parse data
-3. write data to excel(generate chart)
+3. write data to excel(generate chart)/csv files
+
+@version: 0.2
+Modified at Dec 7th, 2015
+Add sshManager(This function is from automation team code), get files from each lab, and parse to separate xlsx file.
 '''
 import re
 import os
 import sys
 import csv
-
+import datetime
 import xlsxwriter
+from lib.ssh import ssh_manager
 
 class CPUAnaAManager(object):
     '''
@@ -27,6 +33,7 @@ class CPUAnaAManager(object):
     firstRow = ['Time', 'SysCPU_0', 'SysCPU_1', 'SysCPU_AVE', 'Mem', 'OamCOMM_cpu',
                 'OamCOMM_mem', 'PDLSI1_cpu','PDLSI1_mem','PDLSL1_cpu','PDLSL1_mem',
                 'PDLSU1_cpu','PDLSU1_mem','PDLSM1_cpu','PDLSM1_mem',]
+    ssh = ssh_manager.SshManager()
     
     def __init__(self):
         '''
@@ -87,13 +94,14 @@ class CPUAnaAManager(object):
                         if keyVal in ['Cpu1']:
                             cpu1 = cpu
                             self.dictCpu[self.dictKey][keyVal] = [cpu1]
-                            cpuAve = (cpu0+cpu1)/2
+                            cpuAve = round((cpu0+cpu1)/2, 1)
                             self.dictCpu[self.dictKey]['Cpu_Ave'] = [cpuAve]
                     elif keyVal in ['Mem']:
                         mem = round(self.parseMem(keyVal, line)/1024, 1)
                     elif keyVal in ['Swap']:
                         swap = round(self.parseSwap(keyVal, line)/1024, 1)
-                        self.dictCpu[self.dictKey]['Mem'] = [swap+mem]
+                        realmem = round(swap+mem, 1)
+                        self.dictCpu[self.dictKey]['Mem'] = [round(swap+mem, 1)]
                 else:
                     if keyVal in ['OamCOMM', 'PDLSI1', 'PDLSL1', 'PDLSU1', 'PDLSM1']:
                         if not self.dictCpu[self.dictKey].has_key(keyVal):
@@ -174,21 +182,8 @@ class CPUAnaAManager(object):
 
     def getFileList(self, lab, dir):
         '''
-        get files from lab
-        1. rm -rf tempdir
-        2. create tempdir
-        3. cd tempdir
-        4. open ssh connection to lab
-        5. cd to data dir
-        6. ftp/sftp to local dir
-        7. quit ftp/sftp
-        8. close ssh connection        
-        '''
-        #cmd = "mdkir -f tmp4CPU"
-        #os.popen(cmd)
-        #cmd = "scp "+dir+"top* tmp4CPU"
-        #os.popen(cmd)
-        
+        get files from local directory       
+        '''      
         fileList = ""
         #cmd = "ls "+dir+" | grep ^top | grep log$ | grep D | grep -v parsed"
         cmd = "ls "+dir+" | grep ^top | grep log$ | grep -v parsed"
@@ -199,6 +194,15 @@ class CPUAnaAManager(object):
             k.append(j)
         return k
 
+    def getFilesFromLab(self, lab, dir):
+        '''
+        get files from lab       
+        '''
+        fileList = []
+        #ssh = ssh_manager.SshManager()
+        fileList = self.ssh.scpGetAll(lab, dir+'/top_*.log')
+        return fileList
+
     def cptAnaAll(self, startTime, endTime, lab, dir):
         '''
         1. create xlsx file
@@ -207,17 +211,16 @@ class CPUAnaAManager(object):
         4. add data to worksheet by function writeToSheet
         5. close file to save it
         '''
-        print '---test---'
-        workbook = xlsxwriter.Workbook('result.xlsx')
+        #workbook = xlsxwriter.Workbook('result_'+lab+'.xlsx')
         for self.fileName in self.getFileList(lab, dir):
             fileIndex = dir+'/'+self.fileName
             self.fileName = re.search(r'top_(\w).', self.fileName).group(1)
             self.dictCpu = {}
             result = self.cpuAna(startTime, endTime, fileIndex)
-            self.writeToSheet(workbook, 'Sta_'+self.fileName, self.dictCpu)
+            #self.writeToSheet(workbook, 'Sta_'+self.fileName, result)
 
             ### Use csv to create .csv text file method ###
-            '''with open('test.csv', 'wb') as csvfile:
+            with open('./cache/'+lab+'/result_'+lab+'_Sta_'+self.fileName+'.csv', 'wb') as csvfile:
                 csvfile.truncate()
                 spam = csv.writer(csvfile, dialect='excel')
                 spam.writerow(self.firstRow)
@@ -227,9 +230,9 @@ class CPUAnaAManager(object):
                     for parseItem in self.parseList:
                         sth += keyCpu[parseItem]
                     sth.insert(0, key)
-                    print 'sth: ',sth
+                    #print 'sth: ',sth
                     spam.writerow(sth)
-            csvfile.close()'''
+            csvfile.close()
             ### Use 'xlwt' worksheet to create .xls excel file method ###
             '''workbook = xlwt.Workbook(encoding='utf-8')
             booksheet1 = workbook.add_sheet('Sheet 1', cell_overwrite_ok=True)
@@ -252,7 +255,7 @@ class CPUAnaAManager(object):
             
             self.writeToSheet(workbook, fileName, self.dictCpu)
             workbook.save('result.xls')'''
-        workbook.close()
+        #workbook.close()
             
             #bladeNumber = 1
             #self.output[bladeNumber] = result
@@ -262,25 +265,40 @@ class CPUAnaAManager(object):
         pass
 
     def parseArg(self):
-        print len(sys.argv)
         if len(sys.argv) != 5:
-            #return '16:43:42', '16:43:48', 'atca47', './rawdata'
             print 'Agument number wrong! You need to input 4 parameters!\n'\
-                  'E.g. 16:43:42', '16:43:48', 'atca47', './rawdata'
+                  "'E.g. 16:43:42', '16:43:48', 'atca55, atca47', '/PLATsoftware/pt_result/2015-12-03/fm1945'"
             sys.exit(0)
         else:
             startTime = sys.argv[1]
             endTime = sys.argv[2]
-            lab = ''
+            labList = sys.argv[3]
             directory = sys.argv[4]
-            return startTime, endTime, lab, directory
+            return startTime, endTime, labList, directory
 
-cpuAnaAManager =  CPUAnaAManager()
+cpuAnaAManager = CPUAnaAManager()
 arg = cpuAnaAManager.parseArg()
-dict1 = cpuAnaAManager.cptAnaAll(arg[0], arg[1], arg[2], arg[3])
-#dict1 = cpuAnaAManager.cptAnaAll('16:43:42', '16:53:48', 'atca47', './rawdata')
-cpuAnaAManager.anaAll(dict1)
-
+print '---test starts!---\n'\
+      '---parsing data from startTime: '+arg[0]+' to endTime: '+arg[1]+'---'
+            
+print datetime.datetime.now()
+labList = arg[2].split(',')
+for lab in list(labList):
+    #fileFolder = '/PLATsoftware/pt_result/2015-12-03/fm1945_'+lab+'/Done/top_*.log'
+    lab = lab.strip()
+    ifDir = cpuAnaAManager.ssh.run(lab, 'ls '+arg[3])
+    if ifDir[0] == 0:
+        fileFolder = arg[3]+'/Done'
+    else:
+        fileFolder = arg[3]+'_'+lab+'/Done'
+    cpuAnaAManager.getFilesFromLab(lab, fileFolder)
+    dict1 = cpuAnaAManager.cptAnaAll(arg[0], arg[1], lab, './cache/'+lab)
+    #dict1 = cpuAnaAManager.cptAnaAll('14:51:00', '14:53:00', lab, './cache/'+lab)
+    print '---parse '+lab+' data done!---'
+print datetime.datetime.now()
+print '---test is done!---'
+#cpuAnaAManager.anaAll(dict1)
+#python cpuAna.py '14:51:00', '14:53:00', 'atca55, atca47', '/PLATsoftware/pt_result/2015-12-03/fm1945_'
 
 
 

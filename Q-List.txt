@@ -14,6 +14,27 @@ __init__
 Q5:
 为什么我看到的sshManager不需要import？
 
+Q1:
+os.popen() 需要再使用后close()吗?
+需要
+Q2:
+我们用过subprocess吗?
+目前automation 里面还没有用
+Q3:
+如何实现把文件中一段一段取出然后进行处理？
+这个我不太清楚，貌似可以利用文件里的指针可以实现。
+百度一下，应该有例子
+
+Q4:
+__MAIN__如何应用
+当此文件是主函数的时候使用
+__init__ 如何应用
+创建一个类的instance的时候会首先调用
+Q5:
+Automation脚本中的sshManager应该是SshManager类的实例，为什么脚本中的sshManager不需要import？但是我自己写的时候需要import？
+脚本里面的sshManager是个实例， 实例化操作在jenkins_worker 里面 _createSdmManager
+sdmManager = SdmManager()
+sdmManager.sshManager = self.sshManager
 
 
 1. 可以把多线程用语多个blade文件处理，能提高效率
