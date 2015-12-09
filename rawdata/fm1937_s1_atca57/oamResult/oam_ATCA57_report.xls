@@ -1,2 +1,0 @@
-Hostname	OAM_MAX_CPU	OAM_AVG_CPU	OAM_AVG_MEM(M)	AvgRunQue	MaxRunQue	GdmpServer_AvgCpu	GdmpServer_AvgMem(M)	ndb_mgmd_AvgCpu 	ndb_mgmd_AvgMem(M) 		        OAM_AvgInBd	       OAM_AvgOutBd
-ATCA57	44.2      	41.0      	3773.22	2	21	10.6               	1126.0            	1.6                	54.0              		              24755	              85745

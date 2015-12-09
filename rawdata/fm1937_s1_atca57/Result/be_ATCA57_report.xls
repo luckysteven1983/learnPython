@@ -1,3 +1,0 @@
-Hostname	OAM_MAX_CPU	OAM_AVG_CPU	Nonpilot_MAX_CPU	Nonpilot_AVG_CPU	OAM_AVG_MEM(M)	NONPILOT_AVG_MEM(M)	AvgRunQue	MaxRunQue	Proc_Name	OamProcAvgCpu	OamProcAvgMem(M)	Proc_Name	NonpilotProcAvgCpu	NonpilotProcAvgMem(M)	OAM_AvgInBd       	OAM_AvgOutBd       	TOTAL_AvgInBd     	TOTAL_AvgOutBd     		ndbObject	RepLatency%<2sectRepLatency%2-3sec
-ATCA57	44.2      	41.0      	           83.6	           64.7	3773.22	 7234.71	2	21	GdmpServer	        10.6	1126            	GdmpServer	68.5             	478                  	24755             	85745              	24755             	85745              		27	1800t95n
-	ndb_mgmd  	         1.6	54              	ndbd      	41.0             	6451                 			
