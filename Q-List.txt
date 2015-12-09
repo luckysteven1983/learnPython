@@ -1,3 +1,6 @@
+http_proxy=http://135.245.49.12:8000
+https_proxy=http://135.245.49.12:8000
+
 Q1:
 os.popen() 需要再使用后close()吗?
 subprocess?
