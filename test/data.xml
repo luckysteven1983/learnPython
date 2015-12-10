@@ -1,0 +1,10 @@
+<root>
+    <item>
+        <data version="1.0" url="http://***" />
+        <data version="2.0" url="http://***" />
+    </item>
+    <other>
+        <data version="1.0" url="http://***" />
+        <data version="2.0" url="http://***" />
+    </other>
+</root>

@@ -7,6 +7,7 @@ import os
 from lib.ssh import ssh_manager
 import get_files
 import get_filelist
+import parse_file
 
 class MyPractice(object):
     '''
@@ -41,15 +42,16 @@ if __name__ == '__main__':
     #getfilelist = get_filelist.GetFileList()
     #filelist = getfilelist.getFileList(lab, localdir)
     #2nd method: directly use get_files return string
-    for line in files:
-        print line.split('/')[-1]
+    #for line in files:
+    #    print line.split('/')[-1]
     '''
-    #4. analyze/parse data to dictCpu
+    #4. analyze/parse file to dictCpu
     '''
-    
+    dictData = parse_file.ParseFile()
     '''
     #5. write data into excel(many sheets)/csv file(s) for each lab
     '''
+    
     
     
             

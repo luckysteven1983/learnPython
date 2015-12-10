@@ -3,6 +3,7 @@ Created on Dec 9, 2015
 
 @author: dadl
 '''
+import parse_data
 
 class ParseFile(object):
     '''
@@ -15,4 +16,6 @@ class ParseFile(object):
         Constructor
         '''
     def parseFile(self):
-        pass
+        #return dictData
+        data = parse_data.ParseData()
+        return data

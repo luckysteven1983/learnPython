@@ -8,8 +8,14 @@ Q2:
 如何把文件中一段一段取出然后进行处理？
 Q3:
 python 处理excel(xlsxwriter), xml(minidom, xpath), ini(ConfigParser)
+s
 python读写excel方法汇总：http://www.gocalf.com/blog/python-read-write-excel.html
+https://xlsxwriter.readthedocs.org/chart.html
+http://xlsxwriter.readthedocs.org/
+
 python解析xml方法汇总：http://blog.chinaunix.net/uid-21633169-id-4407291.html
+http://outofmemory.cn/code-snippet/914/python-kinds-jiexi-xml-bao-usage-method-summary
+
 ConfigParse例子：http://www.cnblogs.com/sislcb/archive/2008/11/25/1340587.html
 Q4:
 __MAIN__
