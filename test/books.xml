@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This is a sample xml-->
+<books>
+    <book id="1002">
+        <title>Love</title>
+        <author>
+            <name>
+                <firstname>Mike</firstname>
+                <lastname>Li</lastname>
+            </name>
+        </author>
+        <pubdate>2012-1-10</pubdate>
+    </book>
+    <book id="1004">
+        <title>Harry Potter</title>
+        <author>
+            <name>
+                <firstname>Peter</firstname>
+                <lastname>Chen</lastname>
+            </name>
+        </author>
+        <pubdate>2012-11-11</pubdate>
+    </book>
+    <book id="1003">
+        <title>Steve.Jobs</title>
+        <author>
+            <name>
+                <firstname>Tom</firstname>
+                <lastname>Wang</lastname>
+            </name>
+        </author>
+        <pubdate>2012-1-19</pubdate>
+    </book>
+</books>
