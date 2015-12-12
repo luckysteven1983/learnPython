@@ -3,6 +3,8 @@ Created on Dec 10, 2015
 
 @author: dadl
 '''
+import re
+
 import xml.dom.minidom
 import lxml.etree
 
@@ -43,14 +45,29 @@ def get_xpath_2():
     print doc.xpath("//item/data")
 
 def test_parse_xml():
+    '''
+    1. parse old SDM_General_Data.xml
+    2. get hardware type, zone id, msgh number, NRG number etc.
+    3. generate new SDM_General_Data.xml based on result in step2 and new SDM_General_Data_template.xml
+    4. parse new SDM_General_Data.xml
+    5. set value to the data in old SDM_General_Data.xml
+    6. write to new SDM_General_Data-[lab name].xml file
+    '''
     dictvalue = {}
     doc = lxml.etree.parse('SDM_General_Data.xml')
     print doc
     print doc.getroot().tag
+    msghnumber = []
     for firstlevel in doc.getroot():
         #print (firstlevel.tag, firstlevel.attrib)
         for secondlevel in firstlevel:
+            secondlevelname = secondlevel.get('name')
+            msgh = re.search(r'msgh(\d+)_Traffic_IPV4', secondlevelname)
+            if msgh:
+                msghnumber.append(msgh.group(1))
             for thirdlevel in secondlevel:
+                pass
+                '''# this set of code can be put in or out of this loop
                 #datapath = '//'+firstlevel.tag+'[@name="%s"]/'+secondlevel.tag+'[@name="%s"]/'+thirdlevel.tag+'[@name="%s"]/@value'
                 datapath = '//'+firstlevel.tag+'[@name="%s"]/'+secondlevel.tag+'[@name="%s"]/'+thirdlevel.tag+'[@name="%s"]'
                 datavalue = datapath+'/@value'
@@ -59,14 +76,26 @@ def test_parse_xml():
                     print 'help:'+str(thirdlevel.get('version'))+'!'
                     thirdlevel.set('version', '2')
                     print 'help:'+str(thirdlevel.get('version'))+'!'
-                #dictvalue[(firstlevel.get('name'), secondlevel.get('name'), thirdlevel.get('name'))] = thirdlevel.get('value')
-    print doc
-    doc.write('xmltree.xml') 
+                '''
+                dictvalue[(firstlevel.get('name'), secondlevel.get('name'), thirdlevel.get('name'))] = thirdlevel.get('value')
+    
+    datapath = '//'+firstlevel.tag+'[@name="%s"]/'+secondlevel.tag+'[@name="%s"]/'+thirdlevel.tag+'[@name="%s"]'
+    datavalue = datapath+'/@value'
+    test = doc.xpath(datavalue %(firstlevel.get('name'), secondlevel.get('name'), thirdlevel.get('name')))
+    if firstlevel.get('name') == 'IP_conf' and secondlevel.get('name') == 'LDAP_Traffic_IPV4' and thirdlevel.get('name') == 'VLAN_ID':
+        print 'help:'+str(thirdlevel.get('version'))+'!'
+        thirdlevel.set('version', '2')
+        print 'help:'+str(thirdlevel.get('version'))+'!'
+                    
+    hardwaretype = doc.xpath(datavalue %('General', 'Common', 'HARDWARE'))[0]
+    print 'hardware type is: %s'%hardwaretype
+    msghnumber.sort()
+    print 'msgh number is: %s'%msghnumber[-1]
+    
+    '''# write to new xmltree.xml file after update(set) value
+    doc.write('xmltree.xml')
+    '''
 
-#     print node.get('name')
-#     anotherkey = ('IP_conf', 'BE.NETWORK.NRG.1.ZONE.1_IPV6', 'GMPS.HOSTNAME')
-#     print '\n'
-#     print 'another value of dictvalue is: '+dictvalue[anotherkey]+'!'
 
 test_parse_xml()
 #get_xpath_2()

@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <applicationConfiguration version="4.3"> 
   <module name="Security"> 
     <function name="common"> 
@@ -2845,7 +2844,7 @@
         <mandatory>NO</mandatory>  
         <level>0</level> 
       </option>  
-      <option name="VLAN_ID" value=""> 
+      <option name="VLAN_ID" value="" version="2"> 
         <configuration>FE</configuration>  
         <configuration>Prov-FE</configuration>  
         <configuration>CM</configuration>  
