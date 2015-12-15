@@ -48,6 +48,7 @@ def test_parse_xml():
     '''
     1. parse old SDM_General_Data.xml
     2. get hardware type, zone id, msgh number, NRG number etc.
+        
     3. generate new SDM_General_Data.xml based on result in step2 and new SDM_General_Data_template.xml
     4. parse new SDM_General_Data.xml
     5. set value to the data in old SDM_General_Data.xml
