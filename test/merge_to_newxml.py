@@ -73,13 +73,13 @@ class MergeToNewxml(object):
             #print (firstlevel.tag, firstlevel.attrib)
             for secondlevel in firstlevel:
                 secondlevelname = secondlevel.get('name')
-                msghfound = re.search(r'msgh(\d+)_Traffic_IPV4', secondlevelname)
+                msghfound = re.search(r'msgh(\d+)_Traffic.*', secondlevelname)
                 if msghfound:
                     self.msghnumbertemp.append(msghfound.group(1))
-                nrg = re.search(r'BE.NETWORK.NRG.(\d+).*_IPV4', secondlevelname)
+                nrg = re.search(r'BE.NETWORK.NRG.(\d+).*', secondlevelname)
                 if nrg:
                     self.nrglisttemp.append(nrg.group(1))
-                zone = re.search(r'BE.NETWORK.NRG.1.ZONE.(\d+)_IPV4', secondlevelname)
+                zone = re.search(r'BE.NETWORK.NRG.1.ZONE.(\d+).*', secondlevelname)
                 if zone:
                     self.zonelisttemp.append(zone.group(1))
                 farmtcp = re.search(r'Farm_TCP(\d+)', secondlevelname)
@@ -105,6 +105,7 @@ class MergeToNewxml(object):
         zone = self.zonelisttemp[0]
         for i in self.zonelisttemp[1:]:
             zone += ','+i
+        self.msghnumbertemp = list(set(self.msghnumbertemp))
         self.msghnumbertemp.sort()
         msgh = self.msghnumbertemp[0]        
         for i in self.msghnumbertemp[1:]:
