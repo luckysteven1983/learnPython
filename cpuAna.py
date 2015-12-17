@@ -276,31 +276,30 @@ class CPUAnaAManager(object):
             print startTime, endTime, labList, directory
             return startTime, endTime, labList, directory
 
-cpuAnaAManager = CPUAnaAManager()
-arg = cpuAnaAManager.parseArg()
-print '---test starts!---\n'\
-      '---parsing data from startTime: '+arg[0]+' to endTime: '+arg[1]+'---'           
-print datetime.datetime.now()
-labList = arg[2].split(',')
-for lab in list(labList):
-    #fileFolder = '/PLATsoftware/pt_result/2015-12-03/fm1945_'+lab+'/Done/top_*.log'
-    lab = lab.strip()
-    cpuAnaAManager.ssh.getClient(lab)
-    print 'ls '+arg[3]+lab
-    ifDir = cpuAnaAManager.ssh.run(lab, 'ls '+arg[3])
-    if ifDir[0] == 0:
-        fileFolder = arg[3]+'/Done'
-    else:
-        fileFolder = arg[3]+'_'+lab+'/Done'
-    print fileFolder
-    cpuAnaAManager.getFilesFromLab(lab, fileFolder)
-    dict1 = cpuAnaAManager.cptAnaAll(arg[0], arg[1], lab, './cache/'+lab)
-    #dict1 = cpuAnaAManager.cptAnaAll('14:51:00', '14:53:00', lab, './cache/'+lab)
-    print '---parse '+lab+' data done!---'
-print datetime.datetime.now()
-print '---test is done!---'
-#cpuAnaAManager.anaAll(dict1)
-#python cpuAna.py '14:51:00', '14:53:00', 'atca55, atca47', '/PLATsoftware/pt_result/2015-12-03/fm1945_'
+if __name__=='__main__':
+    cpuAnaAManager = CPUAnaAManager()
+    arg = cpuAnaAManager.parseArg()
+    print '---test starts!---\n'\
+          '---parsing data from startTime: '+arg[0]+' to endTime: '+arg[1]+'---'           
+    print datetime.datetime.now()
+    labList = arg[2].split(',')
+    for lab in list(labList):
+        #fileFolder = '/PLATsoftware/pt_result/2015-12-03/fm1945_'+lab+'/Done/top_*.log'
+        lab = lab.strip()
+        cpuAnaAManager.ssh.getClient(lab)
+        ifDir = cpuAnaAManager.ssh.run(lab, 'ls '+arg[3])
+        if ifDir[0] == 0:
+            fileFolder = arg[3]+'/Done'
+        else:
+            fileFolder = arg[3]+'_'+lab+'/Done'
+        cpuAnaAManager.getFilesFromLab(lab, fileFolder)
+        dict1 = cpuAnaAManager.cptAnaAll(arg[0], arg[1], lab, './cache/'+lab)
+        #dict1 = cpuAnaAManager.cptAnaAll('14:51:00', '14:53:00', lab, './cache/'+lab)
+        print '---parse '+lab+' data done!---'
+    print datetime.datetime.now()
+    print '---test is done!---'
+    #cpuAnaAManager.anaAll(dict1)
+    #python cpuAna.py '14:51:00', '14:53:00', 'atca55, atca47', '/PLATsoftware/pt_result/2015-12-03/fm1945_'
 
 
 
