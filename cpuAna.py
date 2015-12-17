@@ -199,7 +199,6 @@ class CPUAnaAManager(object):
         get files from lab       
         '''
         fileList = []
-        #ssh = ssh_manager.SshManager()
         fileList = self.ssh.scpGetAll(lab, dir+'/top_*.log')
         return fileList
 
@@ -211,16 +210,16 @@ class CPUAnaAManager(object):
         4. add data to worksheet by function writeToSheet
         5. close file to save it
         '''
-        #workbook = xlsxwriter.Workbook('result_'+lab+'.xlsx')
+        workbook = xlsxwriter.Workbook('result_'+lab+'.xlsx')
         for self.fileName in self.getFileList(lab, dir):
             fileIndex = dir+'/'+self.fileName
             self.fileName = re.search(r'top_(\w).', self.fileName).group(1)
             self.dictCpu = {}
             result = self.cpuAna(startTime, endTime, fileIndex)
-            #self.writeToSheet(workbook, 'Sta_'+self.fileName, result)
+            self.writeToSheet(workbook, 'Sta_'+self.fileName, result)
 
             ### Use csv to create .csv text file method ###
-            with open('./cache/'+lab+'/result_'+lab+'_Sta_'+self.fileName+'.csv', 'wb') as csvfile:
+            '''with open('./cache/'+lab+'/result_'+lab+'_Sta_'+self.fileName+'.csv', 'wb') as csvfile:
                 csvfile.truncate()
                 spam = csv.writer(csvfile, dialect='excel')
                 spam.writerow(self.firstRow)
@@ -232,7 +231,7 @@ class CPUAnaAManager(object):
                     sth.insert(0, key)
                     #print 'sth: ',sth
                     spam.writerow(sth)
-            csvfile.close()
+            csvfile.close()'''
             ### Use 'xlwt' worksheet to create .xls excel file method ###
             '''workbook = xlwt.Workbook(encoding='utf-8')
             booksheet1 = workbook.add_sheet('Sheet 1', cell_overwrite_ok=True)
@@ -255,7 +254,7 @@ class CPUAnaAManager(object):
             
             self.writeToSheet(workbook, fileName, self.dictCpu)
             workbook.save('result.xls')'''
-        #workbook.close()
+        workbook.close()
             
             #bladeNumber = 1
             #self.output[bladeNumber] = result
@@ -274,23 +273,26 @@ class CPUAnaAManager(object):
             endTime = sys.argv[2]
             labList = sys.argv[3]
             directory = sys.argv[4]
+            print startTime, endTime, labList, directory
             return startTime, endTime, labList, directory
 
 cpuAnaAManager = CPUAnaAManager()
 arg = cpuAnaAManager.parseArg()
 print '---test starts!---\n'\
-      '---parsing data from startTime: '+arg[0]+' to endTime: '+arg[1]+'---'
-            
+      '---parsing data from startTime: '+arg[0]+' to endTime: '+arg[1]+'---'           
 print datetime.datetime.now()
 labList = arg[2].split(',')
 for lab in list(labList):
     #fileFolder = '/PLATsoftware/pt_result/2015-12-03/fm1945_'+lab+'/Done/top_*.log'
     lab = lab.strip()
+    cpuAnaAManager.ssh.getClient(lab)
+    print 'ls '+arg[3]+lab
     ifDir = cpuAnaAManager.ssh.run(lab, 'ls '+arg[3])
     if ifDir[0] == 0:
         fileFolder = arg[3]+'/Done'
     else:
         fileFolder = arg[3]+'_'+lab+'/Done'
+    print fileFolder
     cpuAnaAManager.getFilesFromLab(lab, fileFolder)
     dict1 = cpuAnaAManager.cptAnaAll(arg[0], arg[1], lab, './cache/'+lab)
     #dict1 = cpuAnaAManager.cptAnaAll('14:51:00', '14:53:00', lab, './cache/'+lab)
