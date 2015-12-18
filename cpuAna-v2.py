@@ -231,8 +231,15 @@ class CPUAnaAManager(object):
         for i in loop:
             fileIndex = dir+'/'+loops[i]
             name = re.search(r'top_(\w).', loops[i]).group(1)
-            result = self.cpuAna(startTime, endTime, fileIndex, name)
-            self.writeToSheet(workbook, 'Sta_'+name, result)
+            result = self.cpuAna(startTime, endTime, fileIndex, self.fileName)
+            #self.writeToSheet(workbook, 'Sta_'+self.fileName, result)
+            t2 = threading.Thread(target=self.writeToSheet, args=(workbook, 'Sta_'+name, self.dictName[name]))
+            threads2.append(t2)
+        print threads2
+        for i in loop:
+            threads2[i].start()
+        for i in loop:
+            threads2[i].join()
 
             ### Use csv to create .csv text file method ###
             '''with open('./cache/'+lab+'/result_'+lab+'_Sta_'+self.fileName+'.csv', 'wb') as csvfile:
@@ -294,7 +301,7 @@ class CPUAnaAManager(object):
 if __name__=='__main__':
     cpuAnaAManager = CPUAnaAManager()
     arg = cpuAnaAManager.parseArg()
-    print '---test cpuAna.py starts!---\n'\
+    print '---test cpuAna-v2.py starts!---\n'\
           '---parsing data from startTime: '+arg[0]+' to endTime: '+arg[1]+'---'           
     print datetime.datetime.now()
     labList = arg[2].split(',')
@@ -316,3 +323,6 @@ if __name__=='__main__':
     print '---test is done!---'
     #cpuAnaAManager.anaAll(dict1)
     #python cpuAna.py '17:25:00' '20:30:00' 'atca23, atca43, atca55, atca45, atca47, atca57, atca58, atca56, atca59, atca19' '/PLATsoftware/pt_result/2015-12-16/fm1951'
+
+
+
