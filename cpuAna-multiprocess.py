@@ -18,6 +18,7 @@ import sys
 import csv
 import threading
 import datetime
+from time import sleep
 import xlsxwriter
 from lib.ssh import ssh_manager
 
@@ -27,10 +28,19 @@ class CPUAnaAManager(object):
     '''
     dictCpu = {}
     dictName = {}
+    dictTime = {}
+    dictRow = {}
+    dictSheet = {}
+    dictSecond = {}
+    dictSta = {}
     for i in ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L']:
         dictName[i] = dictCpu
+        dictTime[i] = []
+        dictRow[i] = 0
+        dictSecond[i] = []
+        dictSta[i] = ''
     dictKey = ''
-    allTime = []
+    dictChart = {}
     fileName = ''
     parseList = ['Cpu0', 'Cpu1', 'Cpu_Ave', 'Mem', 'OamCOMM',
                  'PDLSI1', 'PDLSL1', 'PDLSU1', 'PDLSM1']
@@ -54,7 +64,9 @@ class CPUAnaAManager(object):
     def cpuAna(self, startTime, endTime, fileInput, fileName):
         '''
         '''
-        self.allTime = []
+        #print 'Start processing station: %s'%fileName
+        dictCpu = {}
+        self.dictTime[fileName] = []
         myFile = open(fileInput, "r")
         cpuData = myFile.readlines()
         lineNum = 0
@@ -74,12 +86,12 @@ class CPUAnaAManager(object):
             found = re.search(r'top - (\d\d:\d\d:\d\d).', line)
             if found:
                 timeIndex = found.group(1)
-                self.dictKey = timeIndex
-                self.allTime.append(timeIndex)
+                dictKey = timeIndex
+                self.dictTime[fileName].append(timeIndex)
                 if not self.timeCompare(timeIndex, endTime):
                     break
                 else:
-                    self.dictCpu[self.dictKey] = {}
+                    dictCpu[dictKey] = {}
                     continue
 
             for keyVal in ['Cpu0', 'Cpu1', 'Mem', 'Swap', 'OamCOMM',
@@ -89,50 +101,35 @@ class CPUAnaAManager(object):
                     if keyVal in ['OamCOMM', 'PDLSI1', 'PDLSL1', 'PDLSU1', 'PDLSM1']:
                     #print "PDLSI1 line: %s"%line
                         cpuMem = self.parseProcess(keyVal, line)
-                        self.dictCpu[self.dictKey][keyVal] = cpuMem
+                        dictCpu[dictKey][keyVal] = cpuMem
                     elif keyVal in ['Cpu0', 'Cpu1']:
                         cpu = self.parseCpu(keyVal, line)
                         if keyVal in ['Cpu0']:
                             cpu0 = cpu
-                            self.dictCpu[self.dictKey][keyVal] = [cpu0]
+                            dictCpu[dictKey][keyVal] = [cpu0]
                         if keyVal in ['Cpu1']:
                             cpu1 = cpu
-                            self.dictCpu[self.dictKey][keyVal] = [cpu1]
+                            dictCpu[dictKey][keyVal] = [cpu1]
                             cpuAve = round((cpu0+cpu1)/2, 1)
-                            self.dictCpu[self.dictKey]['Cpu_Ave'] = [cpuAve]
+                            dictCpu[dictKey]['Cpu_Ave'] = [cpuAve]
                     elif keyVal in ['Mem']:
                         mem = round(self.parseMem(keyVal, line)/1024, 1)
                     elif keyVal in ['Swap']:
                         swap = round(self.parseSwap(keyVal, line)/1024, 1)
                         realmem = round(swap+mem, 1)
-                        self.dictCpu[self.dictKey]['Mem'] = [round(swap+mem, 1)]
+                        dictCpu[dictKey]['Mem'] = [round(swap+mem, 1)]
                 else:
                     if keyVal in ['OamCOMM', 'PDLSI1', 'PDLSL1', 'PDLSU1', 'PDLSM1']:
-                        if not self.dictCpu[self.dictKey].has_key(keyVal):
-                            self.dictCpu[self.dictKey][keyVal] = [0,0]
+                        if not dictCpu[dictKey].has_key(keyVal):
+                            dictCpu[dictKey][keyVal] = [0,0]
                     if keyVal in ['Cpu0', 'Cpu1', 'Mem', 'Swap',]:
-                        if not self.dictCpu[self.dictKey].has_key(keyVal):
-                            self.dictCpu[self.dictKey][keyVal] = [0]
-
-        '''with open('test.csv', 'wb') as csvfile:
-            csvfile.truncate()
-            spam = csv.writer(csvfile, dialect='excel')
-            spam.writerow(self.firstRow)
-            for key in self.dictCpu:
-                if self.timeCompare(endTime, key):
-                    continue
-                else:
-                    sth = []
-                    keyCpu = self.dictCpu[key]
-                    for parseItem in self.parseList:
-                        sth += keyCpu[parseItem]
-                    sth.insert(0, key)
-                    spam.writerow(sth)
-            csvfile.close()'''
-
+                        if not dictCpu[dictKey].has_key(keyVal):
+                            dictCpu[dictKey][keyVal] = [0]
         myFile.close()
-        self.dictName[fileName] = self.dictCpu
-        return self.dictCpu
+        self.dictName[fileName] = dictCpu
+        #print 'End processing station: %s'%fileName
+        #self.dictTime[fileName] = self.allTime[fileName]
+        return self.dictName[fileName]
 
     def parseCpu(self, keyValue, line):
         cpu = re.search(r'.: +(\d+\.\d)%us.', line).group(1)
@@ -157,35 +154,52 @@ class CPUAnaAManager(object):
             dictVal = [float(cpu), float(mem)]
             return dictVal
         
-    def writeToSheet(self, workbook, sheetName, dictCpu):
+    def writeToSheet(self, workbook, sheetName, name):
         ### Use xlsxwriter to create worksheet ###
-        #print 'Start processing %s'%sheetName
-        booksheet1 = workbook.add_worksheet(sheetName)
-        chart = workbook.add_chart({'type': 'line', 'subtype': 'percent_stacked'})
+        #print 'Start processing sheet: %s'%sheetName
+
+            #chart = workbook.add_chart({'type': 'line', 'name': sheetName+'_cpu'})
+            #self.dictChart[fileName] = workbook.add_chart({'type': 'line', 'name': fileName})
+                
         second = []
-        third = []
-        rowNum = 0
-        for key in self.allTime[0:-1]:
+        for keykey in self.dictTime[name][0:-1]:
             sth = []
-            keyCpu = dictCpu[key]
+            keyCpu = self.dictName[name][keykey]
             for parseItem in self.parseList:
                 sth += keyCpu[parseItem]
-            sth.insert(0, key)
+            sth.insert(0, keykey)
             second.append(tuple(sth))
         second.insert(0, tuple(self.firstRow))
-        for i, row in enumerate(second):
-            for j, col in enumerate(row):
-                booksheet1.write(i, j, col)
-        rowNum = len(dictCpu.keys()) + 1
-        chart.add_series({'name': '='+sheetName+'!$B$1',
-                          'categories': '='+sheetName+'!$A$2:$A$'+str(rowNum),
-                          'values': '='+sheetName+'!$B$2:$B$'+str(rowNum)})
-        chart.add_series({'name': '='+sheetName+'!$C$1',
-                          'categories': '='+sheetName+'!$A$2:$A$'+str(rowNum),
-                          'values': '='+sheetName+'!$C$2:$C$'+str(rowNum)})
-        booksheet1.insert_chart('B10', chart)
-        #print 'End processing %s'%sheetName
-        return booksheet1
+        self.dictSecond[name] = second
+                
+#         booksheet1 = workbook.add_worksheet('Sta_'+name)
+#         #chart = workbook.add_chart({'type': 'line', 'name': sheetName+'_cpu'})
+#         #self.dictChart[fileName] = workbook.add_chart({'type': 'line', 'name': fileName})        
+#         second = []
+#         for keykey in self.dictTime[name][0:-1]:
+#             sth = []
+#             keyCpu = self.dictName[name][keykey]
+#             for parseItem in self.parseList:
+#                 sth += keyCpu[parseItem]
+#             sth.insert(0, keykey)
+#             second.append(tuple(sth))
+#         print name, second[-10:]
+#         second.insert(0, tuple(self.firstRow))
+#         for i, row in enumerate(second):
+#             for j, col in enumerate(row):
+#                 booksheet1.write(i, j, col)
+#         self.dictRow[name] = len(self.dictName[name].keys()) + 1
+#         #rowNum = 4000
+#         chart.add_series({'name': '='+sheetName+'!$B$1',
+#                           'categories': '='+sheetName+'!$A$2:$A$'+str(self.dictRow[name]),
+#                           'values': '='+sheetName+'!$B$2:$B$'+str(self.dictRow[name])})
+#         chart.add_series({'name': '='+sheetName+'!$C$1',
+#                           'categories': '='+sheetName+'!$A$2:$A$'+str(self.dictRow[name]),
+#                           'values': '='+sheetName+'!$C$2:$C$'+str(self.dictRow[name])})
+#         self.dictSheet[name].insert_chart('B10', chart)
+        #print 'End processing sheet: %s'%sheetName
+#         self.dictSheet[name] = booksheet1
+#         return self.dictSheet[name]
         #booksheet1.col(0).width=10
 
     def getFileList(self, lab, dir):
@@ -195,6 +209,7 @@ class CPUAnaAManager(object):
         fileList = ""
         #cmd = "ls "+dir+" | grep ^top | grep log$ | grep D | grep -v parsed"
         cmd = "ls "+dir+" | grep ^top | grep log$ | grep -v parsed"
+        #cmd = "dir /B .\cache\%s"%lab
         #result = os.popen(cmd).read()
         k = []
         for i in os.popen(cmd).readlines():
@@ -225,51 +240,58 @@ class CPUAnaAManager(object):
 #             self.dictCpu = {}
 #             result = self.cpuAna(startTime, endTime, fileIndex)
 #             self.writeToSheet(workbook, 'Sta_'+self.fileName, result)
-            
-        fileList = self.getFileList(lab, dir)
-        for fileName in fileList:
-            fileIndex = dir+'/'+fileName
-            name = re.search(r'top_(\w).', fileName).group(1)
-            result = self.cpuAna(startTime, endTime, fileIndex, name)
-            self.writeToSheet(workbook, 'Sta_'+name, result)
-
-            ### Use csv to create .csv text file method ###
-            '''with open('./cache/'+lab+'/result_'+lab+'_Sta_'+self.fileName+'.csv', 'wb') as csvfile:
-                csvfile.truncate()
-                spam = csv.writer(csvfile, dialect='excel')
-                spam.writerow(self.firstRow)
-                for key in self.dictCpu:
-                    sth = []
-                    keyCpu = self.dictCpu[key]
-                    for parseItem in self.parseList:
-                        sth += keyCpu[parseItem]
-                    sth.insert(0, key)
-                    #print 'sth: ',sth
-                    spam.writerow(sth)
-            csvfile.close()'''
-            ### Use 'xlwt' worksheet to create .xls excel file method ###
-            '''workbook = xlwt.Workbook(encoding='utf-8')
-            booksheet1 = workbook.add_sheet('Sheet 1', cell_overwrite_ok=True)
-            booksheet2 = workbook.add_sheet('Sheet 2')
-            second = []
-            third = []
-            for key in self.dictCpu:
-                sth = []
-                keyCpu = self.dictCpu[key]
-                for parseItem in self.parseList:
-                    sth += keyCpu[parseItem]
-                sth.insert(0, key)
-                second.append(tuple(sth))
-            second.insert(0, tuple(self.firstRow))
-            print second
-            for i, row in enumerate(second):
+        loops = self.getFileList(lab, dir)
+        threads2 = []
+        loop = range(len(loops))
+        for i in loop:
+            fileIndex = dir+'/'+loops[i]
+            name = re.search(r'top_(\w).', loops[i]).group(1)
+            #result = self.cpuAna(startTime, endTime, fileIndex, name)
+            t2 = threading.Thread(target=self.cpuAna, args=(startTime, endTime, fileIndex, name))
+            #self.writeToSheet(workbook, 'Sta_'+name, self.dictName[name])
+            #t2 = threading.Thread(target=self.writeToSheet, args=(workbook, 'Sta_'+name, self.dictName[name], name))
+            threads2.append(t2)
+        print threads2
+        for i in loop:
+            threads2[i].start()
+        for i in loop:
+            threads2[i].join()
+        
+        threads1 = []
+        for i in ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L']:
+            self.dictSheet[i] = workbook.add_worksheet('Sta_'+i)
+        #chart = workbook.add_chart({'type': 'line'})
+        for j in loop:
+            fileIndex = dir+'/'+loops[j]
+            name = re.search(r'top_(\w).', loops[j]).group(1)
+            t1 = threading.Thread(target=self.writeToSheet, args=(workbook, 'Sta_'+name, name))
+            threads1.append(t1)
+        print threads1
+        for j in loop:
+            threads1[j].start()
+        for j in loop:
+            threads1[j].join()
+        
+        for i in loop:
+            fileIndex = dir+'/'+loops[i]
+            name = re.search(r'top_(\w).', loops[i]).group(1)    
+            for i, row in enumerate(self.dictSecond[name]):
                 for j, col in enumerate(row):
-                    booksheet1.write(i, j, col)
-            booksheet1.col(0).width=10
-            
-            self.writeToSheet(workbook, fileName, self.dictCpu)
-            workbook.save('result.xls')'''
+                    self.dictSheet[name].write(i, j, col)        
+            rowNum= len(self.dictName[name].keys()) + 1
+            sheetName = 'Sta_'+name
+            chart = workbook.add_chart({'type': 'line'})
+            chart.add_series({'name': '='+sheetName+'!$B$1',
+                              'categories': '='+sheetName+'!$A$2:$A$'+str(rowNum),
+                              'values': '='+sheetName+'!$B$2:$B$'+str(rowNum)})
+            chart.add_series({'name': '='+sheetName+'!$C$1',
+                              'categories': '='+sheetName+'!$A$2:$A$'+str(rowNum),
+                              'values': '='+sheetName+'!$C$2:$C$'+str(rowNum)})
+            self.dictSheet[name].insert_chart('B10', chart)
+
+        #print '%s: Write data into excel START!'%datetime.datetime.now()
         workbook.close()
+        #print '%s: Write data into excel DONE!'%datetime.datetime.now()
             #bladeNumber = 1
             #self.output[bladeNumber] = result
         return dict
@@ -293,7 +315,7 @@ class CPUAnaAManager(object):
 if __name__=='__main__':
     cpuAnaAManager = CPUAnaAManager()
     arg = cpuAnaAManager.parseArg()
-    print '---test cpuAna.py starts!---\n'\
+    print '---test cpuAna-multiprocess.py starts!---\n'\
           '---parsing data from startTime: '+arg[0]+' to endTime: '+arg[1]+'---'           
     print datetime.datetime.now()
     labList = arg[2].split(',')
