@@ -72,5 +72,5 @@ class ev1423_check_alarms_when_diskfull(SDMTestCase):
         Remove dummy file which is created during testcase execution
         '''
         LOGGER.debug("Clean dummy file")
-        cmd = 'cd /root;rm -f tmp.temp'
+        cmd = 'cd /sncore;rm -f tmp.temp'
         self.sshManager.run(self.fe.oamIpAddress, cmd)
