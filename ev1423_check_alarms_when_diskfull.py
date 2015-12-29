@@ -5,62 +5,47 @@ weblink_id:
 '''
 import random
 from lib.logging.logger import Logger
-from framework.asserts.common_asserts import CommonAssert
-from lib.platform.mcas.mcas_platform_manager import MCAS_RESTART_PF_TIMEOUT
-from lib.health_check.health_check_manager import HEALTH_CHECK_ASSERT_TIME_INTERVAL
 from framework.sdm_test_case import SDMTestCase
 from lib.alarm.alarms_config import AlarmsConfig
 from framework.common import Utils
-import lib.exceptions_messages as msgs
 
 LOGGER = Logger.getLogger(__name__)
 LOGFILE = Logger.getAlarmLogFileNames(__name__)
 
-class ev1422_restart_platform_restart_spa_diskfull(SDMTestCase):
+class ev1423_check_alarms_when_diskfull(SDMTestCase):
     '''
-    Pilot Disk is full, check the traffic impact; /etc/Astop all; /etc/Astart all; check the platform can be startup
+    Nonpilot Disk is full, check the alarm
     '''
     def setUp(self):
-        self.logLinksPrint()
+        self.logLinksPrint()  # Used to get the log links in Junit XML results
+        self.myDSM = self.sdmManager.databaseStateManager
         self.mcasMachineManager = self.sdmManager.mcasMachineManager
-        self.mcasPlatformManager = self.sdmManager.mcasPlatformManager
         self.allFEs = self.testEnv.testBed.getFrontends().values()
         self.fe = random.choice(self.allFEs)
+        self.stationList = self.fe.getStationListbyProductRole('RT').values()
+        self.stationChosen = random.choice(self.stationList)
         self.sshManager = self.sdmManager.sshManager
         self.testEnvAsserts = self.sdmManager.testEnvAsserts
-#         self.mustNotHaveAlarms = [Alarm(922039, "Minor"),
-#                                   Alarm(922039, "Major"),
-#                                   Alarm(922039, "Critical")]
         self.expectedAlarms = []
         self.acceptedAlarms = []
         self.success = True
         self.exceptMsg = ""
 
-    def test_restart_platform_restart_spa_diskfull(self):
+    def test_check_alarms_when_diskfull(self):
         '''
         Procedure:
-        1. Increase current partition to full
-        2. restart platform by Astop/Astart all
-        3. check alarm
+        1. Increase /sncore partition to full
+        2. check alarm
         '''
         #-------------- Test case pre-check --------------
         LOGGER.debug("Check the Initial status of the test env")
         self.testEnvAsserts.assertInitialState(self.testEnv, LOGFILE[0])
         startTime = Utils.getCurrentLabTime(self.sdmManager.sshManager, self.allFEs[0])
         #-------------- Test case execution --------------
-        LOGGER.debug("Increase / partition to full by creating dummy file")
-        cmd = 'cd /root;dd if=/dev/zero of=tmp.temp'
-        self.sshManager.run(self.fe.oamIpAddress, cmd)
-        LOGGER.info("%s: restart platform by Astop/Astart all", self.fe.id)
-        self.mcasPlatformManager.runAstopAll(self.fe)
-        self.mcasPlatformManager.runAstartAll(self.fe)
-        LOGGER.info("Now waiting for SPAs to be recovered (max %s s)", MCAS_RESTART_PF_TIMEOUT)
-        CommonAssert.timedAssert(MCAS_RESTART_PF_TIMEOUT, HEALTH_CHECK_ASSERT_TIME_INTERVAL,
-                                  self.sdmManager.healthCheckManager.runCheckAll, \
-                                        self.fe, logLevel="debug")
+        LOGGER.debug("Increase /sncore partition to full by creating dummy file")
+        cmd = 'cd /sncore;dd if=/dev/zero of=tmp.temp'
+        self.sshManager.run(self.fe.oamIpAddress, cmd, station=self.stationChosen)
         #-------------- Test case post-check --------------
-        LOGGER.info("Restart traffics if needed")
-        self.sdmManager.trafficManager.startTrafficsAgainIfNeeded()
         try:
             LOGGER.debug("Check the alarms")
             myAlarmsConfig = AlarmsConfig(self.expectedAlarms, self.acceptedAlarms, startTime)
@@ -71,7 +56,7 @@ class ev1422_restart_platform_restart_spa_diskfull(SDMTestCase):
             # Verdict not yet based on alarms
             self.exceptMsg += str(msg)
             LOGGER.error("%s: alarm check fail", self.fe)
-
+            
         LOGGER.debug("Check the end status of the test env")
         try:
             labs = [lab for lab in self.testEnv.testBed.labs.values() if lab in self.fe]
