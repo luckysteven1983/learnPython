@@ -5,49 +5,51 @@ Created on Jan 4, 2016
 '''
 from lib.logging.logger import Logger
 from framework.sdm_test_case import SDMTestCase
-from lib.platform.mcas.mcas_application_manager import SDM_SPA
 from framework.common import Utils
 
 LOGGER = Logger.getLogger(__name__)
 LOGFILE = Logger.getAlarmLogFileNames(__name__)
 
-class fr_SDM_10228(SDMTestCase):
+class fr_SDM_7910(SDMTestCase):
     '''
-    Restart the SPA about 60+ times in case of 1 PDLSU+3PDLSM
+    Switch over Master NRG 100+ times
     '''
     def setUp(self):
         self.logLinksPrint()  # Used to get the log links in Junit XML results
-        self.myDSM = self.sdmManager.databaseStateManager
-        self.mcasMachineManager = self.sdmManager.mcasMachineManager
-        self.mcasApplicationManager = self.sdmManager.mcasApplicationManager
-        self.allFEs = self.testEnv.testBed.getFrontends().values()
-        self.fe = self.allFEs[0]
-        self.sshManager = self.sdmManager.sshManager
+        self.databaseManager = self.sdmManager.databaseManager
+        self.databaseStateManager = self.sdmManager.databaseStateManager
+        self.allBEs = self.testEnv.testBed.getBackends().values()
+        self.beNrg1 = self.testEnv.testBed.getLabsInNRG()
         self.testEnvAsserts = self.sdmManager.testEnvAsserts
         self.expectedAlarms = []
         self.acceptedAlarms = []
         self.success = True
         self.exceptMsg = ""
 
-    def test_SDM_10228(self):
+    def test_SDM_7910(self):
         '''
         Procedure:
-        Restart SDM spa 60+ times
+        Switch over Master NRG 100+ times
         '''
         #-------------- Test case pre-check --------------
         LOGGER.debug("Check the Initial status of the test env")
         self.testEnvAsserts.assertInitialState(self.testEnv, LOGFILE[0])
-        startTime = Utils.getCurrentLabTime(self.sdmManager.sshManager, self.allFEs[0])
+        startTime = Utils.getCurrentLabTime(self.sdmManager.sshManager, self.allBEs[0])
         #-------------- Test case execution --------------
-        loop = 65
-        LOGGER.info("Restarting SDM SPA %s times on %s", loop, self.fe.id)
+        loop = 100
+        LOGGER.info("Switch over Master NRG %s times", loop)
         for i in range(loop):
-            self.mcasApplicationManager.restartSPA(self.fe, SDM_SPA)
+            beStates = dict((beObj.id, self.databaseStateManager.getState(beObj)) for beObj in self.beNrg1)
+            LOGGER.debug("BE states before: %s", str(beStates))
+            self.databaseManager.matedPairSwo(self.beNrg1)
+            # Here we need to make sure the other BE status haven't changed
+            newStates = dict((beObj.id, self.databaseStateManager.getState(beObj)) for beObj in self.beNrg1)
+            LOGGER.debug("BE states after: %s", str(newStates))
+            self.assertEqual(beStates.values().sort(), newStates.values().sort(), "Other BE states have changed!")
         #-------------- Test case post-check --------------
-        #sleep(300)
         LOGGER.debug("Check the end status of the test env")
         try:
-            labs = [lab for lab in self.testEnv.testBed.labs.values() if lab is self.fe]
+            labs = [lab for lab in self.testEnv.testBed.labs.values() if lab in self.allBEs]
             self.testEnvAsserts.assertEndState(self.testEnv, startTime, LOGFILE[2], checkNoPilotSwitchoverOnLabs=labs)
         except BaseException, msg:
             self.success = False
