@@ -1,53 +1,66 @@
 '''
-Created on Jan 4, 2016
+Created on Jan 6, 2016
 
 @author: dadl
 '''
+from time import sleep
+import random
 from lib.logging.logger import Logger
 from framework.sdm_test_case import SDMTestCase
-from lib.platform.mcas.mcas_application_manager import SDM_SPA
 from framework.common import Utils
 
 LOGGER = Logger.getLogger(__name__)
 LOGFILE = Logger.getAlarmLogFileNames(__name__)
 
-class fr_SDM_10228(SDMTestCase):
+class fr_SDM_10333(SDMTestCase):
     '''
-    Restart the SPA about 60+ times in case of 1 PDLSU+3PDLSM
+    Pilot swo 10 times on FE and BE
     '''
     def setUp(self):
         self.logLinksPrint()  # Used to get the log links in Junit XML results
-        self.myDSM = self.sdmManager.databaseStateManager
+        self.databaseManager = self.sdmManager.databaseManager
+        self.databaseStateManager = self.sdmManager.databaseStateManager
         self.mcasMachineManager = self.sdmManager.mcasMachineManager
-        self.mcasApplicationManager = self.sdmManager.mcasApplicationManager
+        self.allBEs = self.testEnv.testBed.getBackends().values()
+        self.be = random.choice(self.allBEs)
         self.allFEs = self.testEnv.testBed.getFrontends().values()
-        self.fe = self.allFEs[0]
-        self.sshManager = self.sdmManager.sshManager
+        self.fe = random.choice(self.allFEs)
         self.testEnvAsserts = self.sdmManager.testEnvAsserts
         self.expectedAlarms = []
         self.acceptedAlarms = []
         self.success = True
         self.exceptMsg = ""
 
-    def test_SDM_10228(self):
+    def test_SDM_10333(self):
         '''
         Procedure:
-        Restart SDM spa 60+ times
+        Pilot swo 10 times on FE and BE
         '''
         #-------------- Test case pre-check --------------
         LOGGER.debug("Check the Initial status of the test env")
         self.testEnvAsserts.assertInitialState(self.testEnv, LOGFILE[0])
-        startTime = Utils.getCurrentLabTime(self.sdmManager.sshManager, self.allFEs[0])
+        startTime = Utils.getCurrentLabTime(self.sdmManager.sshManager, self.allBEs[0])
         #-------------- Test case execution --------------
-        loop = 65
-        LOGGER.info("Restarting SDM SPA %s times on %s", loop, self.fe.id)
+        loop = 10
+        LOGGER.info("Switch over FE and BE pilot %s times", loop)
         for i in range(loop):
-            self.mcasApplicationManager.restartSPA(self.fe, SDM_SPA)
+            LOGGER.debug("%s: fe swo starts", self.fe.id)
+            feSwoResult = self.mcasMachineManager.pilotSwitchover(self.fe)
+            if not feSwoResult:
+                self.success = False
+            LOGGER.debug("%s: fe swo ends", self.fe.id)
+        #Sleep 2 mins before continuing to do BE pilot swo
+        sleep(120)
+        for i in range(loop):
+            LOGGER.debug("%s: be swo starts", self.be.id)
+            beSwoResult = self.mcasMachineManager.pilotSwitchover(self.be)
+            if not beSwoResult:
+                self.success = False
+            LOGGER.debug("%s: be swo ends", self.be.id)
         #-------------- Test case post-check --------------
-        #sleep(300)
         LOGGER.debug("Check the end status of the test env")
         try:
-            labs = [lab for lab in self.testEnv.testBed.labs.values() if lab is self.fe]
+            labs = [lab for lab in self.testEnv.testBed.labs.values() if lab not in (self.fe, self.be)]
             self.testEnvAsserts.assertEndState(self.testEnv, startTime, LOGFILE[2], checkNoPilotSwitchoverOnLabs=labs)
         except BaseException, msg:
             self.success = False
