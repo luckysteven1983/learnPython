@@ -49,7 +49,11 @@ class fr_SDM_7910(SDMTestCase):
         #-------------- Test case post-check --------------
         LOGGER.debug("Check the end status of the test env")
         try:
+<<<<<<< HEAD
             labs = [lab for lab in self.testEnv.testBed.labs.values() if lab is self.beNrg1]
+=======
+            labs = [lab for lab in self.testEnv.testBed.labs.values() if lab in self.allBEs]
+>>>>>>> 9e450cf12d437a1fd584aad7382bb82ce0c35f3e
             self.testEnvAsserts.assertEndState(self.testEnv, startTime, LOGFILE[2], checkNoPilotSwitchoverOnLabs=labs)
         except BaseException, msg:
             self.success = False
