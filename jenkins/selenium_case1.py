@@ -1,6 +1,10 @@
 #-*- conding=utf-8 -*-
+import sys
+reload(sys)
+sys.setdefaultencoding("utf-8")
 from selenium import webdriver
 if __name__ == "__main__":
+    print 'selenium test start in Firefox'
     driver = webdriver.Firefox()
     #driver.implicitly_wait(30)
     driver.get("http://www.baidu.com")
